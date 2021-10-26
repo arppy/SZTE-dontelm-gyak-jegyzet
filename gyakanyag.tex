@@ -19,6 +19,12 @@
 \begin{document}
 \maketitle
 
+Az alábbi gyakorlati jegyzet soha nem lesz készen, folyamatosan fejlődik. Amely részeket ritkábban vagy nem érintünk a gyakorlaton, azok lassabban fejlődnek, akár hibákat is tartalmazhatnak. Érdemes időnként, de leginkább számonkérés előtt felkeresni a legújabb változatát. Az anyag nagyrészt a következő könyv válogatott fejezeteire épül: 
+
+\begin{tabular}{c}
+  Temesi József: \emph{A döntéselmélet alapjai} (2002, Aula kiadó)
+\end{tabular}
+
 \tableofcontents
 
 \
@@ -662,7 +668,7 @@ Sztochasztikus döntési modell esetében a vizsgálat értékeink kibővülnek 
 
 \paragraph{Feladat:} Rendelkezünk 10 millió forint befektetésre szánt pénzzel, melyet szeretnénk úgy befektetni, hogy a lehető legnagyobb reálhozamunk legyen. Bizonytalan eseményként vizsgáljuk az infláció alakulását.
 
-Magas infláció mellett történelmileg érdemes bankok részvényét megvásárolni, ezen kívül könnyen számolható éves nyereséget okoz a bankok számára a magas inflációs környezet. Egyik lehetséges alternatívánk, hogy megvesszük a rendelkezésre álló keretből egyetlen, tetszőleges bank részvényét. A jelenlegi feladatban feltesszük, hogy kezdő tőzsdei befektetők vagyunk: nem is diverzifikálunk, egyetlen vásárlás. Ennek köszönhetően valami benyomás alapján választunk. Tegyük fel, hogy nem sikerült a legjobban teljesítő bank részvényét kiválasztani, illetve hogy magas áron sikerült csak megvenni a részvényt. Ennek eredményeképpen alacsonyabb inflációs környezet esetén az első évben 10$\%$-ot veszítünk, míg ha az infláció tartósan magas lesz, akkor a kalkulációink alapján várhatóan éves szinten 20$\%$ reálnyereségünk lehet (inflálódást, mindenféle utalási, részvényvásárlási, adózási költséget mindkét esetben beleszámítva, illetve a különböző valutaváltási és valutánként eltérő infláció mértékkel, vagy bármi további részlettel a feladat egyszerűsítése kedvéért most nem foglalkozunk).
+Magas infláció mellett történelmi adatok alapján érdemes bankok részvényeit megvásárolni. A történelmi adatokon kívül könnyen számolható éves nyereséget okoz a bankok számára a magas inflációs környezet. Egyik lehetséges alternatívánk, hogy megvesszük a rendelkezésre álló keretből egyetlen, tetszőleges bank részvényét. A jelenlegi feladatban feltesszük, hogy kezdő tőzsdei befektetők vagyunk, nem diverzifikálunk, egyetlen vásárlás. Ennek köszönhetően valami benyomás alapján választunk egy bankot. Ebből fakadóan tegyük fel, hogy nem sikerült a legjobban teljesítő bank részvényét kiválasztani, illetve hogy magas áron sikerült megvenni a részvényt. Ennek eredményeképpen alacsonyabb inflációs környezet esetén az első évben 10$\%$-ot veszítünk, míg ha az infláció tartósan magas lesz, akkor a kalkulációink alapján várhatóan éves szinten 20$\%$ reálnyereségünk lehet (inflálódást, mindenféle utalási, részvényvásárlási, adózási költséget mindkét esetben beleszámítva, illetve a különböző valutaváltási és valutánként eltérő infláció mértékkel, vagy bármi további részlettel a feladat egyszerűsítése kedvéért most nem foglalkozunk).
 
 A másik lehetséges alternatívánk a Magyar Állampapír Plusz megvásárlása, amely 5 évre 4.95$\%$ kamatot tud nyújtani. Amennyiben 5$\%$ körüli magas infláció lesz, akkor az első évben 0.05$\%$-os reálérték veszteségünk lesz, míg amennyiben az infláció mérséklődik 2$\%$ körüli szintre, akkor 2.95$\%$ reálhozamunk lehet.
 
@@ -804,7 +810,7 @@ $VPTI = 6.6 + 4.63275 = 11.23275$
 
 Jósok helyett érdemesebb kockázatelemző, előrejelző céget keresni. Ami a következő állításokat teheti:
 \begin{itemize}
-\item $z_{1}:$ azt állítják (előrejelzik), hogy az infláció magasan marad következik be.  %(általánosan: bekövetkezik vmely esemény, itt speciálisan, ez az $s_{1}$)
+\item $z_{1}:$ azt állítják (előrejelzik), hogy az infláció magasan marad.  %(általánosan: bekövetkezik vmely esemény, itt speciálisan, ez az $s_{1}$)
 \item $z_{2}:$ azt állítják, hogy az infláció mérséklődik. % $s_{2}$ következik be (általánosan: nem következik be a $z_{1}$-ben feltett esemény, itt speciálisan, ez az $s_{2}$)
 \end{itemize}
 
@@ -868,7 +874,7 @@ A kérdés, amire a megoldást keressük egyrészről az, hogy melyik alternatí
 Jelölésben, új cselekvési alternatívákat vezetünk be: 
 \begin{itemize}
 \item $e_{0}:$ nem veszünk igénybe előrejelzést (ekkor $z_{0}$ üres esemény fog megtörténni, $P(z_0) = 1$)
-\item $e_{1}:$ igénybe vesszük az előrejelező céget (ennek a műveletnek $d$ költsége van)
+\item $e_{1}:$ igénybe vesszük az eddig vizsgált előrejelező céget (ennek a műveletnek $d$ költsége van)
 \end{itemize}
 
 \begin{center}
@@ -881,7 +887,7 @@ Jelölésben, új cselekvési alternatívákat vezetünk be:
 \begin{itemize}
 \item a fát a gyökérből indulva rajzoljuk meg, minden lehetséges döntésnek és lehetséges eseménynek külön ágat húzunk be (fenti ábra).
 \item az eseményekhez tartozó valószínűségeket be tudjuk helyettesíteni az egyes ágakra. Egy esemény minél mélyebben van, annál több dologtól függ. A lentebbi ágakon a felette lévőekkel alkot feltételes valószínűséget.
-\item a levelekhez be tudjuk írni az egyes választások pénzértékét a táblázatból (előrejelzés esetében már itt $d$ = 150 ezer forinttal terhelt pénzértékeket).
+\item a levelekhez be tudjuk írni az egyes választások pénzértékét a táblázatból (előrejelzés esetében már itt $d$ = 0.15 millió forinttal terhelt pénzértékeket).
 \end{itemize}
 
 \paragraph{Eljárás: }
@@ -892,11 +898,11 @@ a levélből elindulva, felfelé propagálva kiszámoljuk az egyes csúcsokat ($
 \item döntési elágazás: kiválasztjuk a $max_{i\in K}\{gyerek_i\}$ és a nem maximális értékhez tartozó ágat levágjuk. Ez lesz a csúcs várható pénzértéke.
 \end{itemize}
 
-Végül a gyökérben egyetlen várható pénzérték marad és az ahhoz tartozó optimális döntések.
+Végül a gyökérben egyetlen, a feladat várható pénzértéke marad és az ahhoz tartozó optimális döntések.
 
 \begin{center}
 
-\includegraphics[scale=0.7]{dectree02}
+\includegraphics[scale=0.7]{dectree03}
 \\
 \end{center}
 
@@ -940,22 +946,22 @@ A MAUT egy általános összefoglaló neve a többtényezős hasznosság elméle
 
 %\paragraph{A kimentelek valószínűsége: } minden $c^{(j,k)}$ kimenetelhez tartozik egy valószínűségi érték $p^{(j,k)}$, ami a döntésből és a természet állapotának a bekövetkezési valószínűségéből adódik.  Tehát tetszőleges $a_j$ alternatíva, $c^{(j,k)}$ értéket vesz fel, $p^{(j,k)}$ valószínűséggel (az $s_k$ esemény bekövetkezése esetén). Ezeket a valószínűségi értékeket nem ismerjük. A döntéshozó intuíciói alapján felépülő hasznosságfüggvény ezt közelíti és $\alpha$-val, vagy $\beta$-val jelölünk a továbbiakban.
 
-A hasznosságelmélet a megértés könnyedsége kedvéért a különböző valószínűségekkel terhelt kimeneteket, egy olyan játékként mutatja be, ahhol a döntéshozónak aközül kell választania, hogy például $\alpha \cdot c^{(j,k)}$ nyer és $(1-\alpha) \cdot c^{(j,l)}$ veszít vagy $\beta \cdot c^{(i,k)}$ nyer és $(1-\beta) \cdot c^{(i,l)}$
+A hasznosságelméletben az alternatívák lehetséges bizonytalan kimenetelű játékként foghatóak fel. Egy ilyen játék egyszerűbben az alábbi módon írható fel: $\alpha \cdot c_1$ (pl. $c_1$:"nyer") és $(1-\alpha) \cdot c^2$ (pl $c_2$:"veszít"). Ezeket a keverési arányokat a görög ábécé első betűivel jelöljük a továbbiakban ($\alpha, \beta, \gamma, ...$).
 
-Példa: kérdés a döntéshozóhoz: $90\%$-os eséllyel nyerünk 12 dollárt és $10\%$-os eséllyel nem nyerünk semmit. Vagy $1\%$-os eséllyel nyerünk 1 millió dollárt, $99\%$-os eséllyel nem nyerünk semmit.
+\paragraph{Lottery} Döntés bizonytalanság esetében a becsült valószínűségi értékkel terhelt (vagy keverési aránnyal megadott) kimeneteleket, alternatívákat \textbf{kockázatos lehetőségeknek (risky prospect), lotteryknek} nevezzük és $a_p$ vagy $a_q$-vel jelöljük. A lotteryk halmaza $A^p$.  $A$ elemei kifejezhetőek $A^p$-ből. $A^p$ halmaza lehet bővebb, mint a valós $A$ halmaza, hiszen olyan további tetszőleges játékok definiálhatók, amelyek $\alpha$ keverési aránya nem szerepel a ténylegesen alternatíváink között.
 
-\paragraph{Lottery} Döntés bizonytalanság esetében a becsült valószínűségi értékkel terhelt kimeneteleket, alternatívákat \textbf{kockázatos lehetőségeknek (risky prospect), lotteryknek} nevezzük és $a^{(j,k)}_p$ vagy $a^{(j)}_p$-vel jelöljük. Attól függően, hogy a vizsgált kimenetelhez vagy a teljes alternatívához tartozó lotteryt vizsgáljuk.  A lotteryk halmaza $A^p$.  $A$ elemei kifejezhetőek $A^p$-ből (adott alternatíva rendelkezik becsült valószínűségekkel, a többi 0). Megadhatóak biztos kimenetelek $A^p$-ből (adott kimenetel valószínűsége 1, minden másé 0).
+Példa lotteryre: kérdés a döntéshozóhoz: Melyik játékban venne részt szívesebben? (Vagy másképp megfogalmazva: mi a preferenciája?) $90\%$-os eséllyel nyer 12 dollárt és $10\%$-os eséllyel nem nyer semmit. Vagy $1\%$-os eséllyel nyer 1 millió dollárt, $99\%$-os eséllyel nem nyer semmit.
 
-Tehát sarkosan fogalmazva annyit jelent a lottery, hogy a döntéshozó mennyit hajlandó kockáztatni az alternatíva adott értékéért cserébe.
+%Tehát sarkosan fogalmazva annyit jelent a lottery, hogy a döntéshozó mennyit hajlandó kockáztatni az alternatíva adott értékéért cserébe.
 
 \paragraph{Preferenciarendezés: } lotteryk felett definiáljuk. Az így megadott preferencia struktúra felhasználható a hasznosságfüggvény megkonstruáláshoz. %Ez a preferenciamegadás hasonló az előadásokból megismert példákkal. (például 98$\%$ valószínűséggel 520.000 dollár vagy 100$\%$ valószínűséggel 500.000 dollár ??). 
 
-\paragraph{Várható hasznosságfüggvény:} $u: X \rightarrow \mathbb{R}$,  $U: A^p \rightarrow \mathbb{R}$
+\paragraph{Várható hasznosságfüggvény:}  $u: A^p \rightarrow \mathbb{R}$  %$u: X \rightarrow \mathbb{R}$
 
 %$u: C \rightarrow \mathbb{R}$,
 %,  $U: A \rightarrow \mathbb{R}$, stb.
 
-\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } $A^p$ elemeihez meghatározzuk a várható értékét (ismerjük a valószínűségeket, és az értékeket), majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $U(a^{(j)}_p)= \sum_{s_k \in S} P(s_k)\cdot u(c^{(j,k)}) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: várható pénzérték alapján döntünk)
+\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } $A^p$ elemeihez meghatározzuk a várható értékét (ismerjük a valószínűségeket, és az értékeket), majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $U(a^{(j)}_p)= \sum_{s_k \in S} P(s_k)\cdot v(c_k) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: várható pénzérték alapján döntünk)
 
  % $\mathbb{E} (a_j) = 
 

@@ -9,7 +9,7 @@
 \select@language {english} \contentsline {paragraph}{Többcélú programozási feladat: }{4}{}%
 \select@language {english} \contentsline {paragraph}{ Egy példa feladat: }{4}{}%
 \select@language {english} \contentsline {paragraph}{ Optimum-fogalom: }{4}{}%
-\select@language {english} \contentsline {section}{\numberline {3}Bevezetés - Döntési folyamat:}{4}{}%
+\select@language {english} \contentsline {section}{\numberline {3}Bevezetés - Döntési folyamat:}{5}{}%
 \select@language {english} \contentsline {section}{\numberline {4}Bevezetés - Döntéstámogató rendszerek (DSS):}{5}{}%
 \select@language {english} \contentsline {paragraph}{Eszközök: }{5}{}%
 \select@language {english} \contentsline {section}{\numberline {5}Bevezetés - Csoportos döntések:}{5}{}%
@@ -67,7 +67,7 @@
 \select@language {english} \contentsline {section}{\numberline {9}Döntés bizonytalanság mellet (sztochasztikus modellek)}{17}{}%
 \select@language {english} \contentsline {paragraph}{Feladat:}{17}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.1}Döntés a pénzérték alapján}{17}{}%
-\select@language {english} \contentsline {paragraph}{Pesszimista, maximin kritérium:}{17}{}%
+\select@language {english} \contentsline {paragraph}{Pesszimista, maximin kritérium:}{18}{}%
 \select@language {english} \contentsline {paragraph}{Optimista, maximax kritérium:}{18}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.2}Döntés a valószínűségérték alapján}{18}{}%
 \select@language {english} \contentsline {paragraph}{Maximum likelihood kritérium: }{18}{}%
