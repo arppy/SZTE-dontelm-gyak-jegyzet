@@ -961,11 +961,11 @@ Példa lotteryre: kérdés a döntéshozóhoz: Melyik játékban venne részt sz
 %$u: C \rightarrow \mathbb{R}$,
 %,  $U: A \rightarrow \mathbb{R}$, stb.
 
-\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } $A^p$ elemeihez meghatározzuk a várható értékét (ismerjük a valószínűségeket, és az értékeket), majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $U(a^{(j)}_p)= \sum_{s_k \in S} P(s_k)\cdot v(c_k) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: várható pénzérték alapján döntünk)
+\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } $A^p$ elemeihez meghatározzuk a várható értékét (ismerjük a valószínűségeket, és az értékeket), majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $u(a^{(j)}_p)= \sum_{s_k \in S} P(s_k)\cdot v(c_k) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: várható pénzérték alapján döntünk)
 
  % $\mathbb{E} (a_j) = 
 
-Példa: $U(a_p)= 0.9\cdot 12 + 0.1\cdot 0 = 10,8$ és $U(a_q)= 0.9\cdot 1000000 + 0.1\cdot 0 = 900000$. Ezek közül az $a_q$ lotteryhez tartozó érték a maximális így ezt preferáljuk. (Ebben az esetben nem alkalmaztuk a $u$ értékelő függvényt, de ha az értékeket normalizáljuk, és ezt tekintenénk értékelésnek, akkor is ezen eredményre jutnánk a döntés szempontjából.)
+Példa: $u(a_p)= 0.9\cdot 12 + 0.1\cdot 0 = 10,8$ és $u(a_q)= 0.9\cdot 1000000 + 0.1\cdot 0 = 900000$. Ezek közül az $a_q$ lotteryhez tartozó érték a maximális így ezt preferáljuk. (Ebben az esetben nem alkalmaztuk a $u$ értékelő függvényt, de ha az értékeket normalizáljuk, és ezt tekintenénk értékelésnek, akkor is ezen eredményre jutnánk a döntés szempontjából.)
 
 \subsection{Axiómarendszerek (Neumann-Morgenstern)} 
 %\subsubsection{1. Axióma}
@@ -1016,10 +1016,10 @@ Szigorú preferencia tulajdonságából származó tulajdonság. Ha egy lotteryt
 
 \subsubsection{Létezési tétel: } Ha az $A^p$ elemeire teljesülnek az 1.,2'.,3.,4.,5. axiómák akkor létezik  $U: A^p \rightarrow \mathbb{R}$ hasznosságfüggvény.
 
-\subsubsection{Fontos tulajdonság: } az $A^p$ értelmezett $\succeq$ preferencia struktúrára és a $U: A^p \rightarrow \mathbb{R}$ hasznosságfüggvényre teljesül: 
+\subsubsection{Fontos tulajdonság: } az $A^p$ értelmezett $\succeq$ preferencia struktúrára és a $u: A^p \rightarrow \mathbb{R}$ hasznosságfüggvényre teljesül: 
 \begin{enumerate}
-\item $a_p$  $\succeq$ $a_q \Leftrightarrow $ $U(a_p)$  $\geq$ $U(a_q)$
-\item és $\forall  \alpha \in (0,1): U(\alpha\cdot a_p , (1-\alpha)\cdot a_q ) = \alpha\cdot U(a_p) + (1-\alpha)\cdot U(a_q) $
+\item $a_p$  $\succeq$ $a_q \Leftrightarrow $ $u(a_p)$  $\geq$ $u(a_q)$
+\item és $\forall  \alpha \in (0,1): u(\alpha\cdot a_p , (1-\alpha)\cdot a_q ) = \alpha\cdot u(a_p) + (1-\alpha)\cdot u(a_q) $
 \end{enumerate}
 
 \subsubsection{Bizonyítás: }
