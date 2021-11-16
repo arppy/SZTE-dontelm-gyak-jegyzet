@@ -961,7 +961,7 @@ Példa lotteryre: kérdés a döntéshozóhoz: Melyik játékban venne részt sz
 %$u: C \rightarrow \mathbb{R}$,
 %,  $U: A \rightarrow \mathbb{R}$, stb.
 
-\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } $A^p$ elemeihez meghatározzuk a várható értékét (ismerjük a valószínűségeket, és az értékeket), majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $u(a^{(j)}_p)= \sum_{s_k \in S} P(s_k)\cdot v(c_k) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: várható pénzérték alapján döntünk)
+\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } $A^p$ elemeihez meghatározzuk a várható értékét (ismerjük a valószínűségeket, és az értékeket), majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $u(a_{p_k})= \sum_{s_k \in S} P(s_k)\cdot v(c_{jk}) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: várható pénzérték alapján döntünk)
 
  % $\mathbb{E} (a_j) = 
 
@@ -974,20 +974,20 @@ Példa: $u(a_p)= 0.9\cdot 12 + 0.1\cdot 0 = 10,8$ és $u(a_q)= 0.9\cdot 1000000 
 %Hasonló indokok miatt kell ezt megkövetelnünk, mint amit már az értékelő függvényeknél láthattunk.
 
 %\subsubsection{2. Axióma}
-%\paragraph{$a^{(')}_p$  $\succ$ $a^{('')}_p \rightarrow \forall \alpha \in (0,1): a^{(')}_p \succ (\alpha\cdot a^{(')}_p , (1-\alpha)\cdot a^{('')}_p ) \succ a^{('')}_p$.} 
+%\paragraph{$a_p$  $\succ$ $a_q \rightarrow \forall \alpha \in (0,1): a_p \succ (\alpha\cdot a_p , (1-\alpha)\cdot a_q ) \succ a_q$.} 
 %Szigorú preferencia tulajdonságából származó tulajdonság. Ha egy lotteryt mindenféleképpen jobban preferálunk egy másiknál, akkor akármilyen kombinációjukat vesszük, annál is jobban preferált lesz.
 
 %\subsubsection{2'. Axióma - Függetlenségi axióma}
-%\paragraph{$a^{(')}_p$  $\succ$ $a^{('')}_p \rightarrow \forall \alpha \in (0,1): (\alpha\cdot a^{(')}_p , (1-\alpha)\cdot a^{(''')}_p ) \succ (\alpha\cdot a^{('')}_p , (1-\alpha)\cdot a^{(''')}_p )$ .} A könnyebb igazolhatóság végett a 2.axióma helyett ezt az axiómát használjuk. (Teljesülése esetén nem lehet komplementaritás a két lottery között.)
+%\paragraph{$a_p$  $\succ$ $a_q \rightarrow \forall \alpha \in (0,1): (\alpha\cdot a_p , (1-\alpha)\cdot a^{(''')}_p ) \succ (\alpha\cdot a_q , (1-\alpha)\cdot a^{(''')}_p )$ .} A könnyebb igazolhatóság végett a 2.axióma helyett ezt az axiómát használjuk. (Teljesülése esetén nem lehet komplementaritás a két lottery között.)
 
 %\subsubsection{3. Axióma - Folytonossági axióma}
-%\paragraph{$a^{(')}_p$  $\succ$ $a^{('')}_p \succ a^{(''')}_p \rightarrow \exists \alpha,\beta \in (0,1): (\alpha\cdot a^{(')}_p , (1-\alpha)\cdot a^{(''')}_p )  \succ a^{('')}_p \succ (\beta\cdot a^{(')}_p , (1-\beta)\cdot a^{(''')}_p ) $ .} Azt mondja ki, hogy létezik a vizsgált legjobb és legrosszabb érték olyan keverése, ami jobb illetve rosszabb a középső értéknél. Ez általánosságban igaz, akkor sérülhet, ha a legjobb és a középső érték nagyon közel van egymáshoz és a legrosszabb viszont nagyon rossz: $a^{(')}$ nyerünk 100 dollárt, $a^{('')}$ nyerünk 99 dollárt, $a^{(''')}$ életfogytiglanig börtönbe kerülünk.
+%\paragraph{$a_p$  $\succ$ $a_q \succ a^{(''')}_p \rightarrow \exists \alpha,\beta \in (0,1): (\alpha\cdot a_p , (1-\alpha)\cdot a^{(''')}_p )  \succ a_q \succ (\beta\cdot a_p , (1-\beta)\cdot a^{(''')}_p ) $ .} Azt mondja ki, hogy létezik a vizsgált legjobb és legrosszabb érték olyan keverése, ami jobb illetve rosszabb a középső értéknél. Ez általánosságban igaz, akkor sérülhet, ha a legjobb és a középső érték nagyon közel van egymáshoz és a legrosszabb viszont nagyon rossz: $a^{(')}$ nyerünk 100 dollárt, $a^{('')}$ nyerünk 99 dollárt, $a^{(''')}$ életfogytiglanig börtönbe kerülünk.
 
 
 %\subsubsection{4. Axióma}
-%\paragraph{$\forall  \alpha \in [0,1]: (\alpha\cdot a^{(')}_p , (1-\alpha)\cdot a^{('')}_p ) = ((1-\alpha)\cdot a^{('')}_p ,\alpha\cdot a^{(')}_p )$ . } Lényegtelen a sorrend a kombináció esetén.
+%\paragraph{$\forall  \alpha \in [0,1]: (\alpha\cdot a_p , (1-\alpha)\cdot a_q ) = ((1-\alpha)\cdot a_q ,\alpha\cdot a_p )$ . } Lényegtelen a sorrend a kombináció esetén.
 %\subsubsection{5. Axióma - Redukciós szabály}
-%\paragraph{$\forall  \alpha \in (0,1): \alpha\cdot a^{(''')}_p = (\alpha\cdot a^{(')}_p , (1-\alpha)\cdot a^{('')}_p ) \rightarrow \forall  \beta \in (0,1): (\beta\cdot a^{(''')}_p , (1-\beta)\cdot a^{('')}_p ) = (\alpha\cdot \beta\cdot a^{(')}_p , (1-\beta\cdot \alpha)\cdot a^{('')}_p )$.} Bonyolultan megfogalmazott játékban ugyanakkora esélye van a győzelemnek, mint a vele ekvivalens könnyű játékban. Csak akkor van értelme bonyolultan feltenni a kérdést, ha döntéshozó "élvezetét leli" az összetett játékban.
+%\paragraph{$\forall  \alpha \in (0,1): \alpha\cdot a^{(''')}_p = (\alpha\cdot a_p , (1-\alpha)\cdot a_q ) \rightarrow \forall  \beta \in (0,1): (\beta\cdot a^{(''')}_p , (1-\beta)\cdot a_q ) = (\alpha\cdot \beta\cdot a_p , (1-\beta\cdot \alpha)\cdot a_q )$.} Bonyolultan megfogalmazott játékban ugyanakkora esélye van a győzelemnek, mint a vele ekvivalens könnyű játékban. Csak akkor van értelme bonyolultan feltenni a kérdést, ha döntéshozó "élvezetét leli" az összetett játékban.
 
 \subsubsection{1. Axióma}
 \paragraph{A kockázatos lehetőségek $A^p$ halmazán értelmezett $\succeq$ preferencia reláció gyenge rendezés (reflexivitás, tranzitivitás, teljesség).}
@@ -1031,9 +1031,9 @@ Tehát $\exists \beta: c \sim (\beta\cdot c_{max}, (1-\beta)\cdot c_{min}) \equi
 
 \paragraph{2. Feltétel: helyettesítés}
 
-Az összes kockázatos kimenetel esetén a kimenetelt ($c^{(j,k)}$) bizonyossági egyenértékesként véve helyettesíthető (indifferens) a bizonyossági egyenértékhez tartozó kockázatos kimenettel ($a^{(j,k)}_p$):
+Az összes kockázatos kimenetel esetén a kimenetelt ($\forall c_i \in X$) bizonyossági egyenértékesként véve helyettesíthető (indifferens) a bizonyossági egyenértékhez tartozó kockázatos kimenettel ($a_{p_i}$):
 
-$(\alpha^{(1,1)}\cdot c^{(1,1)},...,\alpha^{(m,n)}\cdot c^{(m,n)}) \sim (\alpha^{(1,1)}\cdot a^{(1,1)}_p,...,\alpha^{(m,n)}\cdot a^{(m,n)}_p) $
+$(\alpha_1 \cdot c_1 , ... ,\alpha_n \cdot c_n ) \sim (\alpha_1 \cdot a_{p_1}, ... ,\alpha_n \cdot a_{p_n}) $
 
 
 \paragraph{3. Feltétel: redukálhatóság}
@@ -1044,27 +1044,27 @@ Ez azonos az 5. Axiómával. Amit felhasználunk belőle az az, hogy egy összet
 
 \
 
-$a_p \sim (\alpha \cdot c^{(max)}, (1-\alpha) \cdot c^{(min)})$ és 
-$a_q \sim (\gamma \cdot c^{(max)}, (1-\gamma) \cdot c^{(min)})$ $\Rightarrow a_p \succeq a_q \Leftrightarrow \alpha \geq \gamma$. 
+$a_p \sim (\alpha \cdot c_{max}, (1-\alpha) \cdot c_{min})$ és 
+$a_q \sim (\gamma \cdot c_{max}, (1-\gamma) \cdot c_{min})$ $\Rightarrow a_p \succeq a_q \Leftrightarrow \alpha \geq \gamma$. 
 
 \paragraph{A feltételek teljesülése esetén az Axiómák is teljesülnek.}
 
 \begin{enumerate}
 \item Axióma esetén a gyenge rendezés a 4. feltétel miatt teljesül.
-\item Axióma: Legyen két lottery $a^{(')}_p \sim (\alpha^{(')}\cdot c^{(max)}, (1-\alpha^{(')})\cdot c^{(min)})$ és 
-$a^{('')}_p \sim (\alpha^{('')}\cdot c^{(max)}, (1-\alpha^{('')})\cdot c^{(min)})$ (1.-3. feltétel), melyre teljesül hogy $a^{(')}_p \succ a^{('')}_p \Leftrightarrow \alpha^{(')} > \alpha^{('')}$ (4. feltétel). Ekkor teljesül (3. feltétel), hogy
+\item Axióma: Legyen két lottery $a_p \sim (\alpha_1 \cdot c_{max}, (1-\alpha_1 )\cdot c_{min})$ és 
+$a_q \sim (\alpha_2 \cdot c_{max}, (1-\alpha_2 )\cdot c_{min})$ (1.-3. feltétel), melyre teljesül hogy $a_p \succ a_q \Leftrightarrow \alpha_1  > \alpha_2 $ (4. feltétel). Ekkor teljesül (3. feltétel), hogy
 \begin{equation}
 \begin{split}
 \forall \beta \in (0,1):& \\
-& (\beta\cdot a^{(')}_p, (1-\beta)\cdot a^{('')}_p) = \\ 
-= & [(\beta\cdot \alpha^{(')}\cdot c^{(max)}, \beta\cdot (1-\alpha^{(')})\cdot c^{(min)}), \\
-& ((1-\beta)\cdot \alpha^{('')}\cdot c^{(max)}, (1-\beta)\cdot (1-\alpha^{('')})\cdot c^{(min)})] = \\
-= & [(\beta\cdot \alpha^{(')} + \alpha^{('')}-\beta\cdot \alpha^{('')} )\cdot c^{(max)},\\
-& (\beta-\beta\cdot \alpha^{(')} + 1-\beta-\alpha^{('')}+\beta\cdot \alpha^{('')})\cdot c^{(min)}] = \\ 
-= & [(\alpha^{('')} + \beta\cdot (\alpha^{(')} - \alpha^{('')} ))\cdot c^{(max)},(1 - (\alpha^{('')} + \beta\cdot (\alpha^{(')} - \alpha^{('')} ))\cdot c^{(min)}] \\
+& (\beta\cdot a_p, (1-\beta)\cdot a_q) = \\ 
+= & [(\beta\cdot \alpha_1 \cdot c_{max}, \beta\cdot (1-\alpha_1 )\cdot c_{min}), \\
+& ((1-\beta)\cdot \alpha_2 \cdot c_{max}, (1-\beta)\cdot (1-\alpha_2 )\cdot c_{min})] = \\
+= & [(\beta\cdot \alpha_1  + \alpha_2 -\beta\cdot \alpha_2  )\cdot c_{max},\\
+& (\beta-\beta\cdot \alpha_1  + 1-\beta-\alpha_2 +\beta\cdot \alpha_2 )\cdot c_{min}] = \\ 
+= & [(\alpha_2  + \beta\cdot (\alpha_1  - \alpha_2  ))\cdot c_{max},(1 - (\alpha_2  + \beta\cdot (\alpha_1  - \alpha_2  ))\cdot c_{min}] \\
 \end{split}
 \end{equation} 
-Ekkor a $c^{(max)}$-hoz tartozó szorzókra teljesül: $\alpha^{(')} >(\alpha^{('')} + \beta\cdot (\alpha^{(')} - \alpha^{('')}) > \alpha^{('')}$ a 4. feltétel alapján, hogy maguk után vonják a $a^{(')}_p \succ (\beta\cdot a^{(')}_p , (1-\beta)\cdot a^{('')}_p ) \succ a^{('')}_p$ feltételt. A 2'. Axióma ehhez hasonlóan belátható.
+Ekkor a $c_{max}$-hoz tartozó szorzókra teljesül: $\alpha_1  >(\alpha_2  + \beta\cdot (\alpha_1  - \alpha_2 ) > \alpha_2 $ a 4. feltétel alapján, hogy maguk után vonják a $a_p \succ (\beta\cdot a_p , (1-\beta)\cdot a_q ) \succ a_q$ feltételt. A 2'. Axióma ehhez hasonlóan belátható.
 \item Axióma: bevezetünk egy harmadik középső lotteryt, a különböző kombinációkra alkalmazzuk az előzőekben bemutatott átalakítást (3. feltétel alapján) végül a szorzóknak és a 4. feltételnek köszönhetően teljesül a 3. Axióma. (Részletek a Temesi könyvben) 
 \item Axióma: triviális.
 \item Axióma: 3. feltétel.
@@ -1074,29 +1074,29 @@ Ekkor a $c^{(max)}$-hoz tartozó szorzókra teljesül: $\alpha^{(')} >(\alpha^{(
 
 \paragraph{A feltételekből megkonstruálható a hasznosságfüggvény: }
 
-%Az első feltételnek köszönhetően garantált, hogy $\forall c^{(')} \in X: c^{(')} \sim (\beta^{(')}\cdot c^{(max)}, (1-\beta^{(')})\cdot c^{(min)})$. Ekkor legyen $u: X \rightarrow \mathbb{R} : u(c^{(')}) = \beta^{(')}$
-Az első feltételnek köszönhetően garantált, hogy $\forall c \in X: c \sim (\beta \cdot c^{(max)}, (1-\beta) \cdot c^{(min)})$. Ekkor legyen $u: X \rightarrow \mathbb{R} : u(c) = \beta$
+%Az első feltételnek köszönhetően garantált, hogy $\forall c^{(')} \in X: c^{(')} \sim (\beta^{(')}\cdot c_{max}, (1-\beta^{(')})\cdot c_{min})$. Ekkor legyen $u: X \rightarrow \mathbb{R} : u(c^{(')}) = \beta^{(')}$
+Az első feltételnek köszönhetően garantált, hogy $\forall c \in X: c \sim (\beta \cdot c_{max}, (1-\beta) \cdot c_{min})$. Ekkor legyen $v: X \rightarrow \mathbb{R} : v(c) = \beta$
 
 
-%Az első három feltételnek köszönhetően garantált, hogy $\forall a^{(')}_p \in A^p: a^{(')}_p \sim (\alpha^{(')}\cdot c^{(max)}, (1-\alpha^{(')})\cdot c^{(min)})$. Ekkor legyen $U: A^p \rightarrow \mathbb{R} : U(a^{(')}_p) = \alpha^{(')}$ %bármely kockázatos lehetőséget ($a^{(')}_p$) felírhatunk egy vele indifferens kockázatos lehetősséggel, úgy hogy ez a legjobb és a legrosszabb kimenetel különböző (származtatott $\alpha \in [0,1]$ szorzó szerinti) kombinációjaként álljon elő: 
-Az első három feltételnek köszönhetően garantált, hogy $\forall a_p \in A^p: a_p \sim (\alpha \cdot c^{(max)}, (1-\alpha)\cdot c^{(min)})$. Ekkor legyen $U: A^p \rightarrow \mathbb{R} : U(a_p) = \alpha$ 
+%Az első három feltételnek köszönhetően garantált, hogy $\forall a_p \in A^p: a_p \sim (\alpha_p\cdot c_{max}, (1-\alpha_p)\cdot c_{min})$. Ekkor legyen $U: A^p \rightarrow \mathbb{R} : U(a_p) = \alpha_p$ %bármely kockázatos lehetőséget ($a_p$) felírhatunk egy vele indifferens kockázatos lehetősséggel, úgy hogy ez a legjobb és a legrosszabb kimenetel különböző (származtatott $\alpha \in [0,1]$ szorzó szerinti) kombinációjaként álljon elő: 
+Az első három feltételnek köszönhetően garantált, hogy $\forall a_p \in A^p: a_p \sim (\alpha \cdot c_{max}, (1-\alpha)\cdot c_{min})$. Ekkor legyen $u: A^p \rightarrow \mathbb{R} : u(a_p) = \alpha$ 
 
 
-\paragraph{Az így megadott $U$ teljesíti a létezési feltételeket: }
+\paragraph{Az így megadott $u$ teljesíti a létezési feltételeket: }
 \begin{itemize}
 \item Az Axiómákat már láttuk. 
-\item $a_p$  $\succeq$ $a_q \Leftrightarrow $ $U(a_p) = \alpha$  $\geq$ $U(a_q) = \gamma$ a 4. feltétel alapján teljesül.
+\item $a_p$  $\succeq$ $a_q \Leftrightarrow $ $u(a_p) = \alpha$  $\geq$ $u(a_q) = \gamma$ a 4. feltétel alapján teljesül.
 \item Belátható: \begin{equation}
 \begin{split} 
-\forall  \beta \in (0,1)&: U(\beta\cdot a^{(')}_p , (1-\beta)\cdot a^{('')}_p ) = \\
- & = U((\alpha^{('')} + \beta\cdot (\alpha^{(')} - \alpha^{('')} ))\cdot c^{(max)},(1 - (\alpha^{('')} + \beta\cdot (\alpha^{(')} - \alpha^{('')} )))\cdot c^{(min)}) \\
- & = \alpha^{('')} + \beta\cdot \alpha^{(')} - \beta\cdot \alpha^{('')} = \beta\cdot \alpha^{(')} + (1-\beta) \cdot  \alpha^{('')} = \\
- & =  \beta\cdot U(a^{(')}_p) + (1-\beta)\cdot U(a^{('')}_p)\\
+\forall  \beta \in (0,1)&: u(\beta\cdot a_p , (1-\beta)\cdot a_q ) = \\
+ & = u((\alpha_q + \beta\cdot (\alpha_p - \alpha_q ))\cdot c_{max},(1 - (\alpha_q + \beta\cdot (\alpha_p - \alpha_q )))\cdot c_{min}) \\
+ & = \alpha_q + \beta\cdot \alpha_p - \beta\cdot \alpha_q = \beta\cdot \alpha_p + (1-\beta) \cdot  \alpha_q = \\
+ & =  \beta\cdot u(a_p) + (1-\beta)\cdot u(a_q)\\
 \end{split}
 \end{equation} 
 \end{itemize}
 
-\paragraph{$U$ olyan alakú, hogy megfelel a Bernoulli-elvnek:} az előzőek következménye: $U(a^{(j)}_p) = \sum^n_{k=1} \beta_k \cdot  u(c^{(j,k)})$ és, ha $\beta_k = P(s_k)$-val, akkor az pontosan megegyezik a Bernoulli-elvvel.  
+\paragraph{$u$ olyan alakú, hogy megfelel a Bernoulli-elvnek:} az előzőek következménye: $u(a_{p_j}) = \sum^n_{k=1} \beta_k \cdot  v(c_{jk})$ és, ha $\beta_k = P(s_k)$-val, akkor az pontosan megegyezik a Bernoulli-elvvel.  
 
 %\subsubsection{Egy példa hasznosságfüggvény alkalmazására}
 
@@ -1119,23 +1119,23 @@ Az első három feltételnek köszönhetően garantált, hogy $\forall a_p \in A
 \subsection{Egydimenziós hasznosság függvény előállítás - bizonyossági egyenértékes módszer}
 
 \begin{enumerate}
-\item Keressük meg a $c^{(min)}$-t és a $c^{(max)}$-ot. (Nem feltétlenül az ismert lotterykből)
-\item Ismételjük minden kimenetelre ($c$): vegyük az adott kimenetelt bizonyossági egyenértékként és keressük meg a hozzá tartozó lotteryt, ami a $c^{(min)}$, $c^{(max)}$ kombinációjából épül fel. Ennek megtalálása a döntéshozónak feltett kérdések alapján történik.  
+\item Keressük meg a $c_{min}$-t és a $c_{max}$-ot. (Nem feltétlenül az ismert lotterykből)
+\item Ismételjük minden kimenetelre ($c$): vegyük az adott kimenetelt bizonyossági egyenértékként és keressük meg a hozzá tartozó lotteryt, ami a $c_{min}$, $c_{max}$ kombinációjából épül fel. Ennek megtalálása a döntéshozónak feltett kérdések alapján történik.  
 
-$\forall c \sim  (\beta \cdot c^{(max)},(1-\beta)\cdot c^{(min)})$
+$\forall c \sim  (\beta \cdot c_{max},(1-\beta)\cdot c_{min})$
 \item Helyettesítsük be a feladatban megadott lotteryk ($c$) értékei helyére az előző pontban kapott lotteryket. 
 
 $a_p = (\alpha \cdot c_1, (1-\alpha) \cdot c_2 ) $
 
-$a_p = (\alpha\cdot(\beta \cdot c^{(max)},(1-\beta)\cdot c^{(min)}), (1-\alpha) \cdot(\gamma\cdot c^{(max)},(1-\gamma)\cdot c^{(min)})) $
+$a_p = (\alpha\cdot(\beta \cdot c_{max},(1-\beta)\cdot c_{min}), (1-\alpha) \cdot(\gamma\cdot c_{max},(1-\gamma)\cdot c_{min})) $
 
 \item Az így kapott összetett lotteryket a redukciós szabály segítségével hozzuk egyszerűbb alakra: 
 
-$a_p = (\alpha\cdot(\beta \cdot c^{(max)},(1-\beta)\cdot c^{(min)}), (1-\alpha) \cdot(\gamma\cdot c^{(max)},(1-\gamma)\cdot c^{(min)}) )$
+$a_p = (\alpha\cdot(\beta \cdot c_{max},(1-\beta)\cdot c_{min}), (1-\alpha) \cdot(\gamma\cdot c_{max},(1-\gamma)\cdot c_{min}) )$
 
-$a_p = ((\alpha \cdot \beta + (1-\alpha) \cdot \gamma) \cdot c^{(max)} , (\alpha \cdot (1-\beta) + (1-\alpha) \cdot (1-\gamma) ) \cdot c^{(min)} ) $
+$a_p = ((\alpha \cdot \beta + (1-\alpha) \cdot \gamma) \cdot c_{max} , (\alpha \cdot (1-\beta) + (1-\alpha) \cdot (1-\gamma) ) \cdot c_{min} ) $
 
-$U(a_p) = \alpha \cdot \beta + (1-\alpha) \cdot \gamma$
+$u(a_p) = \alpha \cdot \beta + (1-\alpha) \cdot \gamma$
 
 
 \item Az így kapott egyszerű lotteryk összehasonlíthatóak, ezek felett könnyedén megadható a preferencia rendezés.
@@ -1155,7 +1155,7 @@ Példa a hasznosságfüggvényre, ami dialógus során keletkezik.
 \paragraph{Feladat: } Legyen $a_p = (0.5:800, 200)$, $a_q = (0.6:600, 300)$ két referencia lottery. Döntsük el, hogy melyiket válasszuk. 
 
 \begin{enumerate}
-\item Legyen $c^{(min)} = 0$ és a $c^{(max)} = 1000$
+\item Legyen $c_{min} = 0$ és a $c_{max} = 1000$
 \item Az első érték 800, kérdezzük meg a döntéshozót, hogy biztos 800 dolláros nyereség mellett, belevágna-e egy olyan játékba, ahol 20$\%$ eséllyel nyerne 1000 dollárt és 80$\%$  eséllyel semmit. A döntéshozó megmondja, hogy mi a véleménye erről a játékról. Érdemes egy közepes (50$\%$ - 50$\%$ ) eséllyel kezdeni, majd a döntéshozó válasza alapján növelni vagy csökkenteni az esélyt. Ebből megkapható az adott kimenetelhez tartozó hasznossági érték. Legyen például: $800 \sim (0.7:1000, 0)$, $200 \sim (0.1:1000, 0)$, $600 \sim (0.5:1000, 0)$, $300 \sim (0.2:1000, 0)$,
   
 \item Összetett lotteryk:  $a_p = (0.5:(0.7:1000, 0), (0.1:1000, 0))$, $a_q = (0.6:(0.5:1000, 0), (0.2:1000, 0))$, a redukciós szabály segítségével hozzuk egyszerűbb alakra: $a_p : (0.5\cdot 0.7+0.5\cdot 0.1) \rightarrow a_p=(0.4:1000, 0)$ , $a_q : (0.6\cdot 0.5+0.4\cdot 0.2) \rightarrow a_q = (0.38:1000, 0)$.
@@ -1166,33 +1166,64 @@ Rajzoljuk meg a hasznosságfüggvényt és döntsük el, hogy milyen a döntésh
 
 \paragraph{Az információ ára fejezetnél ismertetett példa hasznosságfüggvény előállítására}
 
-Most feltesszük, hogy nem tudjuk senkitől sem megtudni a lehetséges valószínűségeket, hanem a döntéshozó segítségével határozzuk meg őket.
-
 \begin{center}
 \begin{tabular}{l|c|c}
- $A$ & $s_1$ & $s_2$\\
+\multirow{2}{*}{\bf Cselekvési lehetőségek } &  \multicolumn{2}{c}{ \bf Események }\\
+ & $s_1=$ magas infláció (5$\%$) & $s_2=$ alacsony infláció (2$\%$) \\
 \hline
-  $a_1$  & $c_1 =  -10 800$ & $c_2 = 2 000$\\
-  $a_2$ & $c_3 = 456$ & $c_4 = 360$ \\
+  $a_1=$ egy bank részvény & 12 & 9 \\
+  $a_2=$ MÁP & 9.995 & 10.295 \\
 \end{tabular}
 \end{center}
+$P(s_1) = 0.55 , P(s_2) = 0.45$ szubjektív valószínűségi értékek (becslések).
 A feladat két lotteryje, amiről el kell dönteni, hogy a döntéshozó melyiket válassza az a következő:
-$a_p = (0.25: -10800, 2000)$
-$a_q = (0.25: 456, 360)$
+$a_p = ( 0.55 \cdot 12 , 0.45 \cdot 9 ) $
+$a_q = ( 0.55 \cdot 9.995 , 0.45 \cdot 10.295 ) $
 
-Keressük meg $c^{(max)}$ és $c^{(min)}$-t: $c^{(min)}$ = $c_1$ , $c^{(max)}$ = $c_2$. Ebből már meg is kaptuk a két bizonyossági egyenértékest: $c_1 \sim (0: 2000,-10800)$ és $c_2 \sim (1: 2000,-10800)$.
+Keressük meg $c_{max}$ és $c_{min}$-t. Legyen $c_{min}$ = 9 , $c_{max}$ = 12. (Megjegyzés, nem feltétlenül a feladatban ismert minimum és maximum a $c_{min}$ és a $c_{max}$, hanem a feladattól függően ettől eltérő is lehetséges. Itt az egyszerűség kedvéért választottuk így.)
 
-Vegyük egyesével a maradék $c_3$ és $c_4$-et biztos eseményként és kérdezzük meg a döntéshozót, hogy emellett a mekkorát kockáztatna a $c^{(max)}$ eléréséért, ismerve a $c^{(min)}$ esetleges veszteséget.
+Ebből már meg is kaptuk a két bizonyossági egyenértékest: $9 \sim (0: 12,9)$ és $12 \sim (1: 12,9)$.
 
-Például: Tegyük fel, hogy biztosan nyerünk 456 dollárt. Általában egyesével kérdezzük, hogy játszana-e a biztos esemény helyett ha például: 10$\%$ eséllyel nyerne $c^{(max)}$-ot vagy, ha 20$\%$ eséllyel nyerne max-ot, ... addig, amíg el nem dönti, hogy mekkora kockázatot vállalna az adott esetben. Például legyen: $c_3 \sim (0.9: 2000,-10800)$ , ekkor csak akkor kockáztatná meg a biztos $c_3$-at, ha 90$\%$-os eséllyel nyerne $c^{(max)}$-ot. Legyen $c_4 \sim (0.8: 2000,-10800)$ 
+Vegyük egyesével a maradék két értéket $9.995$ és $10.295$-et biztos eseményként és kérdezzük meg a döntéshozót, hogy emellett a mekkorát kockáztatna a $c_{max}$ eléréséért, ismerve a $c_{min}$ esetleges veszteséget.
 
-$a_p = (0.25:(0: 2000,-10800),(1: 2000,-10800)) = (0.25 \cdot 0 + 0.75 \cdot 1 : 2000,-10800)$
+Például: Tegyük fel, hogy biztosan nyerünk $9.995$ dollárt. Általában egyesével kérdezzük, hogy játszana-e a biztos esemény helyett ha például: 10$\%$ eséllyel nyerne $c_{max}$-ot vagy, ha 20$\%$ eséllyel nyerne max-ot, ... addig, amíg el nem dönti, hogy mekkora kockázatot vállalna az adott esetben. Például legyen: $9.995 \sim (0.9: 12,9)$ , ekkor csak akkor kockáztatná meg a biztos $9.995$-at, ha 90$\%$-os eséllyel nyerne $c_{max}$-ot. Legyen $10.295 \sim (0.95: 12,9)$ 
 
-$a_q = (0.25:(0.9: 2000,-10800),(0.8: 2000,-10800)) = (0.25 \cdot 0.9 + 0.75 \cdot 0.8 : 2000,-10800)$
+$a_p = (0.55:(1: 12,9),(0: 12,9)) = (0.55 \cdot 12, 0.45 \cdot 9)$
 
-$U(a_p) = 0,75  < U(a_q) = 0,825$. Tehát a második alternatívát választjuk.
+$a_q = (0.55:(0.9: 12,9),(0.95: 12,9)) = (0.55 \cdot 0.9 + 0.45 \cdot 0.95) \cdot 12, (0.55 \cdot 0.1 + 0.45 \cdot 0.05) \cdot 9)$
 
-Rajzoljuk meg a hasznosságfüggvényt és döntsük el, hogy milyen a döntéshozó kockázati magatartása. $c_3$ esetén a játék várhatpénzértéke $VP=720$, míg $c_4$ esetén $VP=-560$. Tehát kevert stratégiát alkalmaz.
+$u(a_p) = 0.55  < u(a_q) = 0.9225$. Tehát a második alternatívát választjuk.
+
+Rajzoljuk meg a hasznosságfüggvényt és döntsük el, hogy milyen a döntéshozó kockázati magatartása. $9.995$ esetén a játék várható pénzértéke $VP(0.9: 12,9)=11.7$, míg $10.295$ esetén $VP(0.95: 12,9)=11.85$. Mivel mindkét várható pénzérték magasabb, mint az érte odaadott biztos nyeremény ezért kockázat kerülő magatartása van a döntéshozónak.
+
+%Most feltesszük, hogy nem tudjuk senkitől sem megtudni a lehetséges valószínűségeket, hanem a döntéshozó segítségével határozzuk meg őket.
+
+%\begin{center}
+%\begin{tabular}{l|c|c}
+% $A$ & $s_1$ & $s_2$\\
+%\hline
+%  $a_1$  & $c_1 =  -10 800$ & $c_2 = 2 000$\\
+%  $a_2$ & $c_3 = 456$ & $c_4 = 360$ \\
+%\end{tabular}
+%\end{center}
+%A feladat két lotteryje, amiről el kell dönteni, hogy a döntéshozó melyiket válassza az a következő:
+%$a_p = (0.25: -10800, 2000)$
+%$a_q = (0.25: 456, 360)$
+
+%Keressük meg $c_{max}$ és $c_{min}$-t: $c_{min}$ = $c_1$ , $c_{max}$ = $c_2$. Ebből már meg is kaptuk a két bizonyossági egyenértékest: $c_1 \sim (0: 2000,-10800)$ és $c_2 \sim (1: 2000,-10800)$.
+
+%Vegyük egyesével a maradék $c_3$ és $c_4$-et biztos eseményként és kérdezzük meg a döntéshozót, hogy emellett a mekkorát kockáztatna a $c_{max}$ eléréséért, ismerve a $c_{min}$ esetleges veszteséget.
+
+%Például: Tegyük fel, hogy biztosan nyerünk 456 dollárt. Általában egyesével kérdezzük, hogy játszana-e a biztos esemény helyett ha például: 10$\%$ eséllyel nyerne $c_{max}$-ot vagy, ha 20$\%$ eséllyel nyerne max-ot, ... addig, amíg el nem dönti, hogy mekkora kockázatot vállalna az adott esetben. Például legyen: $c_3 \sim (0.9: 2000,-10800)$ , ekkor csak akkor kockáztatná meg a biztos $c_3$-at, ha 90$\%$-os eséllyel nyerne $c_{max}$-ot. Legyen $c_4 \sim (0.8: 2000,-10800)$ 
+
+%$a_p = (0.25:(0: 2000,-10800),(1: 2000,-10800)) = (0.25 \cdot 0 + 0.75 \cdot 1 : 2000,-10800)$
+
+%$a_q = (0.25:(0.9: 2000,-10800),(0.8: 2000,-10800)) = (0.25 \cdot 0.9 + 0.75 \cdot 0.8 : 2000,-10800)$
+
+%$U(a_p) = 0,75  < U(a_q) = 0,825$. Tehát a második alternatívát választjuk.
+
+%Rajzoljuk meg a hasznosságfüggvényt és döntsük el, hogy milyen a döntéshozó kockázati magatartása. $c_3$ esetén a játék várhatpénzértéke $VP=720$, míg $c_4$ esetén $VP=-560$. Tehát kevert stratégiát alkalmaz.
+
 
 \subsection{Kockázati magatartás}
 
