@@ -52,11 +52,11 @@ További példák:
 
 \subsection{Alapfogalmak}
 
-\paragraph{Alternatívák:} egy döntési szituáció lehetséges megoldása, lehetséges cselekvések. Ezek strukturált halmaza: \emph{döntési tér} (v. döntési felület). Megadásuk nem feltétlenül matematikai módon történik. Példa: a szóbajöhető lakások halmaza.
+\paragraph{Alternatívák:} egy döntési szituáció lehetséges megoldása, lehetséges cselekvések. Ezek strukturált halmaza: \emph{döntési tér} (v. döntési felület). Megadásuk nem feltétlenül matematikai módon történik. Példa: a szóba jöhető lakások halmaza.
 
 \paragraph{Kritériumok:} az alternatívák azon jellemzői, amelyeket figyelembe szeretnénk venni a döntési feladatban. Ezek alapján döntünk az alternatívák közül. \emph{Metakritériumok} olyan kritérium, amely alapján a kritériumok közül tudunk választani (vagy rangsorolni).
 
-\paragraph{Többtényezős döntési problémák:} véges (megszámlálható) sok alternatíva, véges sok kritérium. Feladat: egyetlen cselekvési alternatíva kijelölése (pl: legjobb lakás), vagy az alternatívák rangsorolása. Nincs egzakt, minden környezetben és problématípusra általánosan elfogadott algoritmus (ezek megismerése a félév anyaga). Nehézség: lehetnek szubjektív elemei. Teljes döntési folyamatot le kell fedni.
+\paragraph{Többtényezős döntési problémák:} véges (megszámlálható) sok alternatíva, véges sok kritérium. Feladat: egyetlen cselekvési alternatíva kijelölése (pl: legjobb lakás), vagy az alternatívák rangsorolása. Nincs egzakt, minden környezetben és probléma-típusra általánosan elfogadott algoritmus (ezek megismerése a félév anyaga). Nehézség: lehetnek szubjektív elemei. Teljes döntési folyamatot le kell fedni.
 
 \paragraph{Döntéshozó:} felelős a döntés meghozásáért. Több személy is lehet (egyéni $\leftrightarrow$ csoportos döntések). Esetek többségében feltehető, hogy a döntéshozó racionális döntést hoz, optimalizáló szemléletű (Pareto-optimális alternatívák közül választ). Többek között ezt a feltevést járja körbe és cáfolja Herbert A. Simon és Daniel Kahneman (esszék) $\rightarrow$ \emph{korlátozott racionalitás}: kielégítő szemlélet (ez inkább az általános). Döntéshozó az objektív adatok ismeretén felül \emph{preferenciákkal} rendelkezik, ezek alapján dönt.
 
@@ -74,7 +74,7 @@ Fontos kiemelni, hogy amennyiben a feladatunk feltétel-rendszer és célok kül
   
 \paragraph{ Egy példa feladat: } Többféle termék előállításának mennyiségéről kell döntenünk. Döntésünket elsősorban a korlátozottan rendelkezésünkre álló erőforrások (nyersanyag-, munkaerő- és költségkorlátok), illetve a termelés technológiai szabványai befolyásolják. Az elérendő cél a maximális profit, minimális környezeti kár okozásával, illetve lehető legnagyobb társadalmi fejlődés elérésével.
 
-\paragraph{ Optimum-fogalom: } Amennyiben több célfüggvény is van $\rightarrow$ új optimum-fogalom kell. \emph{Pareto-optimum} (kb. hasonló a játékelméleti Nash-egyensúlyi helyzethez) több cél egyidejű teljesülése úgy, hogy nem lehet olyan újabb lehetséges megoldást megadni, ami minden szempontból megegyezik az előzővel, de egy szempont szerint jobb az előzőnél. Ezeknek a halmaza viszont általában végtelen sok elemből áll  $\rightarrow$ nem alkalmas a döntési probléma megoldására. Kompromisszumos megoldást kell keresni. Lehetőségek (mindegyik egyetlen cfgv-re vezeti vissza a megoldást):
+\paragraph{ Optimum-fogalom: } Amennyiben több célfüggvény is van $\rightarrow$ új optimum-fogalom kell. \emph{Pareto-optimum} több cél egyidejű teljesülése úgy, hogy nem lehet olyan újabb lehetséges megoldást megadni, ami minden szempontból nem rosszabb az előzőnél, és egy szempont szerint jobb az előzőnél. Ezeknek a halmaza viszont általában végtelen sok elemből áll  $\rightarrow$ nem alkalmas a döntési probléma megoldására. Kompromisszumos megoldást kell keresni. Lehetőségek (mindegyik egyetlen cfgv-re vezeti vissza a megoldást):
 
 \begin{itemize}
 \item súlyozásos módszer: célfüggvényekhez fontossági súlyokat rendelünk, súlyokkal képzett összegként áll elő az egyetlen cfgv (nehéz a súly megadása)  
@@ -177,11 +177,11 @@ A példában az $A_4$ egy dominált alternatíva: egyik szempont szerint sem job
 
 \subsection{Kielégítésre törekvő módszer}
 
-Minden célhoz meghatározunk egy \emph{kielégítési szintet}. Ez lényegében azt jelenti, hogy mi az a szint (\textbf{szükségességi feltétel}), az adott szempontból, ami felett (v. alatt) elfogadnánk az adott alternatívát. Például: közepes közbiztonsági szint felett már elgondolkozunk a lakás megvásárlásán. Ezek alapján kiküszöbölhetőek azok az alternatívák, amik valamilyen szempontból már nem elfogadhatóak a számunkra. Azok az alternatívák maradnak, amelyek minden kielégítési szintnek megfelelnek. Tehát minden szempontból megbízható. Ugyanakkor általában nem feltétlenül ilyet keresünk, sőt a legjobb alternatívát is kiszórhatja, ami egyébként éppen a határérték alatt van egy szempont szerint. A módszer alkalmazásakor nem az egyetlen legjobb alternatívát keressük, hanem megpróbáljuk leszűkíteni az alternatívák körét (eliminációs módszer). 
+Minden célhoz meghatározunk egy \emph{kielégítési szintet}. Ez lényegében azt jelenti, hogy mi az a szint (\textbf{szükségességi feltétel}), az adott szempontból, ami felett (v. alatt) elfogadnánk az adott alternatívát. Például: közepes közbiztonsági szint felett már elgondolkozunk a lakás megvásárlásán. Ezek alapján kiküszöbölhetőek azok az alternatívák, amik valamilyen szempontból már nem elfogadhatóak a számunkra. Azok az alternatívák maradnak, amelyek minden kielégítési szintnek megfelelnek. Tehát minden szempontból megbízható. Ugyanakkor általában nem feltétlenül ilyet keresünk, sőt a legjobb alternatívát is kiszórhatja, ami egyébként éppen a határérték alatt van egy szempont szerint. A módszer alkalmazásakor nem az egyetlen legjobb alternatívát keressük, hanem megpróbáljuk szűkíteni az alternatívák halmazát (eliminációs módszer). 
 
 \subsection{Diszjunkt módszer}
 
-Az előző módszer kifordítva. Nem egy minden szempontból megbízható alternatívát keresünk, hanem olyat ami valamilyen (akár több) szempontból kiemelkedő. Módszer: minden szemponthoz meghatározzuk azt a szintet (\textbf{elegendőségi feltétel}), amelynél ha egy alternatíva jobb értékkel bír, akkor bent marad az alternatívák körében. Ha egy szempont szerint sem kiemelkedő, akkor elvetjük. Ebben az esetben is szűkítjük az alternatívák körét és nem egyetlen legjobbat keresünk (eliminációs módszer).
+Az előző módszer kifordítva. Nem egy minden szempontból megbízható alternatívát keresünk, hanem olyat ami valamilyen (akár több) szempontból kiemelkedő. Módszer: minden szemponthoz meghatározzuk azt a szintet (\textbf{elegendőségi feltétel}), amelynél ha egy alternatíva jobb értékkel bír, akkor bent marad az alternatívák halmazában. Ha egy szempont szerint sem kiemelkedő, akkor elvetjük. Ebben az esetben is szűkítjük az alternatívák halmazát és nem egyetlen legjobbat keresünk (eliminációs módszer).
 
 Példa: 30 millió forint alatti ingatlanokat kiemelkedően jó értékűnek tartjuk. A 70 m$^2$-hez képest legfeljebb 15 m$^2$-rel eltérő ingatlanokat kiemelkedően jó alapterületűnek tartjuk. ...
 
@@ -366,7 +366,9 @@ Ha a $\succeq$ reláció gyenge rendezés az $A$ halmaz elemeire vonatkozóan, �
 %\end{tabular}
 %\end{center}
 
-\paragraph{A fenti tétel, túl szigorú az indifferencia osztályok megszámlálhatóságáról. Ha gyengítjük a feltételt akkor is megkaphatjuk $v$ létezését: }
+\paragraph{A fenti tétel, túl szigorú az indifferencia osztályok megszámlálhatóságáról.}
+
+Ha gyengítjük a feltételt akkor is megkaphatjuk $v$ létezését.
 
 Legyen a feltételünk az, hogy $\exists B$ az indifferencia osztályok egy részhalmaza, amelyre teljesül:
 \begin{itemize}
@@ -375,7 +377,7 @@ Legyen a feltételünk az, hogy $\exists B$ az indifferencia osztályok egy rés
 \end{itemize}
 Ekkor teljesül $v$ létezése. Összefoglalva ez annyit jelent, hogy ha létezik olyan véges indifferencia osztályok részhalmaza, amihez megadható olyan rendezés, ami egyértelműen rendezni tudja az ezen a részhalmazon túli indifferencia osztályokat is, akkor létezik hozzá értékelő függvény. (Ez egy jó dolog!)
 
-\paragraph{Speciális eset: A n dimenziós vektortér. } Tehát $\forall a \in A$ alternatíva $x^{(a)}_1, ... , x^{(a)}_n$ komponenssel (tulajdonság) jellemzett. Ebben az esetben az alábbi két feltétel teljesülése esetén garantált $v$ létezése: 
+\paragraph{Speciális eset: A n dimenziós vektortér. } Tehát $\forall a \in A$ alternatíva $x^{(a)}_1, ... , x^{(a)}_n$ komponenssel (tulajdonság) jellemzett és a $\succeq$ reláció egy gyenge rendezés az $A$ halmaz elemeire. Ebben az esetben az alábbi két feltétel teljesülése esetén garantált $v$ létezése: 
 
 \begin{itemize}
 \item monotonitási (dominancia) feltétel: ha $a$ tulajdonságonként mindenben legalább olyan jó, mint $b$, de legalább 1 tulajdonságban szigorú egyenlőtlenség áll fenn akkor $a \succ b$.

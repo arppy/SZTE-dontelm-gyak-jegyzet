@@ -1,68 +1,64 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.14)  16 NOV 2021 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.16)  21 SEP 2022 21:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **gyakanyag.tex
 (./gyakanyag.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18>
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-10>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count179
-\c@section=\count180
-\c@subsection=\count181
-\c@subsubsection=\count182
-\c@paragraph=\count183
-\c@subparagraph=\count184
-\c@figure=\count185
-\c@table=\count186
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2021/03/24 3.56 The Babel package
-
-(/usr/share/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2021/03/24 3.56 Babel common definitions
-\babel@savecnt=\count187
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count193
 \U@D=\dimen139
-\l@babelnohyphens=\language87
+\l@unhyphenated=\language87
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-)
-\bbl@dirlevel=\count188
+\bbl@dirlevel=\count194
 
 (/usr/share/texmf-dist/tex/generic/babel-hungarian/magyar.ldf
 Language: magyar 2019/01/14 v1.5c Magyar (Hungarian) support for babel
 Package babel Info: Making ` an active character on input line 2819.
-\c@footnote@add=\count189
-\c@footnote@ch=\count190
+\c@footnote@add=\count195
+\c@footnote@ch=\count196
 )
 (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: \l@canadian = using hyphenrules for english
-(babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language21) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language21) on input line 108.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 108.
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/09/23 v2.17i AMS math features
+Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks16
 \ex@=\dimen140
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -70,45 +66,45 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen141
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count191
+\inf@bad=\count197
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count192
-\leftroot@=\count193
+\uproot@=\count198
+\leftroot@=\count199
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count194
-\DOTSCASE@=\count195
+\classnum@=\count266
+\DOTSCASE@=\count267
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
+\Mathstrutbox@=\box50
+\strutbox@=\box51
 \big@size=\dimen142
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count196
-\c@MaxMatrixCols=\count197
+\macc@depth=\count268
+\c@MaxMatrixCols=\count269
 \dotsspace@=\muskip16
-\c@parentequation=\count198
-\dspbrk@lvl=\count199
-\tag@help=\toks16
-\row@=\count266
-\column@=\count267
-\maxfields@=\count268
-\andhelp@=\toks17
+\c@parentequation=\count270
+\dspbrk@lvl=\count271
+\tag@help=\toks17
+\row@=\count272
+\column@=\count273
+\maxfields@=\count274
+\andhelp@=\toks18
 \eqnshift@=\dimen143
 \alignsep@=\dimen144
 \tagshift@=\dimen145
 \tagwidth@=\dimen146
 \totwidth@=\dimen147
 \lineht@=\dimen148
-\@envbody=\toks18
+\@envbody=\toks19
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
 )
 (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -125,9 +121,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
 )
 (/usr/share/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -138,43 +134,43 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip52
-\multirow@cntb=\count269
+\multirow@cntb=\count275
 \multirow@dima=\skip53
 \bigstrutjot=\dimen149
 )
 (/usr/share/texmf-dist/tex/latex/datenumber/datenumber.sty
-Package: datenumber 2001/08/06v0.02
+Package: datenumber 2022/01/27v0.03
 
 (/usr/share/texmf-dist/tex/latex/datenumber/datenumberUSenglish.ldf
 File: datenumberUSenglish.ldf 
 )
-\c@@dayscnt=\count270
-\c@@startyear=\count271
-\c@datenumber=\count272
-\c@dateyear=\count273
-\c@datemonth=\count274
-\c@dateday=\count275
-\c@datedayname=\count276
-\@nom=\count277
-\@den=\count278
+\c@@dayscnt=\count276
+\c@@startyear=\count277
+\c@datenumber=\count278
+\c@dateyear=\count279
+\c@datemonth=\count280
+\c@dateday=\count281
+\c@datedayname=\count282
+\@nom=\count283
+\@den=\count284
 )
 (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
+\KV@toks@=\toks23
 )
 (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
 (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
@@ -189,11 +185,11 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count279
-\Gm@cntv=\count280
-\c@Gm@tempcnt=\count281
+\Gm@cnth=\count285
+\Gm@cntv=\count286
+\c@Gm@tempcnt=\count287
 \Gm@bindingoffset=\dimen152
 \Gm@wd@mp=\dimen153
 \Gm@odd@mp=\dimen154
@@ -202,12 +198,12 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutheight=\dimen157
 \Gm@layouthoffset=\dimen158
 \Gm@layoutvoffset=\dimen159
-\Gm@dimlist=\toks23
+\Gm@dimlist=\toks24
 )
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count282
-\l__pdf_internal_box=\box49
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count288
+\l__pdf_internal_box=\box52
 )
 (./gyakanyag.aux)
 \openout1 = `gyakanyag.aux'.
@@ -233,17 +229,17 @@ LaTeX Warning: Please use \usepackage{t1enc} with
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count283
+\scratchcounter=\count289
 \scratchdimen=\dimen160
-\scratchbox=\box50
-\nofMPsegments=\count284
-\nofMParguments=\count285
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count286
+\scratchbox=\box53
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count292
 \MPscratchDim=\dimen161
-\MPnumerator=\count287
-\makeMPintoPDFobject=\count288
-\everyMPtoPDFconversion=\toks25
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks26
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -385,13 +381,6 @@ esb^^Se fontos szem-pon-tok, ^^S^^Pgy v^^Seg^^?ul a vizsg^^Salataink
  []
 
 [6]
-Overfull \hbox (14.30212pt too wide) in paragraph at lines 180--181
-\OT1/cmr/m/n/12 al-ter-nat^^S^^Pv^^Sat ker-ess^^?uk, hanem megpr^^Sob^^Saljuk l
-esz}uk^^S^^Pteni az al-ter-nat^^S^^Pv^^Sak k^^?or^^Set (elimin^^Saci^^Sos m^^So
-dszer). 
- []
-
-
 Overfull \hbox (8.44492pt too wide) in paragraph at lines 189--189
 []\OT1/cmr/bx/n/17.28 Elemi d^^?ont^^Sesi m^^Sodszerek (de-ter-min-isztikus mod
 -ellekre) 
@@ -417,28 +406,28 @@ Overfull \hbox (14.88416pt too wide) in paragraph at lines 291--292
  []
 
 [9] [10] [11]
-Overfull \hbox (1.96107pt too wide) in paragraph at lines 460--461
+Overfull \hbox (1.96107pt too wide) in paragraph at lines 462--463
  \OT1/cmr/bx/n/12 K^^?olcs^^?on^^?os pref-er-en-cia f^^?uggetlens^^Seg: [] \OT1
 /cmr/m/n/10.95 ez az el}oz}o defin^^S^^Pci^^Soval szem-ben a tel-jes t^^Senyez}
 ohalmazra
  []
 
 [12]
-Overfull \hbox (10.45471pt too wide) in paragraph at lines 499--500
+Overfull \hbox (10.45471pt too wide) in paragraph at lines 501--502
 \OT1/cmr/m/n/10.95 mert azok-ban az es-etek-ben ez \OT1/cmr/bx/n/10.95 p^^Saron
 k^^Sent tel-jes^^S^^Pti az egyszer}us^^S^^Pt^^Sesi felt^^Setelt, ami pedig gara
 nt^^Salja
  []
 
 [13]
-Overfull \hbox (29.2324pt too wide) in paragraph at lines 570--571
+Overfull \hbox (29.2324pt too wide) in paragraph at lines 572--573
 []\OT1/cmr/m/n/10.95 A mul-ti-p-likat^^S^^Pv alak l^^Setez^^Ses^^Sehez (kett}on
 ^^Sel nagy-obb di-menzi^^Sos es-et-ben) a k^^?olcs^^?on^^?os pref-er-en-ciaf^^?
 uggetlens^^Seg
  []
 
 [14]
-Overfull \hbox (21.72969pt too wide) in paragraph at lines 618--619
+Overfull \hbox (21.72969pt too wide) in paragraph at lines 620--621
 []\OT1/cmr/m/n/10.95 K^^?olcs^^?on^^?os gyenge dif-fer-en-ciaf^^?uggetlens^^Seg
  ^^Ses krit^^Seriump^^Sarokra n^^Sezve k^^?olcs^^?on^^?os pref-er-en-ciaf^^?ugg
 etlens^^Seg
@@ -446,36 +435,36 @@ etlens^^Seg
 
 [15]
 Package epstopdf Info: Source file: <valuesample.eps>
-(epstopdf)                    date: 2021-09-28 16:44:40
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 23959 bytes
 (epstopdf)             Output file: <valuesample-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-09-28 16:44:40
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 10033 bytes
 (epstopdf)             Command: <repstopdf --outfile=valuesample-eps-converted-
 to.pdf valuesample.eps>
-(epstopdf)             \includegraphics on input line 659.
+(epstopdf)             \includegraphics on input line 661.
 Package epstopdf Info: Output file is already uptodate.
 <valuesample-eps-converted-to.pdf, id=69, 225.84375pt x 178.6675pt>
 File: valuesample-eps-converted-to.pdf Graphic file (type pdf)
 <use valuesample-eps-converted-to.pdf>
 Package pdftex.def Info: valuesample-eps-converted-to.pdf  used on input line 6
-59.
+61.
 (pdftex.def)             Requested size: 158.08954pt x 125.06639pt.
  [16]
-Overfull \hbox (10.2529pt too wide) in paragraph at lines 665--665
+Overfull \hbox (10.2529pt too wide) in paragraph at lines 667--667
 []\OT1/cmr/bx/n/17.28 D^^?ont^^Ses bi-zony-ta-lans^^Sag mel-let (sz-tochasztiku
 s mod-ellek) 
  []
 
 
-Overfull \hbox (5.5255pt too wide) in paragraph at lines 671--672
+Overfull \hbox (5.5255pt too wide) in paragraph at lines 673--674
 \OT1/cmr/m/n/10.95 lehet (infl^^Sal^^Sod^^Sast, min-denf^^Sele utal^^Sasi, r^^S
 eszv^^Senyv^^Sas^^Sarl^^Sasi, ad^^Soz^^Sasi k^^?olts^^Seget mindk^^Set es-et-be
 n be-lesz^^Sam^^S^^Ptva,
  []
 
 [17 <./valuesample-eps-converted-to.pdf>]
-Overfull \hbox (10.08499pt too wide) in paragraph at lines 719--720
+Overfull \hbox (10.08499pt too wide) in paragraph at lines 721--722
 []\OT1/cmr/m/n/10.95 De p^^Senz^^Sert^^Sek alapj^^San ezen enyh^^S^^Pteni szok-
 tak $\OMS/cmsy/m/n/10.95 !$ \OT1/cmr/m/n/10.95 op-ti-miz-mus egy^^?utthat^^So: 
 \OT1/cmr/m/it/10.95 Hurwick-f^^Sele $\OML/cmm/m/it/10.95 $\OT1/cmr/m/n/10.95 ,
@@ -483,7 +472,7 @@ tak $\OMS/cmsy/m/n/10.95 !$ \OT1/cmr/m/n/10.95 op-ti-miz-mus egy^^?utthat^^So:
  []
 
 
-Overfull \hbox (27.91226pt too wide) in paragraph at lines 738--739
+Overfull \hbox (27.91226pt too wide) in paragraph at lines 740--741
 \OT1/cmr/m/n/10.95 Kisz^^Samoljuk az ^^Sallapotok becs^^?ult val^^Sosz^^S^^Pn}u
 s^^Segekkel s^^Sulyozott ^^?osszegeit ^^Ses kiv^^Salasztjuk k^^?oz^^?ul^^?uk a 
 maxim^^Salisat. 
@@ -491,117 +480,117 @@ maxim^^Salisat.
 
 [18] [19]
 Package epstopdf Info: Source file: <dectree01.eps>
-(epstopdf)                    date: 2021-09-28 16:44:40
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 158419 bytes
 (epstopdf)             Output file: <dectree01-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-09-28 16:44:40
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 68105 bytes
 (epstopdf)             Command: <repstopdf --outfile=dectree01-eps-converted-to
 .pdf dectree01.eps>
-(epstopdf)             \includegraphics on input line 882.
+(epstopdf)             \includegraphics on input line 884.
 Package epstopdf Info: Output file is already uptodate.
 <dectree01-eps-converted-to.pdf, id=88, 630.355pt x 654.445pt>
 File: dectree01-eps-converted-to.pdf Graphic file (type pdf)
 <use dectree01-eps-converted-to.pdf>
-Package pdftex.def Info: dectree01-eps-converted-to.pdf  used on input line 882
+Package pdftex.def Info: dectree01-eps-converted-to.pdf  used on input line 884
 .
 (pdftex.def)             Requested size: 441.24548pt x 458.10838pt.
  [20] [21 <./dectree01-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <dectree03.eps>
-(epstopdf)                    date: 2021-10-19 18:51:24
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 193043 bytes
 (epstopdf)             Output file: <dectree03-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-10-19 18:52:29
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 84628 bytes
 (epstopdf)             Command: <repstopdf --outfile=dectree03-eps-converted-to
 .pdf dectree03.eps>
-(epstopdf)             \includegraphics on input line 905.
+(epstopdf)             \includegraphics on input line 907.
 Package epstopdf Info: Output file is already uptodate.
 <dectree03-eps-converted-to.pdf, id=98, 745.78625pt x 614.295pt>
 File: dectree03-eps-converted-to.pdf Graphic file (type pdf)
 <use dectree03-eps-converted-to.pdf>
-Package pdftex.def Info: dectree03-eps-converted-to.pdf  used on input line 905
+Package pdftex.def Info: dectree03-eps-converted-to.pdf  used on input line 907
 .
 (pdftex.def)             Requested size: 522.04683pt x 430.00356pt.
 
-Overfull \hbox (38.34996pt too wide) in paragraph at lines 905--906
+Overfull \hbox (38.34996pt too wide) in paragraph at lines 907--908
  [] 
  []
 
 
-Overfull \hbox (5.04689pt too wide) in paragraph at lines 909--909
+Overfull \hbox (5.04689pt too wide) in paragraph at lines 911--911
 []\OT1/cmr/bx/n/17.28 Multi-attribute util-ity the-ory --- Hasznoss^^Sag f^^?ug
 gv^^Seny 
  []
 
 
-Overfull \hbox (3.21378pt too wide) in paragraph at lines 912--913
+Overfull \hbox (3.21378pt too wide) in paragraph at lines 914--915
 \OT1/cmr/m/n/10.95 min-den d^^?ont^^Seshoz^^So megpr^^Sob^^Sal op-ti-maliz^^Sal
 ni egy olyan f^^?uggv^^Senyt, amely ag-greg^^Salja az ^^?osszes v^^Selem^^Seny^
 ^Set
  []
 
 [22 <./dectree03-eps-converted-to.pdf>] [23] [24]
-Overfull \hbox (9.26938pt too wide) in paragraph at lines 1078--1079
+Overfull \hbox (9.26938pt too wide) in paragraph at lines 1080--1081
  \OT1/cmr/bx/n/12 A felt^^Setelekb}ol megkon-stru^^Salhat^^So a hasznoss^^Sagf^
 ^?uggv^^Seny: [] \OT1/cmr/m/n/10.95 Az els}o felt^^Setelnek k^^?osz^^?onhet}oen
 
  []
 
 
-Overfull \hbox (62.9809pt too wide) in paragraph at lines 1119--1119
+Overfull \hbox (62.9809pt too wide) in paragraph at lines 1121--1121
 []\OT1/cmr/bx/n/14.4 Egydimenzi^^Sos hasznoss^^Sag f^^?uggv^^Seny el}o^^Sall^^S
 ^^Pt^^Sas - bi-zonyoss^^Sagi egyen^^Sert^^Sekes
  []
 
 [25]
-Overfull \hbox (21.35643pt too wide) in paragraph at lines 1144--1145
+Overfull \hbox (21.35643pt too wide) in paragraph at lines 1146--1147
 []\OT1/cmr/bx/n/10.95 A d^^?ont^^Seshoz^^Soval t^^?ort^^Sent egyeztet^^Ses, dia
 l^^Sogus sor^^San keletkez}o v^^Salaszok fogj^^Sak meghat^^Sarozni
  []
 
 Package epstopdf Info: Source file: <utilmake.eps>
-(epstopdf)                    date: 2021-09-28 16:44:40
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 43534 bytes
 (epstopdf)             Output file: <utilmake-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-09-28 16:44:40
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 18044 bytes
 (epstopdf)             Command: <repstopdf --outfile=utilmake-eps-converted-to.
 pdf utilmake.eps>
-(epstopdf)             \includegraphics on input line 1148.
+(epstopdf)             \includegraphics on input line 1150.
 Package epstopdf Info: Output file is already uptodate.
 <utilmake-eps-converted-to.pdf, id=114, 394.47375pt x 320.19624pt>
 File: utilmake-eps-converted-to.pdf Graphic file (type pdf)
 <use utilmake-eps-converted-to.pdf>
-Package pdftex.def Info: utilmake-eps-converted-to.pdf  used on input line 1148
+Package pdftex.def Info: utilmake-eps-converted-to.pdf  used on input line 1150
 .
 (pdftex.def)             Requested size: 276.12973pt x 224.13583pt.
 [26 <./utilmake-eps-converted-to.pdf>] [27]
 Package epstopdf Info: Source file: <kockazat.eps>
-(epstopdf)                    date: 2021-09-28 16:44:40
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 38532 bytes
 (epstopdf)             Output file: <kockazat-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-09-28 16:44:40
+(epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 18795 bytes
 (epstopdf)             Command: <repstopdf --outfile=kockazat-eps-converted-to.
 pdf kockazat.eps>
-(epstopdf)             \includegraphics on input line 1234.
+(epstopdf)             \includegraphics on input line 1236.
 Package epstopdf Info: Output file is already uptodate.
 <kockazat-eps-converted-to.pdf, id=124, 345.29pt x 270.00874pt>
 File: kockazat-eps-converted-to.pdf Graphic file (type pdf)
 <use kockazat-eps-converted-to.pdf>
-Package pdftex.def Info: kockazat-eps-converted-to.pdf  used on input line 1234
+Package pdftex.def Info: kockazat-eps-converted-to.pdf  used on input line 1236
 .
 (pdftex.def)             Requested size: 241.70134pt x 189.00482pt.
 
-Overfull \hbox (10.11833pt too wide) in paragraph at lines 1247--1248
+Overfull \hbox (10.11833pt too wide) in paragraph at lines 1249--1250
 \OT1/cmr/m/n/10.95 T^^?obbt^^Senyez}os hasznoss^^Sag f^^?uggv^^Seny az ^^Sert^^
 Sekel}o f^^?uggv^^Senyhez ha-sonl^^Soan a dekom-poz^^S^^Pci^^Sos alakok vizsg^^
 Salat^^Sat
  []
 
 
-Overfull \hbox (17.41377pt too wide) in paragraph at lines 1255--1256
+Overfull \hbox (17.41377pt too wide) in paragraph at lines 1257--1258
  []\OT1/cmr/bx/n/12 Ert^^Sekf^^?uggetlens^^Seg[] \OT1/cmr/m/n/10.95 Legyen $\OM
 L/cmm/m/it/10.95 T \OT1/cmr/m/n/10.95 = (\OML/cmm/m/it/10.95 X[]; :::; X[]\OT1/
 cmr/m/n/10.95 )$ t^^Senyez}ohalmaz. $\OML/cmm/m/it/10.95 T$ \OT1/cmr/m/n/10.95 
@@ -609,7 +598,7 @@ t^^Senyez}or^^Seszhalmazai \OT1/cmr/m/it/10.95 ^^Sert^^Sek-f^^?uggetlenek
  []
 
 [28 <./kockazat-eps-converted-to.pdf>] [29]
-Overfull \hbox (15.61588pt too wide) in paragraph at lines 1372--1373
+Overfull \hbox (15.61588pt too wide) in paragraph at lines 1374--1375
 []\OT1/cmr/m/n/10.95 Az ^^?osszetev}o egy-di-menzi^^Sos ^^Sert^^Sekel}o f^^?ugg
 v^^Senyek megkon-stru^^Sal^^Sasa, bi-zonyoss^^Sagi egyen^^Sert^^Sekes m^^Sodsze
 r
@@ -617,13 +606,13 @@ r
 
 [30] [31] (./gyakanyag.aux) ) 
 Here is how much of TeX's memory you used:
- 4921 strings out of 478994
- 72627 string characters out of 5864751
- 406307 words of memory out of 5000000
- 22324 multiletter control sequences out of 15000+600000
- 416783 words of font info for 81 fonts, out of 8000000 for 9000
+ 5478 strings out of 478238
+ 89920 string characters out of 5850456
+ 417027 words of memory out of 5000000
+ 23638 multiletter control sequences out of 15000+600000
+ 482612 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,27n,74p,1288b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,27n,62p,1297b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/t
@@ -643,9 +632,9 @@ fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sfrm1200.pfb>
-Output written on gyakanyag.pdf (31 pages, 515370 bytes).
+Output written on gyakanyag.pdf (31 pages, 532385 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
+ 230 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)

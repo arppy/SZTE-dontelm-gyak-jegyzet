@@ -38,7 +38,7 @@
 \select@language {english} \contentsline {paragraph}{Definícióból adódó fontos tulajdonságaik:}{10}{}%
 \select@language {english} \contentsline {subsection}{\numberline {8.2}Értékelő függvény létezése}{10}{}%
 \select@language {english} \contentsline {paragraph}{Tulajdonságok:}{11}{}%
-\select@language {english} \contentsline {paragraph}{A fenti tétel, túl szigorú az indifferencia osztályok megszámlálhatóságáról. Ha gyengítjük a feltételt akkor is megkaphatjuk $v$ létezését: }{11}{}%
+\select@language {english} \contentsline {paragraph}{A fenti tétel, túl szigorú az indifferencia osztályok megszámlálhatóságáról.}{11}{}%
 \select@language {english} \contentsline {paragraph}{Speciális eset: A n dimenziós vektortér. }{11}{}%
 \select@language {english} \contentsline {subsection}{\numberline {8.3}Értékelő függvények dekompozíciós alakjai}{11}{}%
 \select@language {english} \contentsline {paragraph}{Speciális dekomponálható preferencia struktúrák:}{11}{}%
