@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.16)  21 SEP 2022 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.16)  28 SEP 2022 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,7 +632,7 @@ fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sfrm1200.pfb>
-Output written on gyakanyag.pdf (31 pages, 532385 bytes).
+Output written on gyakanyag.pdf (31 pages, 532350 bytes).
 PDF statistics:
  230 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams
