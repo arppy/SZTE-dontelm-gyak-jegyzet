@@ -668,24 +668,62 @@ Az eljárást minden $X_k \in X$ tényezőre végrehajtjuk:
 
 Sztochasztikus döntési modell esetében a vizsgálat értékeink kibővülnek a természet egyes állapotainak valószínűségével ($s_k$). \textbf{Kockázatos döntések.}
 
-\paragraph{Feladat:} Rendelkezünk 10 millió forint befektetésre szánt pénzzel, melyet szeretnénk úgy befektetni, hogy a lehető legnagyobb reálhozamunk legyen. Bizonytalan eseményként vizsgáljuk az infláció alakulását.
+\paragraph{Feladat:} Tegyük fel, hogy rendelkezünk 35 millió forinttal, melyet szeretnénk úgy befektetni, hogy a lehető legnagyobb hozamunk legyen a következő 5 évre. Bizonytalan eseményként vizsgáljuk az infláció alakulását.
 
-Magas infláció mellett történelmi adatok alapján érdemes bankok részvényeit megvásárolni. A történelmi adatokon kívül könnyen számolható éves nyereséget okoz a bankok számára a magas inflációs környezet. Egyik lehetséges alternatívánk, hogy megvesszük a rendelkezésre álló keretből egyetlen, tetszőleges bank részvényét. A jelenlegi feladatban feltesszük, hogy kezdő tőzsdei befektetők vagyunk, nem diverzifikálunk, egyetlen vásárlás. Ennek köszönhetően valami benyomás alapján választunk egy bankot. Ebből fakadóan tegyük fel, hogy nem sikerült a legjobban teljesítő bank részvényét kiválasztani, illetve hogy magas áron sikerült megvenni a részvényt. Ennek eredményeképpen alacsonyabb inflációs környezet esetén az első évben 10$\%$-ot veszítünk, míg ha az infláció tartósan magas lesz, akkor a kalkulációink alapján várhatóan éves szinten 20$\%$ reálnyereségünk lehet (inflálódást, mindenféle utalási, részvényvásárlási, adózási költséget mindkét esetben beleszámítva, illetve a különböző valutaváltási és valutánként eltérő infláció mértékkel, vagy bármi további részlettel a feladat egyszerűsítése kedvéért most nem foglalkozunk).
+A feladat egyszerűsége kedvéért két lehetőség közül választunk: ingatlan befektetés ($a_1$) vagy infláció követő állampapír ($a_2$). Mindkét esetben a teljes összeget elköltjük a befektetésre. A feladat során az infláció alakulása alapján vizsgáljuk, hogy mennyi pénzünk lesz a vizsgált az időszak végére.
 
-A másik lehetséges alternatívánk a Magyar Állampapír Plusz megvásárlása, amely 5 évre 4.95$\%$ kamatot tud nyújtani. Amennyiben 5$\%$ körüli magas infláció lesz, akkor az első évben 0.05$\%$-os reálérték veszteségünk lesz, míg amennyiben az infláció mérséklődik 2$\%$ körüli szintre, akkor 2.95$\%$ reálhozamunk lehet.
+Az államkötvény esetében tegyük fel, hogy 1.5$\%$ kamatprémiumot fizet az infláción felül. Az éves lakbér legyen az adózás után az ingatlan vásárlási értékének a 3.4$\%$-a (1.2 millió forint). Tegyük fel, hogy a lakbér adózáson kívül nincs további költsége az ingatlan üzemeltetésének. Továbbá az egyszerűség kedvéért tegyük fel, hogy a megkapott kamotot illetve lakbért nem fektetjük be újra.
 
-Melyik befektetést válasszuk?
-
+Az infláció lehetséges alakulása:
 \begin{center}
-\begin{tabular}{l|c|c}
-\multirow{2}{*}{\bf Cselekvési lehetőségek } &  \multicolumn{2}{c}{ \bf Események }\\
- & $s_1=$ magas infláció (5$\%$) & $s_2=$ alacsony infláció (2$\%$) \\
-\hline
-  $a_1=$ egy bank részvény & 12 & 9 \\
-  $a_2=$ MÁP & 9.995 & 10.295 \\
+\begin{tabular}{c||r|r|r|r|r}
+      & 2022& 2023  & 2024  & 2025 & 2026 \\
+ \hline
+ $s_1$&20$\%$&12$\%$&9$\%$  & 9$\%$ & 7$\%$ \\
+ $s_2$&18$\%$&9$\%$ &7.5$\%$& 4.5$\%$ & 3.5$\%$ \\
+
 \end{tabular}
 \end{center}
-$P(s_1) = 0.55 , P(s_2) = 0.45$ szubjektív valószínűségi értékek (becslések).
+(Ismert hiba a feladatban: az inflációs táblázatban, a 2022 oszlopba az adott év vizsgált időszakához az egy évvel korábbihoz képest mért inflációs értéket írtam be. Miközben éves infláció esetén az éves átlagos inflációt szokás alapul venni, ami nem lett ilyen magas érték. Viszont mivel az órán ezekkel az értékekkel számoltuk végig a feladatot ezért ezt végül változatlanul hagytam. Ennek az az elsődleges oka, hogy fontosabban tartottam a jegyzet az órán elhangzottakkal való egyezését, mint a példa valószerűségét.)
+
+Az államkötvény esetén 5 év utána az eredeti összeget kapjuk vissza, míg a lakást 5 év múlva értékesítjük, így további hozamhoz juthatunk. Amennyiben az infláció tartósan magas marad ($s_1$), akkor ehhez jó eséllyel a magas kamatkörnyzet, drága lakáshitelek és a történelmi példák alapján a lakásárak oldalazására lehet számítani. Tehát ebben az esetben ugyanannyiért tudjuk eladni, mint amennyiért megvettük. A másik esetben ($s_2$), ha az infláció a vizsgált 5 év végére mérséklődik, akkor az első évek oldalazása után 50$\%$ emelkedés várható.
+
+Az ingatlant továbbá olyan szerződéssel szeretnénk bérbe adni, amelyben garantáltan az előző évi infláció mértékében növekvő lakbért várunk el. Tegyük fel, hogy amennyiben tartósan magas marad az infláció és ezért nem nőnek a lakásárak sem és ezzel együtt az albérlet árak sem nőnek, így ebben az esetben végig a kezdő 3.4$\%$-kal számolunk. Míg a második esetben ($s_2$) találunk ilyen bérlőt.
+
+
+Ezeket összegezve az infláció lehetséges alakulása mellett az éves bevételeink a befektetés százalékában:
+\begin{center}
+\begin{tabular}{c c||r|r|r|r|r||r}
+    &  & 2023& 2024  & 2025  & 2026 & 2027 & összesen \\
+ \hline
+ $s_1$&$a_1$&3.4$\%$&3.4$\%$&3.4$\%$&3.4$\%$&3.4$\%$ & 17.0$\%$ \\
+ $s_2$&$a_1$&4.0$\%$&4.4$\%$&4.7$\%$&4.9$\%$&55.1$\%$ & 73.1$\%$ \\
+ \hline
+ $s_1$&$a_2$&21.5$\%$&13.5$\%$&10.5$\%$&10.5$\%$&8.5$\%$ & 64.5$\%$ \\
+ $s_2$&$a_2$&19.5$\%$&10.5$\%$&9.0$\%$&6.0$\%$&5.0$\%$ & 50.0$\%$ \\
+
+\end{tabular}
+\end{center}
+
+
+%\paragraph{Feladat:} Rendelkezünk 10 millió forint befektetésre szánt pénzzel, melyet szeretnénk úgy befektetni, hogy a lehető legnagyobb reálhozamunk legyen. Bizonytalan eseményként vizsgáljuk az infláció alakulását.
+
+%Magas infláció mellett történelmi adatok alapján érdemes bankok részvényeit megvásárolni. A történelmi adatokon kívül könnyen számolható éves nyereséget okoz a bankok számára a magas %inflációs környezet. Egyik lehetséges alternatívánk, hogy megvesszük a rendelkezésre álló keretből egyetlen, tetszőleges bank részvényét. A jelenlegi feladatban feltesszük, hogy kezdő %tőzsdei befektetők vagyunk, nem diverzifikálunk, egyetlen vásárlás. Ennek köszönhetően valami benyomás alapján választunk egy bankot. Ebből fakadóan tegyük fel, hogy nem sikerült a %legjobban teljesítő bank részvényét kiválasztani, illetve hogy magas áron sikerült megvenni a részvényt. Ennek eredményeképpen alacsonyabb inflációs környezet esetén az első évben 10$\%%$-ot veszítünk, míg ha az infláció tartósan magas lesz, akkor a kalkulációink alapján várhatóan éves szinten 20$\%$ reálnyereségünk lehet (inflálódást, mindenféle utalási, %részvényvásárlási, adózási költséget mindkét esetben beleszámítva, illetve a különböző valutaváltási és valutánként eltérő infláció mértékkel, vagy bármi további részlettel a feladat %egyszerűsítése kedvéért most nem foglalkozunk).
+%
+%A másik lehetséges alternatívánk a Magyar Állampapír Plusz megvásárlása, amely 5 évre 4.95$\%$ kamatot tud nyújtani. Amennyiben 5$\%$ körüli magas infláció lesz, akkor az első évben %0.05$\%$-os reálérték veszteségünk lesz, míg amennyiben az infláció mérséklődik 2$\%$ körüli szintre, akkor 2.95$\%$ reálhozamunk lehet.
+%
+%Melyik befektetést válasszuk?
+%
+%\begin{center}
+%\begin{tabular}{l|c|c}
+%\multirow{2}{*}{\bf Cselekvési lehetőségek } &  \multicolumn{2}{c}{ \bf Események }\\
+% & $s_1=$ magas infláció (5$\%$) & $s_2=$ alacsony infláció (2$\%$) \\
+%\hline
+%  $a_1=$ egy bank részvény & 12 & 9 \\
+%  $a_2=$ MÁP & 9.995 & 10.295 \\
+%\end{tabular}
+%\end{center}
+%$P(s_1) = 0.55 , P(s_2) = 0.45$ szubjektív valószínűségi értékek (becslések).
 
 
 %\paragraph{Feladat:} Befektetési feladat: rendelkezünk 12 millió forint befektetésre szánt pénzzel. Két befektetési lehetőségen gondolkozunk: vehetünk belőle 10 ha jó minőségű termőföldet, vagy az aktuális alapkamaton elérhető banki lekötést választjuk.
@@ -710,6 +748,24 @@ $P(s_1) = 0.55 , P(s_2) = 0.45$ szubjektív valószínűségi értékek (becslé
 %\end{center}
 %$P(s_1) = 0.25 , P(s_2) = 0.75$ szubjektív valószínűségi értékek (becslések).
 
+Melyik befektetést válasszuk?
+
+\begin{center}
+\begin{tabular}{l|c|c}
+\multirow{2}{*}{\bf Cselekvési} &  \multicolumn{2}{c}{ \bf Események }\\
+ {\bf lehetőségek} & $s_1=$ tartósan & $s_2=$ enyhülő \\
+  & magas infláció &  infláció \\
+\hline
+  $a_1=$ ingatlan vásárlás & 40.95 & 60.59 \\
+  $a_2=$ PMÁP & 57.58 & 52.50 \\
+\end{tabular}
+\end{center}
+$P(s_1) = 0.55 , P(s_2) = 0.45$ szubjektív valószínűségi értékek (becslések).
+
+\subsection{Dominancia módszer}
+\label{susec:domi}
+Amennyiben egy alternatíva minden esemény bekövetkezése esetén jobb értékekkel rendelkezik, mint egy másik, akkor dominálja azt és a dominált alternatíva elhagyható.
+
 \subsection{Döntés a pénzérték alapján}
 \label{susec:penzert}
 A döntésben csak a nyereségértékeket vesszük figyelembe a valószínűségeket nem.
@@ -720,10 +776,10 @@ A döntésben csak a nyereségértékeket vesszük figyelembe a valószínűség
 
 De pénzérték alapján ezen enyhíteni szoktak $\rightarrow$ optimizmus együttható: \emph{Hurwick-féle} $\alpha$, a döntéshozó $\alpha$ arányban optimista és $1-\alpha$ arányban pesszimista. Legyen például $\alpha \gets 0.8$, ekkor a példánkban: 
 \begin{center}
-$H_{a_1} \gets 0.8\cdot 12 + 0.2\cdot 9 = 11.4$
+$H_{a_1} \gets 0.8\cdot 60.59 + 0.2\cdot 40.95 = 56.662$
 %$H_{a_1} \gets 0.8\cdot 2000 + 0.2\cdot -10800 = -560$
 
-$H_{a_2} \gets 0.8\cdot 10.295 + 0.2\cdot 9.995 = 10.235$
+$H_{a_2} \gets 0.8\cdot 57.58 + 0.2\cdot 52.50 = 56.564$
 %$H_{a_2} \gets 0.8\cdot 456 + 0.2\cdot 360 = 436.80$
 \end{center}
 
@@ -733,19 +789,20 @@ A döntést a $max\{H_{a_1},H_{a_2}\}$ alapján hozzuk, így az $a_1$-et válasz
 \label{susec:vaert}
 \paragraph{Maximum likelihood kritérium: } azt választjuk, amelynek a legnagyobb a bekövetkezési valószínűség mellett legnagyobb a pénzértéke. 
 
-Tehát a $P(s_1)$-nek a legnagyobb a valószínűsége, így az $a_1$-t választjuk.
+Tehát a $P(s_1)$-nek a legnagyobb a valószínűsége, így az $a_2$-t választjuk.
 
 \subsection{Döntés a várható pénzérték alapján}
 \label{VP}
 Alternatívánként vesszük a természet állapotaihoz tartozó várható pénzértéket és azok valószínűségét. Kiszámoljuk az állapotok becsült valószínűségekkel súlyozott összegeit és kiválasztjuk közülük a maximálisat.
 
-$VP(a_1) = 0.55\cdot 12 + 0.45\cdot 9 = 10.65$
+$VP(a_1) = 0.55\cdot 40.95 + 0.45\cdot 60.59 = 49.788$
 %$VP(a_1) = 0.25\cdot -10800 + 0.75\cdot 2000 = -1200$
 
-$VP(a_2) = 0.55\cdot 9.995 + 0.45\cdot 10.295 = 10.13$
+$VP(a_2) = 0.55\cdot 57.58 + 0.45\cdot 52.50 = 55.294$
 %$VP(a_2) = 0.25\cdot 456 + 0.75\cdot 360 = 384$
 
-Az $a_1$-t választjuk.
+Az $a_2$-t választjuk.
+
 
 \subsection{Döntés az elmulasztott nyereség alapján}
 \label{susec:elmunyer}
@@ -763,54 +820,64 @@ Ebben az esetben se vesszük figyelembe a valószínűségeket. Ugyanakkor a pé
 
 \begin{center}
 \begin{tabular}{l|c|c}
-\multirow{2}{*}{\bf Cselekvési lehetőségek } &  \multicolumn{2}{c}{ \bf Események }\\
- & $s_1=$ magas infláció (5$\%$) & $s_2=$ alacsony infláció (2$\%$) \\
+\multirow{2}{*}{\bf Cselekvési} &  \multicolumn{2}{c}{ \bf Események }\\
+ {\bf lehetőségek} & $s_1=$ tartósan & $s_2=$ enyhülő \\
+  & magas infláció &  infláció \\
 \hline
-  $a_1=$ egy bank részvény & 0 & 1.295 \\
-  $a_2=$ MÁP & 2.005 & 0 \\
+  $a_1=$ ingatlan & 19.64 & 0 \\
+  $a_2=$ PMÁP & 3.01 & 8.09 \\
 \end{tabular}
 \end{center}
 
-A döntést az alternatívánkénti (soronkénti) maximális értékek minimuma fogja adni. Tehát az $a_1$-t választjuk.
+\paragraph{Pesszimista döntéshozó:} A döntést az alternatívánkénti (soronkénti) maximális értékek minimuma fogja adni. Tehát az $a_2$-t választjuk.
 
 \subsection{Döntés a várható elmulasztott nyereség alapján}
 Az előzővel teljesen azonosan, azt leszámítva, hogy az elmulasztott nyereség táblázatából vesszük az értékeket és itt a minimálisat választjuk.
 
-$VE(a_1) = 0.55\cdot 0 + 0.45\cdot 1.295 = 0.58275$
+$VE(a_1) = 0.55\cdot 19.64 + 0.45\cdot 0 = 10.802$
 
-$VE(a_2) = 0.55\cdot 2.005 + 0.45\cdot 0 = 1.10275$
+$VE(a_2) = 0.55\cdot 3.01 + 0.45\cdot 8.09 = 5.296$
 
-Az $a_1$-t választjuk.
+Az $a_2$-t választjuk.
 
 \subsection{Döntés a rendelkezésre álló információ alapján}
 Azonos a \ref{VP} szekcióban bemutatottakkal, várható pénzértéket számolunk. Annyival bővül, hogy itt kihangsúlyozzuk azt, hogy a valószínűségeket \emph{rendelkezésre álló információnak} tekintjük. Tehát azok szubjektív valószínűségek.
 
 %$VPRI(a_1) = 0.25\cdot -10800 + 0.75\cdot 2000 = -1200$
-$VPRI(a_1) = 0.55\cdot 12 + 0.45\cdot 9 = 10.65$
+%$VPRI(a_1) = 0.55\cdot 12 + 0.45\cdot 9 = 10.65$
+$VPRI(a_1) = 0.55\cdot 40.95 + 0.45\cdot 60.59 = 49.788$
 
 %$VPRI(a_2) = 0.25\cdot 456 + 0.75\cdot 360 = 384$
-$VPRI(a_2) = 0.55\cdot 9.995 + 0.45\cdot 10.295 = 10.13$
+%$VPRI(a_2) = 0.55\cdot 9.995 + 0.45\cdot 10.295 = 10.13$
+$VPRI(a_2) = 0.55\cdot 57.58 + 0.45\cdot 52.50 = 55.294$
 
-$VPRI = max\{VPRI(a_1), VPRI(a_2)\} = 10.65$
+%$VPRI = max\{VPRI(a_1), VPRI(a_2)\} = 10.65$
+$VPRI = max\{VPRI(a_1), VPRI(a_2)\} = 55.294$
 
 \paragraph{A tökéletes információ várható pénzértéke: } ha élne egy jós, aki meg tudná mondani, hogy milyen lesz az infláció, %elindul-e a beruházás,
-akkor ennek az információnak mekkora a pénzértéke? Mennyit fizessünk a jósnak, ha tökéletes információt tud mondani?
+akkor ennek az információnak mekkora a várható pénzértéke?
+(Mennyit érdemes fizetni a tökéletes információért cserébe?)
+Feltevés: a jós által mondott esemény biztosan bekövetkezik.
+
+Első lépésben meg kell vizsgálni, hogyha az általunk ismert eseményeket állítja a jós, akkor azokat biztosan bekövetkező eseményként vizsgálva mekkora a várható pénzérték.
+Itt azért szerepel továbbra is egy valószínűségi súlyozás, mert így ad teljes eseményteret a két eset. Ennek olyan jelentése van, hogy szerintünk ekkora valószínűséggel mondja a jós, hogy $s_{i}$ esemény következik be biztosan. Ez megegyezik a korábbi valószínűséggel ugyanis a két esemény bekövetkezéséről továbbra is ez a véleményünk. Amennyiben a jós bevonása ezen változtatna, akkor ez természetesen módosulhat.
 
 Lehetséges előrejelzés:
 \begin{itemize}
-\item ha $s_{1}$ lesz a jós szerint $\rightarrow$ optimális cselekvés: $a_1$  és a $VP(a_1) = 0.55\cdot 12 = 6.6$
-\item ha $s_{2}$ lesz a jós szerint $\rightarrow$ optimális cselekvés: $a_2$  és a $VP(a_2) = 0.45\cdot 10.295 = 4.63275$
+\item ha $s_{1}$ lesz a jós szerint $\rightarrow$ optimális cselekvés: $a_2$  és a $VP(a_1) = 0.55\cdot 57.58 = 31.669$
+\item ha $s_{2}$ lesz a jós szerint $\rightarrow$ optimális cselekvés: $a_1$  és a $VP(a_2) = 0.45\cdot 60.59 = 27.2655$
 \end{itemize}
 
 A tökéletes információ várható pénzértéke ennek a két lehetőségnek az összege: 
 
-$VPTI = 6.6 + 4.63275 = 11.23275$
+$VPTI = 31.669 + 27.2655 = 58.9345$
 
-"Mennyit fizessünk a jósnak?" kérdésre a válasz: $VPTI - VPRI = 11.23275 - 10.65 = 0.58275$ (ez egy maximum érték, ennél többet nem ér az információ)
+"Mennyit fizessünk a jósnak?" kérdésre a válasz: $VPTI - VPRI = 58.9345 - 55.294 = 3.6405$ (ez egy maximum érték, ennél többet nem ér az információ)
 
 \subsection{Döntés nem tökéletes információ alapján}
+\label{sec:NTI}
 
-Jósok helyett érdemesebb kockázatelemző, előrejelző céget keresni. Ami a következő állításokat teheti:
+Mivel ténylegesen tökéletes információval rendelkező jósok nem léteznek, ezért helyettük érdemesebb kockázatelemző, előrejelző céget keresni. Ami a következő állításokat teheti:
 \begin{itemize}
 \item $z_{1}:$ azt állítják (előrejelzik), hogy az infláció magasan marad.  %(általánosan: bekövetkezik vmely esemény, itt speciálisan, ez az $s_{1}$)
 \item $z_{2}:$ azt állítják, hogy az infláció mérséklődik. % $s_{2}$ következik be (általánosan: nem következik be a $z_{1}$-ben feltett esemény, itt speciálisan, ez az $s_{2}$)
@@ -823,9 +890,9 @@ Tegyük fel, hogy a cégről ismert \textbf{az előrejelzési pontossága}, kor�
 \item $P(z_{2}|s_2) = 0.7$ 
 \item $P(z_{1}|s_2) = 0.3$ 
 \end{itemize}
-Ezek a \textbf{beválási valószínűségek (likelihoodok)}. Akár meg is egyezhetnének a $s_1$ és $s_2$-re, de általában a változás bekövetkezést nehezebb előre jelezni. Ez az információ a feladatok többségében elérhető, ennek elérhetősége az előfeltétele a feladat végrehajtásának. Az előző fejezetben például a jósnak 1 volt a találati értéke és 0 a tévesztési mindkét esetben.
+Ezek a \textbf{beválási valószínűségek (likelihoodok)}. Akár meg is egyezhetnének a $s_1$ és $s_2$-re, de általában a változás bekövetkezést nehezebb előre jelezni. Ez az információ a feladatok többségében elérhető, ennek elérhetősége az előfeltétele a feladat végrehajtásának. Az előző fejezetben például a jósnak 1 volt a találati értéke és 0 a tévesztési score-ja mindkét esetben.
 
-Az ilyen feladatok esetében a $P(s_1) = 0.55 , P(s_2) = 0.45$ ismert valószínűségi értékeket tekintjük \textbf{a priori valószínűségek}nek. 
+Az ilyen feladatok esetében a $P(s_1) = 0.55 , P(s_2) = 0.45$ saját véleményen alapuló valószínűségi értékeket tekintjük \textbf{a priori valószínűségek}nek. 
 
 \textbf{A Bayes-tétellel kiszámolható a posteriori valószínűségeket}: $P(s_1|z_1),$ $P(s_2|z_1),$ $ P(s_1|z_2),$ $P(s_2|z_2)$
 \begin{equation}
@@ -845,31 +912,31 @@ P(s_2|z_2) = \frac{0.315}{0.425} &= 0.7412
 
 Ezekből pedig kifejezhető az adott alternatíva, adott előrejelzés melletti várható pénzértéke:
 
-$VP(a_1|z_1) = \sum_{i}^{ }v(s_i,a_1)\cdot P(s_i|z_1) = 12\cdot 0.7652 + 9\cdot 0.2348 = \textbf{11.2956}$ 
+$VP(a_1|z_1) = \sum_{i}^{ }v(s_i,a_1)\cdot P(s_i|z_1) = 40.95\cdot 0.7652 + 60.59\cdot 0.2348 = 45.561472$ 
  
-$VP(a_2|z_1) = \sum_{i}v(s_i,a_2)\cdot P(s_i|z_1) = 9.995\cdot 0.7652 + 10.295\cdot 0.2348 = 10.0654$ 
+$VP(a_2|z_1) = \sum_{i}v(s_i,a_2)\cdot P(s_i|z_1) = 57.58\cdot 0.7652 + 52.50\cdot 0.2348 = \textbf{56.387216}$ 
 
-$VP(a_1|z_2) = \sum_{i}v(s_i,a_1)\cdot P(s_i|z_2) = 12\cdot 0.2588 + 9\cdot 0.7412 = 9.7764$  
+$VP(a_1|z_2) = \sum_{i}v(s_i,a_1)\cdot P(s_i|z_2) = 40.95\cdot 0.2588 + 60.59\cdot 0.7412 = \textbf{55.507168}$  
 
-$VP(a_2|z_2) = \sum_{i}v(s_i,a_2)\cdot P(s_i|z_2) = 9.995\cdot 0.2588 + 10.295\cdot 0.7412 = \textbf{10.2174}$
+$VP(a_2|z_2) = \sum_{i}v(s_i,a_2)\cdot P(s_i|z_2) = 57.58\cdot 0.2588 + 52.50\cdot 0.7412 = 53.814704$
 
 \paragraph{A nem tökéletes információ várható pénzértéke: }
 
-Ajánlatot kapunk az eddig vizsgált előrejelző cégtől: 0.15 millió forintért előrejelzést adnak az inflációra. A kérdés megéri-e ennyiért elfogadni az ajánlatot. Mennyit ér a nem tökéletes információ?
+Ajánlatot kapunk az eddig vizsgált előrejelző cégtől: 1.5 millió forintért előrejelzést adnak az inflációra. A kérdés megéri-e ennyiért elfogadni az ajánlatot. Mennyit ér a nem tökéletes információ?
 
 Lehetséges előrejelzés:
 \begin{itemize}
-\item $z_{1} \rightarrow$ optimális cselekvés: $a_1$  és a $VP(a_1) = VP(a_1|z_1) \cdot  P(z_1) = 11.2956\cdot 0.575 = 6.495$
-\item $z_{2} \rightarrow$ optimális cselekvés: $a_2$  és a $VP(a_2) = VP(a_2|z_2) \cdot  P(z_2) = 10.2174\cdot 0.425 = 4.3424$
+\item $z_{1} \rightarrow$ optimális cselekvés: $a_2$  és a $VP(a_2) = VP(a_2|z_1) \cdot  P(z_1) = 56.387216\cdot 0.575 = 32.4226492$
+\item $z_{2} \rightarrow$ optimális cselekvés: $a_1$  és a $VP(a_1) = VP(a_1|z_2) \cdot  P(z_2) = 55.507168\cdot 0.425 = 23.5905464$
 \end{itemize}
 
-Nem teljes információhoz tartozó pénzérték: $VPNTI = \sum_{j} VP(a_j) = 6.495 + 4.3424 = 10.8374$
+Nem teljes információhoz tartozó pénzérték: $VPNTI = \sum_{j} VP(a_j) = 32.4226492 + 23.5905464 = 56.01$
 
-A "Mennyit fizessünk legfeljebb az előrejelző cégnek?" kérdésre a választ az alábbiak alapján tudjuk megkapni: $VPNTI - VPRI = 10.8374 - 10.65 = 0.1874$. Ami egy maximális érték arra, amennyiért megéri őket alkalmazni. Mivel ez alatt van az ajánlatuk, ezért elfogadjuk.
+A "Mennyit fizessünk legfeljebb az előrejelző cégnek?" kérdésre a választ az alábbiak alapján tudjuk megkapni: $VPNTI - VPRI = 56.013 - 55.294 = 0.719$. Ami egy maximális érték arra, amennyiért megéri őket alkalmazni. Mivel ez feletti ajánlat érkezett, ezért elutasítjuk.
 
 \subsection{Döntés döntési fa eljárás alapján}
 
-Kiértékelési eljárásnak fogható fel. A döntési fa struktúra itt egy absztrakciós szintként jelenik meg, ami segíti a döntési folyamat átlátását és nem mint egy gépi tanulási eljárás!
+Kiértékelési eljárásnak fogható fel. A döntési fa struktúra itt egy absztrakciós szintként jelenik meg, ami segíti a $\ref{sec:NTI}$ fejezetben bemutatott "információ értéke" döntési feladat áttikenthetőségét. (Az itt tárgyaltak kizárólag a nevében egyeznek meg a döntési fa - gépi tanulási eljárással.)
 
 A kérdés, amire a megoldást keressük egyrészről az, hogy melyik alternatívát válasszuk, másrészről pedig az, hogy igénybe vegyünk-e (a példában megadott mértékű) $d$ költségű előrejelzést. Tehát a feladat itt nem az információ értékének a kiszámítása, hanem a döntési folyamat egyes lépéseinek és egészének a várható pénzértékének a számítása, melyeket maximalizálni szeretnénk. Így ez megadja az optimális döntéseket az adott szituációkban.
 
@@ -888,8 +955,8 @@ Jelölésben, új cselekvési alternatívákat vezetünk be:
 \paragraph{Előkészületek: }
 \begin{itemize}
 \item a fát a gyökérből indulva rajzoljuk meg, minden lehetséges döntésnek és lehetséges eseménynek külön ágat húzunk be (fenti ábra).
-\item az eseményekhez tartozó valószínűségeket be tudjuk helyettesíteni az egyes ágakra. Egy esemény minél mélyebben van, annál több dologtól függ. A lentebbi ágakon a felette lévőekkel alkot feltételes valószínűséget.
-\item a levelekhez be tudjuk írni az egyes választások pénzértékét a táblázatból (előrejelzés esetében már itt $d$ = 0.15 millió forinttal terhelt pénzértékeket).
+\item az eseményekhez tartozó valószínűségeket be tudjuk helyettesíteni az egyes ágakra. Egy esemény minél mélyebben van, annál több dologtól függ. A lentebbi ágakon a felette lévőekkel alkot feltételes valószínűséget. Pl: egy lentebbi ágon $P(s_1|z_1)$ van, míg felül $P(z_1)$ van (tehát ez utóbbi nem függ az $s_i$-től).
+\item a levelekhez be tudjuk írni az egyes választások pénzértékét a táblázatból (előrejelzés esetében már itt $d$ = 1.5 millió forinttal terhelt pénzértékeket).
 \end{itemize}
 
 \paragraph{Eljárás: }
@@ -904,7 +971,7 @@ Végül a gyökérben egyetlen, a feladat várható pénzértéke marad és az a
 
 \begin{center}
 
-\includegraphics[scale=0.7]{dectree03}
+\includegraphics[scale=0.7]{dectree04}
 \\
 \end{center}
 
