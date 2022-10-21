@@ -1030,7 +1030,9 @@ Példa lotteryre: kérdés a döntéshozóhoz: Melyik játékban venne részt sz
 %$u: C \rightarrow \mathbb{R}$,
 %,  $U: A \rightarrow \mathbb{R}$, stb.
 
-\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } $A^p$ elemeihez meghatározzuk a várható értékét (ismerjük a valószínűségeket, és az értékeket), majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $u(a_{p_k})= \sum_{s_k \in S} P(s_k)\cdot v(c_{jk}) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: várható pénzérték alapján döntünk)
+\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } $A^p$ elemeihez meghatározzuk a várható értékét (ismerjük a valószínűségeket, és az értékeket), majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $u(a_{p_k})= \sum_{s_k \in S} P(s_k)\cdot v(c_{jk}) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: $VPRI=max(u(a_{p_k}))$, várható pénzérték alapján döntünk).
+
+
 
  % $\mathbb{E} (a_j) = 
 
@@ -1074,10 +1076,12 @@ Szigorú preferencia tulajdonságából származó tulajdonság. Ha egy lotteryt
 \paragraph{$a_p$  $\succ$ $a_q \succ a_r \rightarrow \exists \alpha,\beta \in (0,1): (\alpha\cdot a_p , (1-\alpha)\cdot a_r )  \succ a_q \succ (\beta\cdot a_p , (1-\beta)\cdot a_r ) $ .} Azt mondja ki, hogy létezik a vizsgált legjobb és legrosszabb érték olyan keverése, ami jobb illetve rosszabb a középső értéknél. Ez általánosságban igaz, akkor sérülhet, ha a legjobb és a középső érték nagyon közel van egymáshoz és a legrosszabb viszont nagyon rossz: $a_p$ nyerünk 100 dollárt, $a_q$ nyerünk 99 dollárt, $a_r$ életfogytiglanig börtönbe kerülünk.
 
 \subsubsection{4. Axióma}
-\paragraph{$\forall  \alpha \in [0,1]: (\alpha\cdot a_p , (1-\alpha)\cdot a_q ) = ((1-\alpha)\cdot a_q ,\alpha\cdot a_p )$ . } Lényegtelen a sorrend a kombináció esetén.
+\paragraph{$\forall  \alpha \in [0,1]: (\alpha\cdot a_p , (1-\alpha)\cdot a_q ) \sim ((1-\alpha)\cdot a_q ,\alpha\cdot a_p )$ . } Lényegtelen a sorrend a kombináció esetén.
 
 \subsubsection{5. Axióma - Redukciós szabály}
-\paragraph{$\forall  \alpha \in (0,1): a_r = (\alpha\cdot a_p , (1-\alpha)\cdot a_q) \Leftrightarrow \forall  \beta \in (0,1): (\beta\cdot a_r, (1-\beta)\cdot a_q ) = (\alpha\cdot \beta\cdot a_p , (1-\beta\cdot \alpha)\cdot a_q )$.} Bonyolultan megfogalmazott játékban ugyanakkora esélye van a győzelemnek, mint a vele ekvivalens könnyű játékban. Csak akkor van értelme bonyolultan feltenni a kérdést, ha döntéshozó "élvezetét leli" az összetett játékban.
+$\forall  \alpha \in (0,1): a_r \sim (\alpha\cdot a_p , (1-\alpha)\cdot a_q) \rightarrow \forall  \beta \in (0,1): (\beta\cdot a_r, (1-\beta)\cdot a_s ) \sim (\alpha\cdot \beta\cdot a_p , (1-\alpha)\cdot \beta \cdot a_q, (1-\beta)\cdot a_s )$.
+
+Bonyolultan megfogalmazott játékban ugyanakkora esélye van a győzelemnek, mint a vele ekvivalens könnyű játékban. Akkor sérül ez az axióma, ha a döntéshozó "élvezetét leli" az összetett játékban vagy éppen a leegyszerűsített játékot egyértelműen jobban preferálja, mint a vele ekvivalens összetettebb játékot. Tehát ezzel az axiómával megköveteljük, hogy a preferencia struktúrában az ekvivalens játékok legyenek indifferensek a döntéshozó szerint.
 
 %\paragraph{$\forall  \alpha \in (0,1): \alpha\cdot a_r = (\alpha\cdot a_p , (1-\alpha)\cdot a_q) \rightarrow \forall  \beta \in (0,1): (\beta\cdot a_r, (1-\beta)\cdot a_q ) = (\alpha\cdot \beta\cdot a_p , (1-\beta\cdot \alpha)\cdot a_q )$.} Bonyolultan megfogalmazott játékban ugyanakkora esélye van a győzelemnek, mint a vele ekvivalens könnyű játékban. Csak akkor van értelme bonyolultan feltenni a kérdést, ha döntéshozó "élvezetét leli" az összetett játékban.
 
@@ -1185,11 +1189,11 @@ Az első három feltételnek köszönhetően garantált, hogy $\forall a_p \in A
 
 %$U(a_2) = 0.25\cdot  0.9 + 0.75\cdot 0.8 = 0,825$
 
-\subsection{Egydimenziós hasznosság függvény előállítás - bizonyossági egyenértékes módszer}
+\subsection{Egydimenziós hasznosság függvények előállítása~- bizonyossági egyenértékes módszer}
 
 \begin{enumerate}
-\item Keressük meg a $c_{min}$-t és a $c_{max}$-ot. (Nem feltétlenül az ismert lotterykből)
-\item Ismételjük minden kimenetelre ($c$): vegyük az adott kimenetelt bizonyossági egyenértékként és keressük meg a hozzá tartozó lotteryt, ami a $c_{min}$, $c_{max}$ kombinációjából épül fel. Ennek megtalálása a döntéshozónak feltett kérdések alapján történik.  
+\item Keressük meg a $c_{min}$-t és a $c_{max}$-ot. (Nem feltétlenül az ismert értékekből választhatunk.)
+\item Ismételjük minden ismert kimenetelre ($c$): vegyük az adott kimenetelt bizonyossági egyenértékként és keressük meg a hozzá tartozó lotteryt, ami a $c_{min}$, $c_{max}$ kombinációjából épül fel. Ennek megtalálása a döntéshozónak feltett kérdések alapján történik. Például: biztos $c_1$ nyereményt odaadna-e egy olyan játékért cserébe, amiben $(\alpha \cdot c_{max}, (1-\alpha) \cdot c_{min} )$ nyerne? Ha nem, akkor növeljük $\alpha$ értékét és kérdezzük meg újra, amíg igent mond. Legrosszabb esetben $\alpha = 1$ esetben igent fog mondani, ugyanis a maximális értéket, mint biztos nyeremény minden biztos értékért cserébe elfogadja.
 
 $\forall c \sim  (\beta \cdot c_{max},(1-\beta)\cdot c_{min})$
 \item Helyettesítsük be a feladatban megadott lotteryk ($c$) értékei helyére az előző pontban kapott lotteryket. 

@@ -95,38 +95,37 @@
 \select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \rightarrow \forall \alpha \in (0,1): a_p \succ (\alpha \cdot a_p , (1-\alpha )\cdot a_q ) \succ a_q$.}{24}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {10.1.3}2'. Axióma - Függetlenségi axióma (Fishburn 1970)}{24}{}%
 \select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \rightarrow \forall \alpha \in (0,1): (\alpha \cdot a_p , (1-\alpha )\cdot a_r ) \succ (\alpha \cdot a_q , (1-\alpha )\cdot a_r )$ .}{24}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.1.4}3. Axióma - Folytonossági axióma}{24}{}%
-\select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \succ a_r \rightarrow \exists \alpha ,\beta \in (0,1): (\alpha \cdot a_p , (1-\alpha )\cdot a_r ) \succ a_q \succ (\beta \cdot a_p , (1-\beta )\cdot a_r ) $ .}{24}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.1.4}3. Axióma - Folytonossági axióma}{25}{}%
+\select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \succ a_r \rightarrow \exists \alpha ,\beta \in (0,1): (\alpha \cdot a_p , (1-\alpha )\cdot a_r ) \succ a_q \succ (\beta \cdot a_p , (1-\beta )\cdot a_r ) $ .}{25}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {10.1.5}4. Axióma}{25}{}%
-\select@language {english} \contentsline {paragraph}{$\forall \alpha \in [0,1]: (\alpha \cdot a_p , (1-\alpha )\cdot a_q ) = ((1-\alpha )\cdot a_q ,\alpha \cdot a_p )$ . }{25}{}%
+\select@language {english} \contentsline {paragraph}{$\forall \alpha \in [0,1]: (\alpha \cdot a_p , (1-\alpha )\cdot a_q ) \sim ((1-\alpha )\cdot a_q ,\alpha \cdot a_p )$ . }{25}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {10.1.6}5. Axióma - Redukciós szabály}{25}{}%
-\select@language {english} \contentsline {paragraph}{$\forall \alpha \in (0,1): a_r = (\alpha \cdot a_p , (1-\alpha )\cdot a_q) \Leftrightarrow \forall \beta \in (0,1): (\beta \cdot a_r, (1-\beta )\cdot a_q ) = (\alpha \cdot \beta \cdot a_p , (1-\beta \cdot \alpha )\cdot a_q )$.}{25}{}%
 \select@language {english} \contentsline {subsection}{\numberline {10.2}Hasznosság függvény létezése és előállítása}{25}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {10.2.1}Létezési tétel: }{25}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {10.2.2}Fontos tulajdonság: }{25}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {10.2.3}Bizonyítás: }{25}{}%
 \select@language {english} \contentsline {paragraph}{1. Feltétel: bizonyossági egyenérték}{25}{}%
 \select@language {english} \contentsline {paragraph}{2. Feltétel: helyettesítés}{25}{}%
-\select@language {english} \contentsline {paragraph}{3. Feltétel: redukálhatóság}{25}{}%
-\select@language {english} \contentsline {paragraph}{4. Feltétel: összehasonlíthatóság}{25}{}%
+\select@language {english} \contentsline {paragraph}{3. Feltétel: redukálhatóság}{26}{}%
+\select@language {english} \contentsline {paragraph}{4. Feltétel: összehasonlíthatóság}{26}{}%
 \select@language {english} \contentsline {paragraph}{A feltételek teljesülése esetén az Axiómák is teljesülnek.}{26}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {10.2.4}Következmények: }{26}{}%
 \select@language {english} \contentsline {paragraph}{A feltételekből megkonstruálható a hasznosságfüggvény: }{26}{}%
 \select@language {english} \contentsline {paragraph}{Az így megadott $u$ teljesíti a létezési feltételeket: }{26}{}%
-\select@language {english} \contentsline {paragraph}{$u$ olyan alakú, hogy megfelel a Bernoulli-elvnek:}{26}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.3}Egydimenziós hasznosság függvény előállítás - bizonyossági egyenértékes módszer}{27}{}%
-\select@language {english} \contentsline {paragraph}{Jelölés: }{27}{}%
+\select@language {english} \contentsline {paragraph}{$u$ olyan alakú, hogy megfelel a Bernoulli-elvnek:}{27}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.3}Egydimenziós hasznosság függvények előállítása~- bizonyossági egyenértékes módszer}{27}{}%
+\select@language {english} \contentsline {paragraph}{Jelölés: }{28}{}%
 \select@language {english} \contentsline {paragraph}{Feladat: }{28}{}%
 \select@language {english} \contentsline {paragraph}{Az információ ára fejezetnél ismertetett példa hasznosságfüggvény előállítására}{28}{}%
 \select@language {english} \contentsline {subsection}{\numberline {10.4}Kockázati magatartás}{29}{}%
 \select@language {english} \contentsline {paragraph}{Jelölés: }{29}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.5}Többtényezős hasznosság függvény létezése és előállítása}{29}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.5.1}Függetlenségi tesztek}{29}{}%
-\select@language {english} \contentsline {paragraph}{Értékfüggetlenség}{29}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.5}Többtényezős hasznosság függvény létezése és előállítása}{30}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.5.1}Függetlenségi tesztek}{30}{}%
+\select@language {english} \contentsline {paragraph}{Értékfüggetlenség}{30}{}%
 \select@language {english} \contentsline {paragraph}{Hasznosságfüggetlenség}{30}{}%
 \select@language {english} \contentsline {paragraph}{Preferenciafüggetlenség}{30}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.6}Additív és multiplikatív hasznosságfüggvény}{30}{}%
-\select@language {english} \contentsline {paragraph}{A közös alak: kvázi additív hasznosságfüggvény (kifejezhető belőle az additív és a multiplikatív hasznosságfüggvény)}{30}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.6}Additív és multiplikatív hasznosságfüggvény}{31}{}%
+\select@language {english} \contentsline {paragraph}{A közös alak: kvázi additív hasznosságfüggvény (kifejezhető belőle az additív és a multiplikatív hasznosságfüggvény)}{31}{}%
 \select@language {english} \contentsline {paragraph}{$K$ skálázási konstans meghatározása 2D ($n=2$) esetben:}{31}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.7}Előállítás}{31}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.7}Előállítás}{32}{}%
 \select@language {english} \contentsline {subsection}{\numberline {10.8}A hasznossági elmélet felvetéseinek magatartáselméleti kritikái}{32}{}%
