@@ -36,18 +36,18 @@
 \select@language {english} \contentsline {subsection}{\numberline {8.1}Preferenciareláció tulajdonságai}{10}{}%
 \select@language {english} \contentsline {paragraph}{További relációk bevezetése:}{10}{}%
 \select@language {english} \contentsline {paragraph}{Definícióból adódó fontos tulajdonságaik:}{10}{}%
-\select@language {english} \contentsline {subsection}{\numberline {8.2}Értékelő függvény létezése}{10}{}%
+\select@language {english} \contentsline {subsection}{\numberline {8.2}Értékelő függvény létezése}{11}{}%
 \select@language {english} \contentsline {paragraph}{Tulajdonságok:}{11}{}%
 \select@language {english} \contentsline {paragraph}{A fenti tétel, túl szigorú az indifferencia osztályok megszámlálhatóságáról.}{11}{}%
 \select@language {english} \contentsline {paragraph}{Speciális eset: A n dimenziós vektortér. }{11}{}%
 \select@language {english} \contentsline {subsection}{\numberline {8.3}Értékelő függvények dekompozíciós alakjai}{11}{}%
-\select@language {english} \contentsline {paragraph}{Speciális dekomponálható preferencia struktúrák:}{11}{}%
+\select@language {english} \contentsline {paragraph}{Speciális dekomponálható preferencia struktúrák:}{12}{}%
 \select@language {english} \contentsline {subsection}{\numberline {8.4}Additív értékelő függvények}{12}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {8.4.1}Preferencia-függetlenség: }{12}{}%
 \select@language {english} \contentsline {paragraph}{Példa:}{12}{}%
 \select@language {english} \contentsline {paragraph}{Példa:}{12}{}%
-\select@language {english} \contentsline {paragraph}{Definíció: }{12}{}%
-\select@language {english} \contentsline {paragraph}{Kölcsönös preferencia függetlenség: }{12}{}%
+\select@language {english} \contentsline {paragraph}{Definíció: }{13}{}%
+\select@language {english} \contentsline {paragraph}{Kölcsönös preferencia függetlenség: }{13}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {8.4.2}Kétdimenziós eset}{13}{}%
 \select@language {english} \contentsline {paragraph}{Egyszerűsítési feltétel: }{13}{}%
 \select@language {english} \contentsline {paragraph}{Thomsen feltétel:}{13}{}%
@@ -56,12 +56,12 @@
 \select@language {english} \contentsline {paragraph}{Def:}{14}{}%
 \select@language {english} \contentsline {paragraph}{Definíció: }{14}{}%
 \select@language {english} \contentsline {paragraph}{Kvázi additivitási tétel}{14}{}%
-\select@language {english} \contentsline {subsection}{\numberline {8.6}Multiplikatív értékelő függvények}{14}{}%
+\select@language {english} \contentsline {subsection}{\numberline {8.6}Multiplikatív értékelő függvények}{15}{}%
 \select@language {english} \contentsline {paragraph}{$K$ skálázási konstans meghatározása 2D ($n=2$) esetben:}{15}{}%
 \select@language {english} \contentsline {subsection}{\numberline {8.7}Értékelő függvények megkonstruálása}{15}{}%
 \select@language {english} \contentsline {paragraph}{Jelölések:}{15}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {8.7.1}Többtényezős értékelőfüggvény}{15}{}%
-\select@language {english} \contentsline {paragraph}{Hipotézisek alakra vonatkozó tesztekből:}{15}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {8.7.1}Többtényezős értékelőfüggvény}{16}{}%
+\select@language {english} \contentsline {paragraph}{Hipotézisek alakra vonatkozó tesztekből:}{16}{}%
 \select@language {english} \contentsline {paragraph}{Konstruálás: }{16}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {8.7.2}Egydimenziós értékelőfüggvény}{16}{}%
 \select@language {english} \contentsline {section}{\numberline {9}Döntés bizonytalanság mellet (sztochasztikus modellek)}{17}{}%
@@ -70,14 +70,14 @@
 \select@language {english} \contentsline {subsection}{\numberline {9.2}Döntés a pénzérték alapján}{18}{}%
 \select@language {english} \contentsline {paragraph}{Pesszimista, maximin kritérium:}{18}{}%
 \select@language {english} \contentsline {paragraph}{Optimista, maximax kritérium:}{18}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.3}Döntés a valószínűségérték alapján}{18}{}%
-\select@language {english} \contentsline {paragraph}{Maximum likelihood kritérium: }{18}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.3}Döntés a valószínűségérték alapján}{19}{}%
+\select@language {english} \contentsline {paragraph}{Maximum likelihood kritérium: }{19}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.4}Döntés a várható pénzérték alapján}{19}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.5}Döntés az elmulasztott nyereség alapján}{19}{}%
 \select@language {english} \contentsline {paragraph}{Pesszimista döntéshozó:}{19}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.6}Döntés a várható elmulasztott nyereség alapján}{19}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.7}Döntés a rendelkezésre álló információ alapján}{19}{}%
-\select@language {english} \contentsline {paragraph}{A tökéletes információ várható pénzértéke: }{19}{}%
+\select@language {english} \contentsline {paragraph}{A tökéletes információ várható pénzértéke: }{20}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.8}Döntés nem tökéletes információ alapján}{20}{}%
 \select@language {english} \contentsline {paragraph}{A nem tökéletes információ várható pénzértéke: }{21}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.9}Döntés döntési fa eljárás alapján}{21}{}%

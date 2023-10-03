@@ -326,7 +326,9 @@ Ahhoz, hogy $v$-t megkonstruáljuk a $\succeq$-nak gyenge rendezésnek kell lenn
 \end{itemize}
 Következmények:  $\sim$ is tranzitív lesz. Tehát a \textbf{$\sim$ ekvivalencia reláció} (reflexív, tranzitív, szimmetrikus). Ennek köszönhetően $\sim$ \textbf{indifferencia osztály}okat generál $A$ felett (azok az alternatívák, amik ugyanolyan jók, azonos indifferencia osztályba sorolhatók).
 
-Az \textbf{indifferencia osztályok halmaza megszámlálható}: ez azt jelenti, hogy az alternatívák véges sok osztályba sorolhatóak.
+Az \textbf{indifferencia osztályok halmaza megszámlálható}: ez azt jelenti, hogy az alternatívák véges sok osztályba sorolhatóak. Ennek a következménye, hogy a természetes számokat felhasználhatjuk az osztályok jelölésére.
+
+Felmerül a kérdés, hogy milyen az, ha az indifferencia osztályok halmaza nem megszámlálható? Például, amennyiben tökéletesen osztható javak tartoznak az infifferencia osztályokba, melyeknek tovább osztásával újabb osztályok hozhatóak létre.
 
 Minden adott $v$ létezéséhez.
 
@@ -373,14 +375,14 @@ Ha gyengítjük a feltételt akkor is megkaphatjuk $v$ létezését.
 Legyen a feltételünk az, hogy $\exists B$ az indifferencia osztályok egy részhalmaza, amelyre teljesül:
 \begin{itemize}
 \item $B$ megszámlálható,
-\item $\forall A_1, A_2$ indifferencia osztály részhalmazra: $\exists C \in B$, hogy $A_1 \succ C \succ A_2$ (tehát sűrű a $\succ$ rendezésre). 
+\item $\forall A_1, A_2$ indifferencia osztály részhalmazra: $\exists C \in B$, hogy ha $A_1 \succ A_2$ akkor $A_1 \succ C \succ A_2$ (tehát sűrű a $\succ$ rendezésre). 
 \end{itemize}
 Ekkor teljesül $v$ létezése. Összefoglalva ez annyit jelent, hogy ha létezik olyan véges indifferencia osztályok részhalmaza, amihez megadható olyan rendezés, ami egyértelműen rendezni tudja az ezen a részhalmazon túli indifferencia osztályokat is, akkor létezik hozzá értékelő függvény. (Ez egy jó dolog!)
 
 \paragraph{Speciális eset: A n dimenziós vektortér. } Tehát $\forall a \in A$ alternatíva $x^{(a)}_1, ... , x^{(a)}_n$ komponenssel (tulajdonság) jellemzett és a $\succeq$ reláció egy gyenge rendezés az $A$ halmaz elemeire. Ebben az esetben az alábbi két feltétel teljesülése esetén garantált $v$ létezése: 
 
 \begin{itemize}
-\item monotonitási (dominancia) feltétel: ha $a$ tulajdonságonként mindenben legalább olyan jó, mint $b$, de legalább 1 tulajdonságban szigorú egyenlőtlenség áll fenn akkor $a \succ b$.
+\item monotonitási (dominancia) feltétel: ha $a$ tulajdonságonként mindenben legalább olyan jó, mint $b$, de legalább 1 tulajdonságban szigorú preferencia áll fenn $a$ javára akkor $a \succ b$.
 \item folytonossági feltétel: $\forall a,b,c \in A$, ahol $a \succ b \succ c \Rightarrow$  $\exists k \in (0,1): b \sim k \cdot a + (1-k) \cdot c$
 \end{itemize}
 Továbbiakban ezt a speciális esetét vizsgáljuk.
