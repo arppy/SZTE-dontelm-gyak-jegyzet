@@ -687,7 +687,7 @@ Az infláció lehetséges alakulása:
 \end{tabular}
 \end{center}
 
-Az államkötvény esetén 9 év utána az eredeti összeget kapnánk vissza, viszont mivel jelen esetben a 5 év után visszaváltjuk (a jelenlegi visszaváltási feltételt feltételezve) ezért az eredeti összeg 1$\%$-kal csökkentett értékét kapjuk (az 5. év forduló nap előtti utolsó nap visszaváltva az utolsó évi kamat-1$\%$-kal számolhatunk). A lakást ugyanígy 5 év múlva értékesítjük, így ebben az esetben is további hozamhoz juthatunk. Amennyiben az infláció tartósan magas marad ($s_1$), akkor ehhez jó eséllyel a magas kamatkörnyzet, drága lakáshitelek és a történelmi példák alapján a lakásárak oldalazására lehet számítani. Tehát ebben az esetben ugyanannyiért tudjuk eladni, mint amennyiért megvettük. A másik esetben ($s_2$), ha az infláció a vizsgált 5 év végére mérséklődik, akkor az első évek oldalazása után egy hirtelen 50$\%$-os emelkedés várható.
+Az államkötvény esetén 9 év utána az eredeti összeget kapnánk vissza, viszont mivel jelen esetben a 5 év után visszaváltjuk (a jelenlegi visszaváltási feltételt feltételezve) ezért az eredeti összeg 1$\%$-kal csökkentett értékét kapjuk (az 5. év forduló nap előtti utolsó nap visszaváltva az utolsó évi kamat minusz 1$\%$-kal számolhatunk). A lakást ugyanígy 5 év múlva értékesítjük, így ebben az esetben is további hozamhoz juthatunk. Amennyiben az infláció tartósan magas marad ($s_1$), akkor ehhez jó eséllyel a magas kamatkörnyzet, drága lakáshitelek és a történelmi példák alapján a lakásárak oldalazására lehet számítani. Tehát ebben az esetben ugyanannyiért tudjuk eladni, mint amennyiért megvettük. A másik esetben ($s_2$), ha az infláció a vizsgált 5 év végére mérséklődik, akkor az első évek oldalazása után egy hirtelen 50$\%$-os emelkedés várható.
 
 Az ingatlant továbbá olyan szerződéssel szeretnénk bérbe adni, amelyben garantáltan az előző évi infláció mértékében növekvő lakbért várunk el. A második esetben ($s_2$) sikerül ilyen bérlőt találnunk, akinek megfelel a feltétel. Viszont amennyiben tartósan magas marad az infláció, akkor nem sikerül ilyen szerződést kötnünk és nem nőnek a lakásárak sem. Így ebben az esetben végig a kezdő 3.4$\%$-kal számolunk.
 
@@ -767,6 +767,8 @@ $P(s_1) = 0.55 , P(s_2) = 0.45$ szubjektív valószínűségi értékek (becslé
 \subsection{Dominancia módszer}
 \label{susec:domi}
 Amennyiben egy alternatíva minden esemény bekövetkezése esetén jobb értékekkel rendelkezik, mint egy másik, akkor dominálja azt és a dominált alternatíva elhagyható.
+
+A fenti példában nincs ilyen alternatíva.
 
 \subsection{Döntés a pénzérték alapján}
 \label{susec:penzert}
@@ -873,7 +875,8 @@ $VPRI(a_2) = 0.55\cdot 55.35 + 0.45\cdot 51.15 = 53.46$
 %$VPRI = max\{VPRI(a_1), VPRI(a_2)\} = 10.65$
 $VPRI = max\{VPRI(a_1), VPRI(a_2)\} = 53.46$
 
-\paragraph{A tökéletes információ várható pénzértéke: } ha élne egy jós, aki meg tudná mondani, hogy milyen lesz az infláció, %elindul-e a beruházás,
+\subsection{A tökéletes információ várható pénzértéke} 
+Ha élne egy jós, aki meg tudná mondani, hogy milyen lesz az infláció, %elindul-e a beruházás,
 akkor ennek az információnak mekkora a várható pénzértéke?
 (Mennyit érdemes fizetni a tökéletes információért cserébe?)
 Feltevés: a jós által mondott esemény biztosan bekövetkezik.
