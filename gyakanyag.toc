@@ -1,131 +1,131 @@
-\select@language {english} \contentsline {section}{\numberline {1}Bevezetés - Többtényezős döntések}{3}{}%
-\select@language {english} \contentsline {subsection}{\numberline {1.1}Egy jellemző döntési feladat - lakásvásárlási probléma}{3}{}%
-\select@language {english} \contentsline {subsection}{\numberline {1.2}Alapfogalmak}{3}{}%
-\select@language {english} \contentsline {paragraph}{Alternatívák:}{3}{}%
-\select@language {english} \contentsline {paragraph}{Kritériumok:}{3}{}%
-\select@language {english} \contentsline {paragraph}{Többtényezős döntési problémák:}{3}{}%
-\select@language {english} \contentsline {paragraph}{Döntéshozó:}{3}{}%
-\select@language {english} \contentsline {section}{\numberline {2}Bevezetés - Lineáris programozás}{4}{}%
-\select@language {english} \contentsline {paragraph}{Többcélú programozási feladat: }{4}{}%
-\select@language {english} \contentsline {paragraph}{ Egy példa feladat: }{4}{}%
-\select@language {english} \contentsline {paragraph}{ Optimum-fogalom: }{4}{}%
-\select@language {english} \contentsline {section}{\numberline {3}Bevezetés - Döntési folyamat:}{5}{}%
-\select@language {english} \contentsline {section}{\numberline {4}Bevezetés - Döntéstámogató rendszerek (DSS):}{5}{}%
-\select@language {english} \contentsline {paragraph}{Eszközök: }{5}{}%
-\select@language {english} \contentsline {section}{\numberline {5}Bevezetés - Csoportos döntések:}{5}{}%
-\select@language {english} \contentsline {paragraph}{Szavazási eljárások}{6}{}%
-\select@language {english} \contentsline {paragraph}{Megkövetelt tulajdonságok: }{6}{}%
-\select@language {english} \contentsline {paragraph}{Arrow-tétel:}{6}{}%
-\select@language {english} \contentsline {section}{\numberline {6}Eliminációs módszerek}{6}{}%
-\select@language {english} \contentsline {subsection}{\numberline {6.1}Dominancia módszer}{7}{}%
-\select@language {english} \contentsline {paragraph}{Dominált alternatíva:}{7}{}%
-\select@language {english} \contentsline {subsection}{\numberline {6.2}Kielégítésre törekvő módszer}{7}{}%
-\select@language {english} \contentsline {subsection}{\numberline {6.3}Diszjunkt módszer}{7}{}%
-\select@language {english} \contentsline {section}{\numberline {7}Elemi döntési módszerek (determinisztikus modellekre)}{7}{}%
-\select@language {english} \contentsline {paragraph}{Problémák az eddigi ábrázolással:}{7}{}%
-\select@language {english} \contentsline {paragraph}{Szubjektív értékelések számszerűsítése:}{8}{}%
-\select@language {english} \contentsline {paragraph}{Skála meghatározása:}{8}{}%
-\select@language {english} \contentsline {paragraph}{Normalizálás:}{8}{}%
-\select@language {english} \contentsline {subsection}{\numberline {7.1}Lexikografikus módszer}{9}{}%
-\select@language {english} \contentsline {subsection}{\numberline {7.2}Maximin módszer (pesszimista döntéshozó)}{9}{}%
-\select@language {english} \contentsline {subsection}{\numberline {7.3}Maximax módszer (optimista döntéshozó)}{9}{}%
-\select@language {english} \contentsline {subsection}{\numberline {7.4}Súlyozásos módszer}{9}{}%
-\select@language {english} \contentsline {section}{\numberline {8}Értékelő függvények}{9}{}%
-\select@language {english} \contentsline {paragraph}{Preferencia reláció: }{9}{}%
-\select@language {english} \contentsline {paragraph}{Értékelő függvény: }{10}{}%
-\select@language {english} \contentsline {subsection}{\numberline {8.1}Preferenciareláció tulajdonságai}{10}{}%
-\select@language {english} \contentsline {paragraph}{További relációk bevezetése:}{10}{}%
-\select@language {english} \contentsline {paragraph}{Definícióból adódó fontos tulajdonságaik:}{10}{}%
-\select@language {english} \contentsline {subsection}{\numberline {8.2}Értékelő függvény létezése}{11}{}%
-\select@language {english} \contentsline {paragraph}{Tulajdonságok:}{11}{}%
-\select@language {english} \contentsline {paragraph}{A fenti tétel, túl szigorú az indifferencia osztályok megszámlálhatóságáról.}{11}{}%
-\select@language {english} \contentsline {paragraph}{Speciális eset: A n dimenziós vektortér. }{11}{}%
-\select@language {english} \contentsline {subsection}{\numberline {8.3}Értékelő függvények dekompozíciós alakjai}{11}{}%
-\select@language {english} \contentsline {paragraph}{Speciális dekomponálható preferencia struktúrák:}{12}{}%
-\select@language {english} \contentsline {subsection}{\numberline {8.4}Additív értékelő függvények}{12}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {8.4.1}Preferencia-függetlenség: }{12}{}%
-\select@language {english} \contentsline {paragraph}{Példa:}{12}{}%
-\select@language {english} \contentsline {paragraph}{Példa:}{12}{}%
+\select@language {english} \contentsline {section}{\numberline {1}Bevezetés - Többtényezős döntések}{1}{}%
+\select@language {english} \contentsline {subsection}{\numberline {1.1}Egy jellemző döntési feladat - lakásvásárlási probléma}{1}{}%
+\select@language {english} \contentsline {subsection}{\numberline {1.2}Alapfogalmak}{2}{}%
+\select@language {english} \contentsline {paragraph}{Alternatívák:}{2}{}%
+\select@language {english} \contentsline {paragraph}{Kritériumok:}{2}{}%
+\select@language {english} \contentsline {paragraph}{Többtényezős döntési problémák:}{2}{}%
+\select@language {english} \contentsline {paragraph}{Döntéshozó:}{2}{}%
+\select@language {english} \contentsline {section}{\numberline {2}Bevezetés - Lineáris programozás}{2}{}%
+\select@language {english} \contentsline {paragraph}{Többcélú programozási feladat: }{2}{}%
+\select@language {english} \contentsline {paragraph}{ Egy példa feladat: }{2}{}%
+\select@language {english} \contentsline {paragraph}{ Optimum-fogalom: }{3}{}%
+\select@language {english} \contentsline {section}{\numberline {3}Bevezetés - Döntési folyamat:}{3}{}%
+\select@language {english} \contentsline {section}{\numberline {4}Bevezetés - Döntéstámogató rendszerek (DSS):}{3}{}%
+\select@language {english} \contentsline {paragraph}{Eszközök: }{4}{}%
+\select@language {english} \contentsline {section}{\numberline {5}Bevezetés - Csoportos döntések:}{4}{}%
+\select@language {english} \contentsline {paragraph}{Szavazási eljárások}{4}{}%
+\select@language {english} \contentsline {paragraph}{Megkövetelt tulajdonságok: }{4}{}%
+\select@language {english} \contentsline {paragraph}{Arrow-tétel:}{4}{}%
+\select@language {english} \contentsline {section}{\numberline {6}Eliminációs módszerek}{5}{}%
+\select@language {english} \contentsline {subsection}{\numberline {6.1}Dominancia módszer}{5}{}%
+\select@language {english} \contentsline {paragraph}{Dominált alternatíva:}{5}{}%
+\select@language {english} \contentsline {subsection}{\numberline {6.2}Kielégítésre törekvő módszer}{5}{}%
+\select@language {english} \contentsline {subsection}{\numberline {6.3}Diszjunkt módszer}{6}{}%
+\select@language {english} \contentsline {section}{\numberline {7}Elemi döntési módszerek (determinisztikus modellekre)}{6}{}%
+\select@language {english} \contentsline {paragraph}{Problémák az eddigi ábrázolással:}{6}{}%
+\select@language {english} \contentsline {paragraph}{Szubjektív értékelések számszerűsítése:}{6}{}%
+\select@language {english} \contentsline {paragraph}{Skála meghatározása:}{7}{}%
+\select@language {english} \contentsline {paragraph}{Normalizálás:}{7}{}%
+\select@language {english} \contentsline {subsection}{\numberline {7.1}Lexikografikus módszer}{7}{}%
+\select@language {english} \contentsline {subsection}{\numberline {7.2}Maximin módszer (pesszimista döntéshozó)}{7}{}%
+\select@language {english} \contentsline {subsection}{\numberline {7.3}Maximax módszer (optimista döntéshozó)}{7}{}%
+\select@language {english} \contentsline {subsection}{\numberline {7.4}Súlyozásos módszer}{8}{}%
+\select@language {english} \contentsline {section}{\numberline {8}Értékelő függvények}{8}{}%
+\select@language {english} \contentsline {paragraph}{Preferencia reláció: }{8}{}%
+\select@language {english} \contentsline {paragraph}{Értékelő függvény: }{8}{}%
+\select@language {english} \contentsline {subsection}{\numberline {8.1}Preferenciareláció tulajdonságai}{8}{}%
+\select@language {english} \contentsline {paragraph}{További relációk bevezetése:}{8}{}%
+\select@language {english} \contentsline {paragraph}{Definícióból adódó fontos tulajdonságaik:}{8}{}%
+\select@language {english} \contentsline {subsection}{\numberline {8.2}Értékelő függvény létezése}{9}{}%
+\select@language {english} \contentsline {paragraph}{Tulajdonságok:}{9}{}%
+\select@language {english} \contentsline {paragraph}{A fenti tétel, túl szigorú az indifferencia osztályok megszámlálhatóságáról.}{9}{}%
+\select@language {english} \contentsline {paragraph}{Speciális eset: A n dimenziós vektortér. }{10}{}%
+\select@language {english} \contentsline {subsection}{\numberline {8.3}Értékelő függvények dekompozíciós alakjai}{10}{}%
+\select@language {english} \contentsline {paragraph}{Speciális dekomponálható preferencia struktúrák:}{10}{}%
+\select@language {english} \contentsline {subsection}{\numberline {8.4}Additív értékelő függvények}{10}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {8.4.1}Preferencia-függetlenség: }{10}{}%
+\select@language {english} \contentsline {paragraph}{Példa:}{10}{}%
+\select@language {english} \contentsline {paragraph}{Példa:}{11}{}%
+\select@language {english} \contentsline {paragraph}{Definíció: }{11}{}%
+\select@language {english} \contentsline {paragraph}{Kölcsönös preferencia függetlenség: }{11}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {8.4.2}Kétdimenziós eset}{11}{}%
+\select@language {english} \contentsline {paragraph}{Egyszerűsítési feltétel: }{11}{}%
+\select@language {english} \contentsline {paragraph}{Thomsen feltétel:}{11}{}%
+\select@language {english} \contentsline {subsection}{\numberline {8.5}Kvázi additív értékelő függvények}{12}{}%
+\select@language {english} \contentsline {paragraph}{A kvázi additív alak jó tulajdonságai: }{12}{}%
+\select@language {english} \contentsline {paragraph}{Def:}{12}{}%
 \select@language {english} \contentsline {paragraph}{Definíció: }{13}{}%
-\select@language {english} \contentsline {paragraph}{Kölcsönös preferencia függetlenség: }{13}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {8.4.2}Kétdimenziós eset}{13}{}%
-\select@language {english} \contentsline {paragraph}{Egyszerűsítési feltétel: }{13}{}%
-\select@language {english} \contentsline {paragraph}{Thomsen feltétel:}{13}{}%
-\select@language {english} \contentsline {subsection}{\numberline {8.5}Kvázi additív értékelő függvények}{13}{}%
-\select@language {english} \contentsline {paragraph}{A kvázi additív alak jó tulajdonságai: }{13}{}%
-\select@language {english} \contentsline {paragraph}{Def:}{14}{}%
-\select@language {english} \contentsline {paragraph}{Definíció: }{14}{}%
-\select@language {english} \contentsline {paragraph}{Kvázi additivitási tétel}{14}{}%
-\select@language {english} \contentsline {subsection}{\numberline {8.6}Multiplikatív értékelő függvények}{15}{}%
-\select@language {english} \contentsline {paragraph}{$K$ skálázási konstans meghatározása 2D ($n=2$) esetben:}{15}{}%
-\select@language {english} \contentsline {subsection}{\numberline {8.7}Értékelő függvények megkonstruálása}{15}{}%
-\select@language {english} \contentsline {paragraph}{Jelölések:}{15}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {8.7.1}Többtényezős értékelőfüggvény}{16}{}%
-\select@language {english} \contentsline {paragraph}{Hipotézisek alakra vonatkozó tesztekből:}{16}{}%
-\select@language {english} \contentsline {paragraph}{Konstruálás: }{16}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {8.7.2}Egydimenziós értékelőfüggvény}{16}{}%
-\select@language {english} \contentsline {section}{\numberline {9}Döntés bizonytalanság mellet (sztochasztikus modellek)}{17}{}%
-\select@language {english} \contentsline {paragraph}{Feladat:}{17}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.1}Dominancia módszer}{18}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.2}Döntés a pénzérték alapján}{18}{}%
-\select@language {english} \contentsline {paragraph}{Pesszimista, maximin kritérium:}{18}{}%
-\select@language {english} \contentsline {paragraph}{Optimista, maximax kritérium:}{18}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.3}Döntés a valószínűségérték alapján}{19}{}%
-\select@language {english} \contentsline {paragraph}{Maximum likelihood kritérium: }{19}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.4}Döntés a várható pénzérték alapján}{19}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.5}Döntés az elmulasztott nyereség alapján}{19}{}%
-\select@language {english} \contentsline {paragraph}{Pesszimista döntéshozó:}{19}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.6}Döntés a várható elmulasztott nyereség alapján}{19}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.7}Döntés a rendelkezésre álló információ alapján}{19}{}%
-\select@language {english} \contentsline {paragraph}{A tökéletes információ várható pénzértéke: }{20}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.8}Döntés nem tökéletes információ alapján}{20}{}%
-\select@language {english} \contentsline {paragraph}{A nem tökéletes információ várható pénzértéke: }{21}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.9}Döntés döntési fa eljárás alapján}{21}{}%
-\select@language {english} \contentsline {paragraph}{Előkészületek: }{22}{}%
-\select@language {english} \contentsline {paragraph}{Eljárás: }{22}{}%
-\select@language {english} \contentsline {section}{\numberline {10}Multi-attribute utility theory --- Hasznosság függvény}{23}{}%
-\select@language {english} \contentsline {paragraph}{Lottery}{24}{}%
-\select@language {english} \contentsline {paragraph}{Preferenciarendezés: }{24}{}%
-\select@language {english} \contentsline {paragraph}{Várható hasznosságfüggvény:}{24}{}%
-\select@language {english} \contentsline {paragraph}{Döntési szabály megalkotása $\rightarrow $ Bernoulli elv: }{24}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.1}Axiómarendszerek (Neumann-Morgenstern)}{24}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.1.1}1. Axióma}{24}{}%
-\select@language {english} \contentsline {paragraph}{A kockázatos lehetőségek $A^p$ halmazán értelmezett $\succeq $ preferencia reláció gyenge rendezés (reflexivitás, tranzitivitás, teljesség).}{24}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.1.2}2. Axióma}{24}{}%
-\select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \rightarrow \forall \alpha \in (0,1): a_p \succ (\alpha \cdot a_p , (1-\alpha )\cdot a_q ) \succ a_q$.}{24}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.1.3}2'. Axióma - Függetlenségi axióma (Fishburn 1970)}{24}{}%
-\select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \rightarrow \forall \alpha \in (0,1): (\alpha \cdot a_p , (1-\alpha )\cdot a_r ) \succ (\alpha \cdot a_q , (1-\alpha )\cdot a_r )$ .}{24}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.1.4}3. Axióma - Folytonossági axióma}{25}{}%
-\select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \succ a_r \rightarrow \exists \alpha ,\beta \in (0,1): (\alpha \cdot a_p , (1-\alpha )\cdot a_r ) \succ a_q \succ (\beta \cdot a_p , (1-\beta )\cdot a_r ) $ .}{25}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.1.5}4. Axióma}{25}{}%
-\select@language {english} \contentsline {paragraph}{$\forall \alpha \in [0,1]: (\alpha \cdot a_p , (1-\alpha )\cdot a_q ) \sim ((1-\alpha )\cdot a_q ,\alpha \cdot a_p )$ . }{25}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.1.6}5. Axióma - Redukciós szabály}{25}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.2}Hasznosság függvény létezése és előállítása}{25}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.2.1}Létezési tétel: }{25}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.2.2}Fontos tulajdonság: }{25}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.2.3}Bizonyítás: }{25}{}%
-\select@language {english} \contentsline {paragraph}{1. Feltétel: bizonyossági egyenérték}{25}{}%
-\select@language {english} \contentsline {paragraph}{2. Feltétel: helyettesítés}{25}{}%
-\select@language {english} \contentsline {paragraph}{3. Feltétel: redukálhatóság}{26}{}%
-\select@language {english} \contentsline {paragraph}{4. Feltétel: összehasonlíthatóság}{26}{}%
-\select@language {english} \contentsline {paragraph}{A feltételek teljesülése esetén az Axiómák is teljesülnek.}{26}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.2.4}Következmények: }{26}{}%
-\select@language {english} \contentsline {paragraph}{A feltételekből megkonstruálható a hasznosságfüggvény: }{26}{}%
-\select@language {english} \contentsline {paragraph}{Az így megadott $u$ teljesíti a létezési feltételeket: }{26}{}%
-\select@language {english} \contentsline {paragraph}{$u$ olyan alakú, hogy megfelel a Bernoulli-elvnek:}{27}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.3}Egydimenziós hasznosság függvények előállítása~- bizonyossági egyenértékes módszer}{27}{}%
-\select@language {english} \contentsline {paragraph}{Jelölés: }{28}{}%
-\select@language {english} \contentsline {paragraph}{Feladat: }{28}{}%
-\select@language {english} \contentsline {paragraph}{Az információ ára fejezetnél ismertetett példa hasznosságfüggvény előállítására}{28}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.4}Kockázati magatartás}{29}{}%
-\select@language {english} \contentsline {paragraph}{Jelölés: }{29}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.5}Többtényezős hasznosság függvény létezése és előállítása}{30}{}%
-\select@language {english} \contentsline {subsubsection}{\numberline {10.5.1}Függetlenségi tesztek}{30}{}%
-\select@language {english} \contentsline {paragraph}{Értékfüggetlenség}{30}{}%
-\select@language {english} \contentsline {paragraph}{Hasznosságfüggetlenség}{30}{}%
-\select@language {english} \contentsline {paragraph}{Preferenciafüggetlenség}{30}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.6}Additív és multiplikatív hasznosságfüggvény}{31}{}%
-\select@language {english} \contentsline {paragraph}{A közös alak: kvázi additív hasznosságfüggvény (kifejezhető belőle az additív és a multiplikatív hasznosságfüggvény)}{31}{}%
-\select@language {english} \contentsline {paragraph}{$K$ skálázási konstans meghatározása 2D ($n=2$) esetben:}{31}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.7}Előállítás}{32}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.8}A hasznossági elmélet felvetéseinek magatartáselméleti kritikái}{32}{}%
+\select@language {english} \contentsline {paragraph}{Kvázi additivitási tétel}{13}{}%
+\select@language {english} \contentsline {subsection}{\numberline {8.6}Multiplikatív értékelő függvények}{13}{}%
+\select@language {english} \contentsline {paragraph}{$K$ skálázási konstans meghatározása 2D ($n=2$) esetben:}{13}{}%
+\select@language {english} \contentsline {subsection}{\numberline {8.7}Értékelő függvények megkonstruálása}{14}{}%
+\select@language {english} \contentsline {paragraph}{Jelölések:}{14}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {8.7.1}Többtényezős értékelőfüggvény}{14}{}%
+\select@language {english} \contentsline {paragraph}{Hipotézisek alakra vonatkozó tesztekből:}{14}{}%
+\select@language {english} \contentsline {paragraph}{Konstruálás: }{14}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {8.7.2}Egydimenziós értékelőfüggvény}{14}{}%
+\select@language {english} \contentsline {section}{\numberline {9}Döntés bizonytalanság mellet (sztochasztikus modellek)}{15}{}%
+\select@language {english} \contentsline {paragraph}{Feladat:}{15}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.1}Dominancia módszer}{16}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.2}Döntés a pénzérték alapján}{16}{}%
+\select@language {english} \contentsline {paragraph}{Pesszimista, maximin kritérium:}{16}{}%
+\select@language {english} \contentsline {paragraph}{Optimista, maximax kritérium:}{17}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.3}Döntés a valószínűségérték alapján}{17}{}%
+\select@language {english} \contentsline {paragraph}{Maximum likelihood kritérium: }{17}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.4}Döntés a várható pénzérték alapján}{17}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.5}Döntés az elmulasztott nyereség alapján}{17}{}%
+\select@language {english} \contentsline {paragraph}{Pesszimista döntéshozó:}{17}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.6}Döntés a várható elmulasztott nyereség alapján}{17}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.7}Döntés a rendelkezésre álló információ alapján}{18}{}%
+\select@language {english} \contentsline {paragraph}{A tökéletes információ várható pénzértéke: }{18}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.8}Döntés nem tökéletes információ alapján}{18}{}%
+\select@language {english} \contentsline {paragraph}{A nem tökéletes információ várható pénzértéke: }{19}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.9}Döntés döntési fa eljárás alapján}{19}{}%
+\select@language {english} \contentsline {paragraph}{Előkészületek: }{20}{}%
+\select@language {english} \contentsline {paragraph}{Eljárás: }{21}{}%
+\select@language {english} \contentsline {section}{\numberline {10}Multi-attribute utility theory --- Hasznosság függvény}{21}{}%
+\select@language {english} \contentsline {paragraph}{Lottery}{22}{}%
+\select@language {english} \contentsline {paragraph}{Preferenciarendezés: }{22}{}%
+\select@language {english} \contentsline {paragraph}{Várható hasznosságfüggvény:}{22}{}%
+\select@language {english} \contentsline {paragraph}{Döntési szabály megalkotása $\rightarrow $ Bernoulli elv: }{22}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.1}Axiómarendszerek (Neumann-Morgenstern)}{22}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.1.1}1. Axióma}{22}{}%
+\select@language {english} \contentsline {paragraph}{A kockázatos lehetőségek $A^p$ halmazán értelmezett $\succeq $ preferencia reláció gyenge rendezés (reflexivitás, tranzitivitás, teljesség).}{22}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.1.2}2. Axióma}{22}{}%
+\select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \rightarrow \forall \alpha \in (0,1): a_p \succ (\alpha \cdot a_p , (1-\alpha )\cdot a_q ) \succ a_q$.}{22}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.1.3}2'. Axióma - Függetlenségi axióma (Fishburn 1970)}{23}{}%
+\select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \rightarrow \forall \alpha \in (0,1): (\alpha \cdot a_p , (1-\alpha )\cdot a_r ) \succ (\alpha \cdot a_q , (1-\alpha )\cdot a_r )$ .}{23}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.1.4}3. Axióma - Folytonossági axióma}{23}{}%
+\select@language {english} \contentsline {paragraph}{$a_p$ $\succ $ $a_q \succ a_r \rightarrow \exists \alpha ,\beta \in (0,1): (\alpha \cdot a_p , (1-\alpha )\cdot a_r ) \succ a_q \succ (\beta \cdot a_p , (1-\beta )\cdot a_r ) $ .}{23}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.1.5}4. Axióma}{23}{}%
+\select@language {english} \contentsline {paragraph}{$\forall \alpha \in [0,1]: (\alpha \cdot a_p , (1-\alpha )\cdot a_q ) \sim ((1-\alpha )\cdot a_q ,\alpha \cdot a_p )$ . }{23}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.1.6}5. Axióma - Redukciós szabály}{23}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.2}Hasznosság függvény létezése és előállítása}{23}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.2.1}Létezési tétel: }{23}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.2.2}Fontos tulajdonság: }{23}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.2.3}Bizonyítás: }{23}{}%
+\select@language {english} \contentsline {paragraph}{1. Feltétel: bizonyossági egyenérték}{23}{}%
+\select@language {english} \contentsline {paragraph}{2. Feltétel: helyettesítés}{24}{}%
+\select@language {english} \contentsline {paragraph}{3. Feltétel: redukálhatóság}{24}{}%
+\select@language {english} \contentsline {paragraph}{4. Feltétel: összehasonlíthatóság}{24}{}%
+\select@language {english} \contentsline {paragraph}{A feltételek teljesülése esetén az Axiómák is teljesülnek.}{24}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.2.4}Következmények: }{24}{}%
+\select@language {english} \contentsline {paragraph}{A feltételekből megkonstruálható a hasznosságfüggvény: }{24}{}%
+\select@language {english} \contentsline {paragraph}{Az így megadott $u$ teljesíti a létezési feltételeket: }{25}{}%
+\select@language {english} \contentsline {paragraph}{$u$ olyan alakú, hogy megfelel a Bernoulli-elvnek:}{25}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.3}Egydimenziós hasznosság függvények előállítása~- bizonyossági egyenértékes módszer}{25}{}%
+\select@language {english} \contentsline {paragraph}{Jelölés: }{26}{}%
+\select@language {english} \contentsline {paragraph}{Feladat: }{26}{}%
+\select@language {english} \contentsline {paragraph}{Az információ ára fejezetnél ismertetett példa hasznosságfüggvény előállítására}{26}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.4}Kockázati magatartás}{27}{}%
+\select@language {english} \contentsline {paragraph}{Jelölés: }{27}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.5}Többtényezős hasznosság függvény létezése és előállítása}{28}{}%
+\select@language {english} \contentsline {subsubsection}{\numberline {10.5.1}Függetlenségi tesztek}{28}{}%
+\select@language {english} \contentsline {paragraph}{Értékfüggetlenség}{28}{}%
+\select@language {english} \contentsline {paragraph}{Hasznosságfüggetlenség}{28}{}%
+\select@language {english} \contentsline {paragraph}{Preferenciafüggetlenség}{28}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.6}Additív és multiplikatív hasznosságfüggvény}{29}{}%
+\select@language {english} \contentsline {paragraph}{A közös alak: kvázi additív hasznosságfüggvény (kifejezhető belőle az additív és a multiplikatív hasznosságfüggvény)}{29}{}%
+\select@language {english} \contentsline {paragraph}{$K$ skálázási konstans meghatározása 2D ($n=2$) esetben:}{29}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.7}Előállítás}{30}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.8}A hasznossági elmélet felvetéseinek magatartáselméleti kritikái}{30}{}%
