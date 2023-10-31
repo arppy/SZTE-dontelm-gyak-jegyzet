@@ -1043,6 +1043,8 @@ A hasznosságelméletben az alternatívák lehetséges bizonytalan kimenetelű j
 
 Példa lotteryre: kérdés a döntéshozóhoz: Melyik játékban venne részt szívesebben? (Vagy másképp megfogalmazva: mi a preferenciája?) $90\%$-os eséllyel nyer 12 dollárt és $10\%$-os eséllyel nem nyer semmit. Vagy $1\%$-os eséllyel nyer 1 millió dollárt, $99\%$-os eséllyel nem nyer semmit.
 
+Az előző fejezetben olyan speciális esetet néztünk, ahol mindkét alternatívára azonos esemény volt hatással. Ez most ennél általánosabb, az egyes alternatívákhoz független események és így független valószínűségek tartozhatnak.
+
 %Tehát sarkosan fogalmazva annyit jelent a lottery, hogy a döntéshozó mennyit hajlandó kockáztatni az alternatíva adott értékéért cserébe.
 
 \paragraph{Preferenciarendezés: } lotteryk felett definiáljuk. Az így megadott preferencia struktúra felhasználható a hasznosságfüggvény megkonstruáláshoz. %Ez a preferenciamegadás hasonló az előadásokból megismert példákkal. (például 98$\%$ valószínűséggel 520.000 dollár vagy 100$\%$ valószínűséggel 500.000 dollár ??). 
@@ -1052,15 +1054,11 @@ Példa lotteryre: kérdés a döntéshozóhoz: Melyik játékban venne részt sz
 %$u: C \rightarrow \mathbb{R}$,
 %,  $U: A \rightarrow \mathbb{R}$, stb.
 
-\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } $A^p$ elemeihez meghatározzuk a várható értékét (ismerjük a valószínűségeket, és az értékeket), majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $u(a_{p_k})= \sum_{s_k \in S} P(s_k)\cdot v(c_{jk}) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: $VPRI=max(u(a_{p_k}))$, várható pénzérték alapján döntünk).
+\paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } A döntéshozó preferenciarendezését a lotterykhez tartozó várható pénzérték által kijelölt sorrend határozza meg. Tehát Bernoulli szerint $A^p$ elemeihez meghatározzuk a várható értékét, majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $u(a_{p_k})= \sum_{s_k \in S} P(s_k)\cdot v(c_{jk}) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: $VPRI=max(u(a_{p_k}))$, várható pénzérték alapján döntünk).
 
+Példa: $u(a_p)= 0.9\cdot 12 + 0.1\cdot 0 = 10.8$ és $u(a_q)= 0.9\cdot 1000000 + 0.1\cdot 0 = 900000$. Ezek közül az $a_q$ lotteryhez tartozó érték a maximális így ezt preferáljuk. (Ebben az esetben nem alkalmaztuk a $u$ értékelő függvényt, de ha az értékeket normalizáljuk, és ezt tekintenénk értékelésnek, akkor is ezen eredményre jutnánk a döntés szempontjából.)
 
-
- % $\mathbb{E} (a_j) = 
-
-Példa: $u(a_p)= 0.9\cdot 12 + 0.1\cdot 0 = 10,8$ és $u(a_q)= 0.9\cdot 1000000 + 0.1\cdot 0 = 900000$. Ezek közül az $a_q$ lotteryhez tartozó érték a maximális így ezt preferáljuk. (Ebben az esetben nem alkalmaztuk a $u$ értékelő függvényt, de ha az értékeket normalizáljuk, és ezt tekintenénk értékelésnek, akkor is ezen eredményre jutnánk a döntés szempontjából.)
-
-\subsection{Axiómarendszerek (Neumann-Morgenstern)} 
+\subsection{Axiómarendszerek (Neumann-Morgenstern 1947)} 
 %\subsubsection{1. Axióma}
 %\paragraph{A kockázatos lehetőségek $A^p$ halmazán értelmezett $\succeq$ preferencia reláció gyenge rendezés.}
 

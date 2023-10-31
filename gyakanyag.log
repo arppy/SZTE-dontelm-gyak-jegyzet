@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.2)  24 OCT 2023 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.2)  31 OCT 2023 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,21 +570,21 @@ ni egy olyan f^^?uggv^^Senyt, amely ag-greg^^Salja az ^^?osszes v^^Selem^^Seny^
  []
 
 [23 <./dectree05-eps-converted-to.pdf>] [24] [25]
-Overfull \hbox (9.26938pt too wide) in paragraph at lines 1173--1174
+Overfull \hbox (9.26938pt too wide) in paragraph at lines 1171--1172
  \OT1/cmr/bx/n/12 A felt^^Setelekb}ol megkon-stru^^Salhat^^So a hasznoss^^Sagf^
 ^?uggv^^Seny: [] \OT1/cmr/m/n/10.95 Az els}o felt^^Setelnek k^^?osz^^?onhet}oen
 
  []
 
 [26]
-Overfull \hbox (11.30821pt too wide) in paragraph at lines 1218--1219
+Overfull \hbox (11.30821pt too wide) in paragraph at lines 1216--1217
 []\OT1/cmr/m/n/10.95 Ism^^Setelj^^?uk min-den is-mert kimenetelre ($\OML/cmm/m/
 it/10.95 c[]$\OT1/cmr/m/n/10.95 ): vegy^^?uk az adott kimenetelt bi-zonyoss^^Sa
 gi egyen^^Sert^^Sekk^^Sent
  []
 
-
-Overfull \hbox (21.35643pt too wide) in paragraph at lines 1239--1240
+[27]
+Overfull \hbox (21.35643pt too wide) in paragraph at lines 1237--1238
 []\OT1/cmr/bx/n/10.95 A d^^?ont^^Seshoz^^Soval t^^?ort^^Sent egyeztet^^Ses, dia
 l^^Sogus sor^^San keletkez}o v^^Salaszok fogj^^Sak meghat^^Sarozni
  []
@@ -597,15 +597,15 @@ Package epstopdf Info: Source file: <utilmake.eps>
 (epstopdf)                    size: 18044 bytes
 (epstopdf)             Command: <repstopdf --outfile=utilmake-eps-converted-to.
 pdf utilmake.eps>
-(epstopdf)             \includegraphics on input line 1243.
+(epstopdf)             \includegraphics on input line 1241.
 Package epstopdf Info: Output file is already uptodate.
-<utilmake-eps-converted-to.pdf, id=119, 394.47375pt x 320.19624pt>
+<utilmake-eps-converted-to.pdf, id=122, 394.47375pt x 320.19624pt>
 File: utilmake-eps-converted-to.pdf Graphic file (type pdf)
 <use utilmake-eps-converted-to.pdf>
-Package pdftex.def Info: utilmake-eps-converted-to.pdf  used on input line 1243
+Package pdftex.def Info: utilmake-eps-converted-to.pdf  used on input line 1241
 .
 (pdftex.def)             Requested size: 276.12973pt x 224.13583pt.
-[27] [28 <./utilmake-eps-converted-to.pdf>]
+[28 <./utilmake-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <kockazat.eps>
 (epstopdf)                    date: 2021-11-26 07:28:44
 (epstopdf)                    size: 38532 bytes
@@ -614,23 +614,23 @@ Package epstopdf Info: Source file: <kockazat.eps>
 (epstopdf)                    size: 18795 bytes
 (epstopdf)             Command: <repstopdf --outfile=kockazat-eps-converted-to.
 pdf kockazat.eps>
-(epstopdf)             \includegraphics on input line 1329.
+(epstopdf)             \includegraphics on input line 1327.
 Package epstopdf Info: Output file is already uptodate.
 <kockazat-eps-converted-to.pdf, id=129, 345.29pt x 270.00874pt>
 File: kockazat-eps-converted-to.pdf Graphic file (type pdf)
 <use kockazat-eps-converted-to.pdf>
-Package pdftex.def Info: kockazat-eps-converted-to.pdf  used on input line 1329
+Package pdftex.def Info: kockazat-eps-converted-to.pdf  used on input line 1327
 .
 (pdftex.def)             Requested size: 241.70134pt x 189.00482pt.
-
-Overfull \hbox (10.11833pt too wide) in paragraph at lines 1342--1343
+ [29 <./kockazat-eps-converted-to.pdf>]
+Overfull \hbox (10.11833pt too wide) in paragraph at lines 1340--1341
 \OT1/cmr/m/n/10.95 T^^?obbt^^Senyez}os hasznoss^^Sag f^^?uggv^^Seny az ^^Sert^^
 Sekel}o f^^?uggv^^Senyhez ha-sonl^^Soan a dekom-poz^^S^^Pci^^Sos alakok vizsg^^
 Salat^^Sat
  []
 
-[29 <./kockazat-eps-converted-to.pdf>]
-Overfull \hbox (17.41377pt too wide) in paragraph at lines 1350--1351
+
+Overfull \hbox (17.41377pt too wide) in paragraph at lines 1348--1349
  []\OT1/cmr/bx/n/12 Ert^^Sekf^^?uggetlens^^Seg[] \OT1/cmr/m/n/10.95 Legyen $\OM
 L/cmm/m/it/10.95 T \OT1/cmr/m/n/10.95 = (\OML/cmm/m/it/10.95 X[]; :::; X[]\OT1/
 cmr/m/n/10.95 )$ t^^Senyez}ohalmaz. $\OML/cmm/m/it/10.95 T$ \OT1/cmr/m/n/10.95 
@@ -638,7 +638,7 @@ t^^Senyez}or^^Seszhalmazai \OT1/cmr/m/it/10.95 ^^Sert^^Sek-f^^?uggetlenek
  []
 
 [30] [31]
-Overfull \hbox (15.61588pt too wide) in paragraph at lines 1467--1468
+Overfull \hbox (15.61588pt too wide) in paragraph at lines 1465--1466
 []\OT1/cmr/m/n/10.95 Az ^^?osszetev}o egy-di-menzi^^Sos ^^Sert^^Sekel}o f^^?ugg
 v^^Senyek megkon-stru^^Sal^^Sasa, bi-zonyoss^^Sagi egyen^^Sert^^Sekes m^^Sodsze
 r
@@ -671,7 +671,7 @@ ic/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
 /share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-di
 st/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on gyakanyag.pdf (32 pages, 521871 bytes).
+Output written on gyakanyag.pdf (32 pages, 522177 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams
