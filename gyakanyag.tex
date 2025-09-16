@@ -160,10 +160,10 @@ A fenti szempontok szerint nekiálltunk lakást keresni és végül a következ�
 \begin{tabular}{c||c|c|c|c|c}
  & $X_1$& $X_2$& $X_3$& $X_4$& $X_5$ \\
  \hline
- $A_1$&25  &98 & lepukkant & közepes & lakáson belül \\
- $A_2$&50  &56 & új& kiemelkedően jó& fedett \\
- $A_3$&45  &120 & újszerű & kifejezetten rossz& nyitott udvaron \\
- $A_4$&52  &56 & új& kiemelkedően jó& fedett \\
+ $A_1$&68  &98 & lepukkant & közepes & lakáson belül \\
+ $A_2$&74  &56 & új& kiemelkedően jó& fedett \\
+ $A_3$&138  &120 & újszerű & kifejezetten rossz& nyitott udvaron \\
+ $A_4$&76  &56 & új& kiemelkedően jó& fedett \\
 \end{tabular}
 \end{center}
 
@@ -183,7 +183,7 @@ Minden célhoz meghatározunk egy \emph{kielégítési szintet}. Ez lényegében
 
 Az előző módszer kifordítva. Nem egy minden szempontból megbízható alternatívát keresünk, hanem olyat ami valamilyen (akár több) szempontból kiemelkedő. Módszer: minden szemponthoz meghatározzuk azt a szintet (\textbf{elegendőségi feltétel}), amelynél ha egy alternatíva jobb értékkel bír, akkor bent marad az alternatívák halmazában. Ha egy szempont szerint sem kiemelkedő, akkor elvetjük. Ebben az esetben is szűkítjük az alternatívák halmazát és nem egyetlen legjobbat keresünk (eliminációs módszer).
 
-Példa: 30 millió forint alatti ingatlanokat kiemelkedően jó értékűnek tartjuk. A 70 m$^2$-hez képest legfeljebb 15 m$^2$-rel eltérő ingatlanokat kiemelkedően jó alapterületűnek tartjuk. ...
+Példa: 50 millió forint alatti ingatlanokat kiemelkedően jó értékűnek tartjuk. A 70 m$^2$-hez képest legfeljebb 15 m$^2$-rel eltérő ingatlanokat kiemelkedően jó alapterületűnek tartjuk. ...
 
 
 \section{Elemi döntési módszerek (determinisztikus modellekre)}
@@ -223,10 +223,10 @@ A lakás méretének egyirányú skálára való felfűzése több lehetséges m
 \begin{tabular}{c||c|c|c|c|c}
  & $X_1$& $X_2$& $X_3$& $X_4$& $X_5$ \\
  \hline
- $A_1$&25  &28 & 0.3 & 0.56 & 0.1 \\
- $A_2$&50  &14 & 0.9 & 0.97& 0.9 \\
- $A_3$&45  &50 & 0.6 & 0.12& 0.5 \\
- $A_4$&52  &14 & 0.9 & 0.97& 0.9 \\
+ $A_1$&68  &28 & 0.3 & 0.56 & 0.1 \\
+ $A_2$&74  &14 & 0.9 & 0.97& 0.9 \\
+ $A_3$&138  &50 & 0.6 & 0.12& 0.5 \\
+ $A_4$&76  &14 & 0.9 & 0.97& 0.9 \\
 
 \end{tabular}
 \end{center}
@@ -250,13 +250,13 @@ Maximum és minimum meghatározása:
 \begin{center}
 \begin{tabular}{c||c|c|c|c|c}
  & $X_1$& $X_2$& $X_3$& $X_4$& $X_5$ \\
-  &\small{$max=100,$}&\small{$max=70,$}	&		&		&	\\
- &\small{$min=10$}&\small{$min=0$}	&		&		& \\
+  &\small{$max=150,$}&\small{$max=70,$}	&		&		&	\\
+ &\small{$min=20$}&\small{$min=0$}	&		&		& \\
  \hline
- $A_1$&0.83  &0.6 &  0.3 & 0.56 & 0.1 \\
- $A_2$&0.56  &0.8 & 0.9 & 0.97 & 0.9 \\
- $A_3$&0.61  &0.29 & 0.6 & 0.12 & 0.5 \\
- $A_4$&0.53  &0.8 & 0.9 & 0.97 & 0.9 \\
+ $A_1$&0.63  &0.6 &  0.3 & 0.56 & 0.1 \\
+ $A_2$&0.58  &0.8 & 0.9 & 0.97 & 0.9 \\
+ $A_3$&0.09  &0.29 & 0.6 & 0.12 & 0.5 \\
+ $A_4$&0.57  &0.8 & 0.9 & 0.97 & 0.9 \\
 \end{tabular}
 \end{center}
 
@@ -264,26 +264,37 @@ Maximum és minimum meghatározása:
 
 A célok között fontossági sorrendet állítunk fel. Ezután választjuk a legfontosabb szempontot, megnézzük, hogy eldönti-e az alternatívák választását. Ha egy kiemelkedik akkor azt választjuk, ha nem akkor folytatjuk a második legfontosabb döntéssel mindaddig, míg egyetlen alternatíva nem marad.
 
-Pl: legfontosabb szempont, hogy a biciklitárolási lehetőség, második pedig a lakás ára. Ebben az esetben a legfontosabb cél szerint két alternatíva marad, de a lakás ára alapján már egyértelműen lehet dönteni a fennmaradó két alternatíva közül.
+Pl: legfontosabb szempont a biciklitárolási lehetőség, második pedig a lakás ára. Ebben az esetben a legfontosabb cél szerint két alternatíva marad, de a lakás ára alapján már egyértelműen lehet dönteni a fennmaradó két alternatíva közül.
 
 \subsection{Maximin módszer (pesszimista döntéshozó)}
 
 Az értékek azonos, normalizált skálán vannak. Minden alternatívához megkeresi a felvett leggyengébb értéket és azok közül kiválasztja a legjobbat.
 
-A példában az utolsó alternatíva legrosszabb értéke 0.53, az $A1$-é 0.1, az $A2$-é 0.56, míg az $A3$-é 0.12, így ezeknek a maximuma 0.56, ezért az $A2$ alternatívát választjuk.
+A példában az utolsó alternatíva legrosszabb értéke 0.57, az $A1$-é 0.1, az $A2$-é 0.58, míg az $A3$-é 0.12, így ezeknek a maximuma 0.58, ezért az $A2$ alternatívát választjuk.
 
 \subsection{Maximax módszer (optimista döntéshozó)}
 
 Minden alternatívához megkeresi a felvett legjobb értéket és ezek közül kiválasztja a legjobbat.
 
-A példában az $A1$ alternatíva maximális értéke 0.83, az $A2$-é és az  $A_4$-é  0.97, míg az $A3$-é 0.61. Mivel több alternatíva maradt ezért közülük az eddigi kritériumok letakarásával a következő maximális érték mentén próbálunk dönteni, mindaddig, míg nem lesz egyértelmű legjobb alternatíva. Az ár szerint már egyértelmű döntést tudunk hozni: $A_2$.
+A példában az $A1$ alternatíva maximális értéke 0.63, az $A2$-é és az  $A_4$-é  0.97, míg az $A3$-é 0.61.
+
+Mivel több alternatíva maradt ezért közülük az eddigi kritériumok letakarásával a következő maximális érték mentén próbálunk dönteni,
+mindaddig, míg nem lesz egyértelmű legjobb alternatíva. Az ár szerint már egyértelmű döntést tudunk hozni: $A_2$.
 
 
 \subsection{Súlyozásos módszer}
 
-Minden kritériumhoz meghatározunk egy súlyt és elvárjuk, hogy a súlyok összege 1 legyen. Majd a súlyozott összegek alapján a maximális értékű alternatívát választjuk. 
+Minden kritériumhoz meghatározunk egy súlyt és elvárjuk, hogy a súlyok összege 1 legyen.
+Majd a súlyozott összegek alapján a maximális értékű alternatívát választjuk.
 
-Például legyen a döntéshozó akarata alapján az $X_1$-hez tartozó súly 0.5, míg az $X_2$, $X_3$, $X_4$-hez 0.1, illetve az $X_5$-höz 0.2. A súlyok összege 1, tehát megfelelő súlyozást adott meg a döntéshozó. Ezek alapján kiszámoljuk az egyes alternatívákhoz kapcsolódó súlyozott összegeket. Az $A_1$ alternatíva esetében $0.5\cdot0.83+0.1\cdot0.6+0.1\cdot0.3+0.1\cdot0.56+0.2\cdot0.1$, ami 0.581. Az $A_2$ esetében ugyanez 0.727, az $A_3$ esetében 0.506, míg $A_4$ esetében 0.712. Mivel a maximális értéket az $A_2$ veszi fel, ezért ezt az alternatívát választjuk. 
+Például legyen a döntéshozó akarata alapján az $X_1$-hez tartozó súly 0.5, míg az $X_2$, $X_3$, $X_4$-hez 0.1, illetve az $X_5$-höz 0.2.
+A súlyok összege 1, tehát megfelelő súlyozást adott meg a döntéshozó.
+Ezek alapján kiszámoljuk az egyes alternatívákhoz kapcsolódó súlyozott összegeket.
+Az $A_1$ alternatíva esetében $0.5\cdot0.63+0.1\cdot0.6+0.1\cdot0.3+0.1\cdot0.56+0.2\cdot0.1$, ami 0.481.
+Az $A_2$ esetében ugyanez 0.737,
+az $A_3$ esetében 0.246, %0.5×0.09+0.1×0.29+0.1×0.6+0.1×0.12+0.2×0.5
+míg $A_4$ esetében 0.732. %0.5×0.57+0.1×0.8+0.1×0.9+0.1×0.97+0.2×0.9
+Mivel a maximális értéket az $A_2$ veszi fel, ezért ezt az alternatívát választjuk.
 
 
 \

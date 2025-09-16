@@ -52,7 +52,7 @@
 \select@language {english} \contentsline {paragraph}{Egyszerűsítési feltétel: }{13}{}%
 \select@language {english} \contentsline {paragraph}{Thomsen feltétel:}{13}{}%
 \select@language {english} \contentsline {subsection}{\numberline {8.5}Kvázi additív értékelő függvények}{13}{}%
-\select@language {english} \contentsline {paragraph}{A kvázi additív alak jó tulajdonságai: }{13}{}%
+\select@language {english} \contentsline {paragraph}{A kvázi additív alak jó tulajdonságai: }{14}{}%
 \select@language {english} \contentsline {paragraph}{Def:}{14}{}%
 \select@language {english} \contentsline {paragraph}{Definíció: }{14}{}%
 \select@language {english} \contentsline {paragraph}{Kvázi additivitási tétel}{14}{}%
