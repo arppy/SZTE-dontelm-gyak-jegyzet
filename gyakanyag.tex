@@ -339,13 +339,15 @@ Következmények:  $\sim$ is tranzitív lesz. Tehát a \textbf{$\sim$ ekvivalenc
 
 Az \textbf{indifferencia osztályok halmaza megszámlálható}: ez azt jelenti, hogy az alternatívák véges sok osztályba sorolhatóak. Ennek a következménye, hogy a természetes számokat felhasználhatjuk az osztályok jelölésére.
 
-Felmerül a kérdés, hogy milyen az, ha az indifferencia osztályok halmaza nem megszámlálható? Például, amennyiben tökéletesen osztható javak tartoznak az infifferencia osztályokba, melyeknek tovább osztásával újabb osztályok hozhatóak létre.
+Felmerül a kérdés, hogy milyen az, ha az indifferencia osztályok halmaza nem megszámlálható?
+Például, amennyiben tökéletesen osztható javak tartoznak az infifferencia osztályokba, melyeknek tovább osztásával újabb osztályok hozhatóak létre.
 
 Minden adott $v$ létezéséhez.
 
 \subsection{Értékelő függvény létezése}
 
-Ha a $\succeq$ reláció gyenge rendezés az $A$ halmaz elemeire vonatkozóan, és az indifferencia osztályok halmaza megszámlálható $\Rightarrow \exists v: A \rightarrow \mathbb{R} $, ahol $\forall(a,b) \in A$ teljesül, hogy 
+Ha a $\succeq$ reláció gyenge rendezés az $A$ halmaz elemeire vonatkozóan, és az indifferencia osztályok halmaza megszámlálható
+$\Rightarrow \exists v: A \rightarrow \mathbb{R} $, ahol $\forall(a,b) \in A$ teljesül, hogy
 \begin{itemize}
 \item $a \succeq b \Leftrightarrow$  $v(a) \geq v(b)$, (vagy
 \item $a \succ b \Leftrightarrow v(a) > v(b)$, és $a \sim  b \Leftrightarrow v(a) = v(b).$)
@@ -390,19 +392,32 @@ Legyen a feltételünk az, hogy $\exists B$ az indifferencia osztályok egy rés
 \end{itemize}
 Ekkor teljesül $v$ létezése. Összefoglalva ez annyit jelent, hogy ha létezik olyan véges indifferencia osztályok részhalmaza, amihez megadható olyan rendezés, ami egyértelműen rendezni tudja az ezen a részhalmazon túli indifferencia osztályokat is, akkor létezik hozzá értékelő függvény. (Ez egy jó dolog!)
 
-\paragraph{Speciális eset: A n dimenziós vektortér. } Tehát $\forall a \in A$ alternatíva $x^{(a)}_1, ... , x^{(a)}_n$ komponenssel (tulajdonság) jellemzett és a $\succeq$ reláció egy gyenge rendezés az $A$ halmaz elemeire. Ebben az esetben az alábbi két feltétel teljesülése esetén garantált $v$ létezése: 
-
+\paragraph{Speciális eset: A n dimenziós vektortér. }
+Tehát $\forall a \in A$ alternatíva $x_1, ... , x_n$ komponenssel (tulajdonság) jellemzett.
+Ekkor $v: \mathbb{R}^n \rightarrow \mathbb{R}$ lesz.
+Feltesszük továbbra is, hogy a $\succeq$ reláció egy gyenge rendezés az $A$ halmaz elemeire.
+És ebben az esetben az alábbi két további feltétel teljesülése esetén garantált $v$ létezése:
 \begin{itemize}
-\item monotonitási (dominancia) feltétel: ha $a$ tulajdonságonként mindenben legalább olyan jó, mint $b$, de legalább 1 tulajdonságban szigorú preferencia áll fenn $a$ javára akkor $a \succ b$.
-\item folytonossági feltétel: $\forall a,b,c \in A$, ahol $a \succ b \succ c \Rightarrow$  $\exists k \in (0,1): b \sim k \cdot a + (1-k) \cdot c$
+\item monotonitási feltétel:
+$\forall a,b \in A$ alternatíva, amely $x_1, ... , x_n$ és $y_1, ... , y_n$ komponenssel jellemzett,
+teljesül, hogy $x_i \geq y_i$ ($\forall i = 1, ... , n$) és legalább egy $j$ esetén pedig
+$x_j \geq y_j$ $\Rightarrow a \succ b$.
+Tehát ha $a$ kritériumonként mindenben legalább olyan jó,
+mint $b$ és létezik legalább egy kritérium, amiben $a$ egyértelműen jobb, mint $b$,
+akkor szigorú preferenciának kell fennállnia $a$ javára: $a \succ b$.
+\item folytonossági feltétel: $\forall a,b,c \in A$, ahol $a \succ b \succ c \Rightarrow$  $\exists k \in (0,1): b \sim k \cdot a + (1-k) \cdot c$.
+Erre azért van szükség, mert a valós függvényeknek folytonosnak kell lennie $\mathbb{R}^n$-en, ezért a kis változások az
+alternatívákban nem vezethetnek hirtelen, ugrásszerű változáshoz a preferenciákban.
 \end{itemize}
 Továbbiakban ezt a speciális esetét vizsgáljuk.
 
 \subsection{Értékelő függvények dekompozíciós alakjai}
 
-\textbf{Def: } Preferencia struktúra \textbf{dekomponálható}, ha $\exists v_1: X_1 \rightarrow \mathbb{R}$, ..., $v_n: X_n \rightarrow \mathbb{R}$ és $\exists v: A \rightarrow \mathbb{R}$ függvények, hogy $\forall a^\prime, a^{\prime\prime} \in A: a^\prime  \succeq  a^{\prime\prime} \Leftrightarrow $
+\textbf{Def: } Preferencia struktúra \textbf{dekomponálható}, ha
+$\exists v_1: X_1 \rightarrow \mathbb{R}$, ..., $v_n: X_n \rightarrow \mathbb{R}$ és $\exists v: A \rightarrow \mathbb{R}$ függvények, hogy
+$\forall a, b \in A: a \succeq  b \Leftrightarrow $
 \begin{equation}
-v(x^{(\prime)}_1, .., x^{(\prime)}_n)=v[v_1(x^{(\prime)}_1), ..., v_n(x^{(\prime)}_n)] \geq v(x^{(\prime\prime)}_1, .., x^{(\prime\prime)}_n)=v[v_1(x^{(\prime\prime)}_1), ..., v_n(x^{(\prime\prime)}_n)]
+v(x_1, .., x_n)=v[v_1(x_1), ..., v_n(x_n)] \geq v(y_1, .., y_n)=v[v_1(y_1), ..., v_n(y_n)]
 \end{equation}
 
 \paragraph{Speciális dekomponálható preferencia struktúrák:}
