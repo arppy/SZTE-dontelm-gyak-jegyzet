@@ -454,9 +454,13 @@ Legyen $a=(x_1, ... , x_n) \in A$. Ekkor a preferencia struktúra \textbf{addit�
 \end{tabular}
 \end{center}
 
-Tegyük fel, hogy valaki nyáron a fagyit, télen a sütit részesíti előnyben akkor: (fagyi, nyár) $\succeq$ (süti, nyár) 
-$\Rightarrow$
-(süti, tél) $\succeq$ (fagyi, tél). Ekkor azt mondjuk, hogy az édesség preferenciafüggő az évszaktól. \textbf{Ez fordítva nem feltétlenül mondható ki.} NEM SZIMMETRIKUS. Pl: (nyár, fagyi) $\succeq$ (tél, fagyi), de (nyár, süti) $\succeq$ (tél, süti). Tehát az évszak preferenciafüggetlen az édességtől.
+Tegyük fel, hogy valaki nyáron a fagyit, télen a sütit részesíti előnyben akkor:
+(fagyi, nyár) $\succeq$ (süti, nyár) $\Rightarrow$ nem teljesül, hogy (fagyi, tél) $\succeq$ (süti, tél),
+ugyanis (süti, tél) $\succeq$ (fagyi, tél).
+Ekkor azt mondjuk, hogy az édesség preferenciafüggő az évszaktól.
+\textbf{De ez fordítva nem feltétlenül mondható ki.} NEM SZIMMETRIKUS.
+Pl: (nyár, fagyi) $\succeq$ (tél, fagyi), és (nyár, süti) $\succeq$ (tél, süti).
+Tehát az évszak preferenciafüggetlen az édességtől.
 
 
 \paragraph{Példa:}  $T=$(íz,édesség,évszak)
@@ -476,7 +480,8 @@ $\Rightarrow$
 \end{tabular}
 \end{center}
 
-Ebben az esetben viszont feltesszük azt, hogy függetlenül az évszaktól és az édesség típusától a csokisat preferáljuk a vaníliással szemben. Tehát: (csoki, süti) $\succeq$ (vanília, süti) $\Rightarrow$ (csoki, fagyi) $\succeq$ (vanília, fagyi) és (csoki, nyár) $\succeq$ (vanília, nyár) $\Rightarrow$ (csoki, tél) $\succeq$ (vanília, tél). Ekkor az íz preferenciafüggetlen a többi kritériumtól. 
+Ebben az esetben viszont feltesszük azt, hogy függetlenül az évszaktól és az édesség típusától a csokisat preferáljuk a vaníliással szemben.
+Tehát: (csoki, süti) $\succeq$ (vanília, süti) $\Rightarrow$ (csoki, fagyi) $\succeq$ (vanília, fagyi) és (csoki, nyár) $\succeq$ (vanília, nyár) $\Rightarrow$ (csoki, tél) $\succeq$ (vanília, tél). Ekkor az íz preferenciafüggetlen a többi kritériumtól.
 
 
 \paragraph{Definíció: } Legyen $T=(X_1,...,X_m)$ tényezőhalmaz, $C \subseteq T$ tényezőrészhalmaz,  $C^* \subseteq T $ komplementerhalmaz. Ekkor $C$ preferencia független $C^*$-tól $\Leftrightarrow$ ha $\forall x_C, y_C \in X_C:$  egy tetszőleges $x_{C^{*}}^0 \in X_{C^*}$  esetén teljesül minden más $ x_{C^{*}} \in X_{C^*}$ -re, hogy:
@@ -696,96 +701,46 @@ Az eljárást minden $X_k \in X$ tényezőre végrehajtjuk:
 
 Sztochasztikus döntési modell esetében a vizsgálat értékeink kibővülnek a természet egyes állapotainak valószínűségével ($s_k$). \textbf{Kockázatos döntések.}
 
-\paragraph{Feladat:} Tegyük fel, hogy rendelkezünk 35 millió forinttal, melyet szeretnénk úgy befektetni, hogy a lehető legnagyobb hozamunk legyen a következő 5 évre. Bizonytalan eseményként vizsgáljuk az infláció alakulását.
+\paragraph{Feladat:} Tegyük fel, hogy rendelkezünk egy USA gazdaságnak erősen kitett részvényportfólióval.
+Aminek a hozama várhatóan negatívan korrelál egy esetleges USA recesszióval.
+A részvény portfólió egészét most nem részletezzük és nem összegezzük a feladat másik érdemi részével,
+mindez a motiváció érthetősége miatt került bele a feladatba.
+Ezért a feladat egyszerűsítése kedvért az alábbi 100\$ készpénz befektetését vizsgáljuk.
+A célunk, hogy a rendelkezésünkre álló készpénzzel (100\$) olyan befektetést tegyünk,
+ami USA recesszió esetén ellensúlyozza a részvényportfólión elért veszteségünket.
 
-A feladat egyszerűsége kedvéért két lehetőség közül választunk: ingatlan befektetés ($a_1$) vagy infláció követő állampapír ($a_2$). Mindkét esetben a teljes összeget elköltjük a befektetésre. A feladat során az infláció alakulása alapján vizsgáljuk, hogy mennyi pénzünk lesz a vizsgált az időszak végére.
+Erre a Polymarket-et fogjuk használni, ahol a \("\)US recession by end of 2026?\("\) játékban veszünk részt.
+Ez egy olyan játék, amiben ha \("\)Igen\("\)-t választjuk, akkor az aktuális árfolyamnak megfelelően a teljesülés esetén
+megnyerjük a \("\)Nem\("\) játékban résztvevők pénzét, veszteség esetén pedig elvesztünk mindent
+(átadjuk a befektetett összeget a a \("\)Nem\("\) játékban résztvevőnek).
 
-Az államkötvény esetében tegyük fel, hogy 0.25$\%$ kamatprémiumot fizet az infláción felül (az adott évben mindig az eggyel korábbi év inflációjára számoljuk ezt). Az éves lakbér legyen az adózás után az ingatlan vásárlási értékének a 3.4$\%$-a (1.2 millió forint). Tegyük fel, hogy a lakbér adózáson kívül nincs további költsége az ingatlan üzemeltetésének. Továbbá az egyszerűség kedvéért tegyük fel, hogy a megkapott kamatot illetve lakbért nem fektetjük be újra.
+Tegyük fel, hogy az első alternatívánk az, hogy mind a 100\$-ból \("\)Igen\("\)-t veszünk.
+Ekkor a Figure~\ref{fig:polyusarecession} alapján 250.04\$-t kapunk 2026 végén, amennyiben tényleg recesszió lesz.
+Elveszítjük a 100\$-t, ha nem lesz recesszió.
+Lehetőségünk van a pénz egy részéből rövid kötvényt venni, amely rész mindkét esetben várhatóan 3\% kamatot fizet.
+Legyen a második alternatívánk, hogy 20\$-ból veszünk \("\)Igen\("\)-t és a maradék 80\$-ból pedig rövid kötvényt.
+A 80\$ rövid kötvény 2.40\$ kamatot fizet 2026 végéig.
+Növekedés esetén csak a kötvényre fordított névérték és a kamat marad meg, recesszió esetén ezen felül az \("\)Igen\("\)-re
+51.72\$-t kapunk a Polymarketen (összesen 134.12\$).
 
-Az infláció lehetséges alakulása:
-\begin{center}
-\begin{tabular}{c||r|r|r|r|r|r|}
-      & 2022 & 2023  & 2024  & 2025 & 2026  \\
- \hline
- $s_1$&14.5$\%$&18.4$\%$& 9$\%$ & 9$\%$ & 7$\%$\\
- $s_2$&14.5$\%$&17.4$\%$& 6$\%$ & 4.5$\%$ & 3.5$\%$ \\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.3]{PolymarketUSARecession2025-10-07.png}
+    \caption{Polymarket USA recesszió 2026 végig (2025.10.07.-én.)}
+    \label{fig:polyusarecession}
+\end{figure}
 
-\end{tabular}
-\end{center}
-
-Az államkötvény esetén 9 év utána az eredeti összeget kapnánk vissza, viszont mivel jelen esetben a 5 év után visszaváltjuk (a jelenlegi visszaváltási feltételt feltételezve) ezért az eredeti összeg 1$\%$-kal csökkentett értékét kapjuk (az 5. év forduló nap előtti utolsó nap visszaváltva az utolsó évi kamat minusz 1$\%$-kal számolhatunk). A lakást ugyanígy 5 év múlva értékesítjük, így ebben az esetben is további hozamhoz juthatunk. Amennyiben az infláció tartósan magas marad ($s_1$), akkor ehhez jó eséllyel a magas kamatkörnyzet, drága lakáshitelek és a történelmi példák alapján a lakásárak oldalazására lehet számítani. Tehát ebben az esetben ugyanannyiért tudjuk eladni, mint amennyiért megvettük. A másik esetben ($s_2$), ha az infláció a vizsgált 5 év végére mérséklődik, akkor az első évek oldalazása után egy hirtelen 50$\%$-os emelkedés várható.
-
-Az ingatlant továbbá olyan szerződéssel szeretnénk bérbe adni, amelyben garantáltan az előző évi infláció mértékében növekvő lakbért várunk el. A második esetben ($s_2$) sikerül ilyen bérlőt találnunk, akinek megfelel a feltétel. Viszont amennyiben tartósan magas marad az infláció, akkor nem sikerül ilyen szerződést kötnünk és nem nőnek a lakásárak sem. Így ebben az esetben végig a kezdő 3.4$\%$-kal számolunk.
-
-
-Ezeket összegezve az infláció lehetséges alakulása mellett az éves bevételeink a befektetés százalékában:
-\begin{center}
-\begin{tabular}{c c||r|r|r|r|r||r}
-    &  & 2023& 2024  & 2025  & 2026 & 2027 & összesen \\
- \hline
- $s_1$&$a_1$&3.40$\%$&3.40$\%$&3.40$\%$&3.40$\%$&3.40$\%$ & 17.00$\%$ \\
- $s_2$&$a_1$&3.89$\%$&4.57$\%$&4.84$\%$&5.06$\%$&55.24$\%$ & 73.60$\%$ \\
- \hline
- $s_1$&$a_2$&14.75$\%$&18.65$\%$&9.25$\%$ & 9.25$\%$& 6.25 $\%$ & 58.15$\%$ \\
- $s_2$&$a_2$&14.75$\%$&17.65$\%$&6.25 $\%$ & 4.75$\%$ & 2.75 $\%$ & 46.15$\%$ \\
-
-\end{tabular}
-\end{center}
-
-
-
-%\paragraph{Feladat:} Rendelkezünk 10 millió forint befektetésre szánt pénzzel, melyet szeretnénk úgy befektetni, hogy a lehető legnagyobb reálhozamunk legyen. Bizonytalan eseményként vizsgáljuk az infláció alakulását.
-
-%Magas infláció mellett történelmi adatok alapján érdemes bankok részvényeit megvásárolni. A történelmi adatokon kívül könnyen számolható éves nyereséget okoz a bankok számára a magas %inflációs környezet. Egyik lehetséges alternatívánk, hogy megvesszük a rendelkezésre álló keretből egyetlen, tetszőleges bank részvényét. A jelenlegi feladatban feltesszük, hogy kezdő %tőzsdei befektetők vagyunk, nem diverzifikálunk, egyetlen vásárlás. Ennek köszönhetően valami benyomás alapján választunk egy bankot. Ebből fakadóan tegyük fel, hogy nem sikerült a %legjobban teljesítő bank részvényét kiválasztani, illetve hogy magas áron sikerült megvenni a részvényt. Ennek eredményeképpen alacsonyabb inflációs környezet esetén az első évben 10$\%%$-ot veszítünk, míg ha az infláció tartósan magas lesz, akkor a kalkulációink alapján várhatóan éves szinten 20$\%$ reálnyereségünk lehet (inflálódást, mindenféle utalási, %részvényvásárlási, adózási költséget mindkét esetben beleszámítva, illetve a különböző valutaváltási és valutánként eltérő infláció mértékkel, vagy bármi további részlettel a feladat %egyszerűsítése kedvéért most nem foglalkozunk).
-%
-%A másik lehetséges alternatívánk a Magyar Állampapír Plusz megvásárlása, amely 5 évre 4.95$\%$ kamatot tud nyújtani. Amennyiben 5$\%$ körüli magas infláció lesz, akkor az első évben %0.05$\%$-os reálérték veszteségünk lesz, míg amennyiben az infláció mérséklődik 2$\%$ körüli szintre, akkor 2.95$\%$ reálhozamunk lehet.
-%
-%Melyik befektetést válasszuk?
-%
-%\begin{center}
-%\begin{tabular}{l|c|c}
-%\multirow{2}{*}{\bf Cselekvési lehetőségek } &  \multicolumn{2}{c}{ \bf Események }\\
-% & $s_1=$ magas infláció (5$\%$) & $s_2=$ alacsony infláció (2$\%$) \\
-%\hline
-%  $a_1=$ egy bank részvény & 12 & 9 \\
-%  $a_2=$ MÁP & 9.995 & 10.295 \\
-%\end{tabular}
-%\end{center}
-%$P(s_1) = 0.55 , P(s_2) = 0.45$ szubjektív valószínűségi értékek (becslések).
-
-
-%\paragraph{Feladat:} Befektetési feladat: rendelkezünk 12 millió forint befektetésre szánt pénzzel. Két befektetési lehetőségen gondolkozunk: vehetünk belőle 10 ha jó minőségű termőföldet, vagy az aktuális alapkamaton elérhető banki lekötést választjuk.
-
-%A termőföld vásárlása esetén egyrészt a termőföld éves bérbeadásából származó nyereséget könyvelhetjük el, másrészt a jó minőségéből és a piaci környezetből adódóan évről-évre folyamatosan emelkedik az értéke. A példában egy év alatt 2 millió forint nyereség várható.
-
-%A környéken nem megoldott a kellő hulladékkezelés. Ennek köszönhetően várhatóan egy hulladéklerakó fog létesülni a termőföldünk szomszédságában. A beruházásra nincs meg a kellő forrás. A helyi önkormányzat ezt a forráshiányt a kellő biztonsági intézkedéseken spórolná meg, így a híg hulladéklé a termőföldünkön folyna keresztül és összességében 90$\%$-kal esne vissza a termőföldünk értéke és a termés is tönkremegy (nem lesz belőle bevételünk). A rendelkezésre álló információk alapján 25$\%$-ra becsüljük annak a valószínűségét, hogy a hulladéklerakó megépül. 
-
-%Ugyanakkor lelkes helyi civilek aláírásgyűjtésbe kezdenek a hulladéklerakó távolabbra és biztonságosabb elhelyezésért. Ha a kezdeményezés sikeres akkor ebben az esetben nem valósulna meg a beruházás. Mivel a környék eleve forráshiánnyal kűzd ezért ennek az esetnek (hulladéklerakó nem megépülése) szerintünk 75$\%$ a becsült esélye. 
-
-%A másik lehetőségünk, hogy banki lekötésbe fektetjük a pénzünk. Ha ez mellett nem lesz új beruházás (hulladéklerakó) számolnunk kell azzal, hogy a jelenlegi 3.8$\%$-os alapkamatot az MNB tovább vágja 3$\%$-ra, ami érinti a banki lekötésünket. Ellenkező esetben marad a kamatszint.
-
-%\begin{center}
-%\begin{tabular}{l|c|c}
-%\multirow{2}{*}{\bf Cselekvési lehetőségek } &  \multicolumn{2}{c}{ \bf Események }\\
-
-% & $s_1=$ hulladéklerakó épül & $s_2=$ nincs új beruházás \\
-%\hline
-%  $a_1=$ termőföldvásárlás & -10 800 & 2 000 \\
-%  $a_2=$ pénz a bankban & 456 & 360\\
-%\end{tabular}
-%\end{center}
-%$P(s_1) = 0.25 , P(s_2) = 0.75$ szubjektív valószínűségi értékek (becslések).
+A Polymarket árfolyama alapján 0.39 esély van a recesszióra és
 
 Melyik befektetést válasszuk?
 
 \begin{center}
-\begin{tabular}{l|c|c}
+\begin{tabular}{l|r|r}
 \multirow{2}{*}{\bf Cselekvési} &  \multicolumn{2}{c}{ \bf Események }\\
- {\bf lehetőségek} & $s_1=$ tartósan & $s_2=$ enyhülő \\
-  & magas infláció &  infláció \\
+ {\bf lehetőségek} & $s_1=$ recesszió & $s_2=$ növekedés \\
 \hline
-  $a_1=$ ingatlan vásárlás & 40.95 & 60.76 \\
-  $a_2=$ PMÁP & 55.35 & 51.15 \\
+  $a_1=$ polymarket \("\)Igen\("\) 100.00 & 250.04 & 0.00 \\
+  $a_2=$ polymarket \("\)Igen\("\) 20, rövid kötvény 80 & 134.12 & 82.40 \\
 \end{tabular}
 \end{center}
 $P(s_1) = 0.55 , P(s_2) = 0.45$ szubjektív valószínűségi értékek (becslések).
