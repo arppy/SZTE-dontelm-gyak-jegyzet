@@ -701,11 +701,14 @@ Az eljárást minden $X_k \in X$ tényezőre végrehajtjuk:
 
 Sztochasztikus döntési modell esetében a vizsgálat értékeink kibővülnek a természet egyes állapotainak valószínűségével ($s_k$). \textbf{Kockázatos döntések.}
 
-\paragraph{Feladat:} Tegyük fel, hogy rendelkezünk egy USA gazdaságnak erősen kitett részvényportfólióval.
+\paragraph{Feladat:} Tegyük fel, hogy rendelkezünk jelenlegi értéken 1000\$-t érő,
+az USA gazdaságnak erősen kitett részvényportfólióval.
 Aminek a hozama várhatóan negatívan korrelál egy esetleges USA recesszióval.
-A részvény portfólió egészét most nem részletezzük és nem összegezzük a feladat másik érdemi részével,
-mindez a motiváció érthetősége miatt került bele a feladatba.
-Ezért a feladat egyszerűsítése kedvért az alábbi 100\$ készpénz befektetését vizsgáljuk.
+A részvény portfóliót nem részletezzük, annyit tudunk, hogy historikusan magas értékeltségen van jelenleg.
+Ennek köszönhetően alacsonyabb a várt egyéves hozamunk:
+tegyük fel, hogy 6\%-ot várunk abban az esetben, ha USA növekedés lesz (1060\$-unk lesz 2026 végére).
+USA recesszió esetén pedig 40\%-os esést várunk (600\$-unk lesz 2026 végére).
+A feladat során további 100\$ készpénz befektetéséről hozunk döntést.
 A célunk, hogy a rendelkezésünkre álló készpénzzel (100\$) olyan befektetést tegyünk,
 ami USA recesszió esetén ellensúlyozza a részvényportfólión elért veszteségünket.
 
@@ -715,22 +718,28 @@ megnyerjük a \("\)Nem\("\) játékban résztvevők pénzét, veszteség esetén
 (átadjuk a befektetett összeget a a \("\)Nem\("\) játékban résztvevőnek).
 
 Tegyük fel, hogy az első alternatívánk az, hogy mind a 100\$-ból \("\)Igen\("\)-t veszünk.
-Ekkor a Figure~\ref{fig:polyusarecession} alapján 250.04\$-t kapunk 2026 végén, amennyiben tényleg recesszió lesz.
+Ekkor a Figure~\ref{fig:polyusarecession} alapján 251.08\$-t kapunk 2026 végén, amennyiben tényleg recesszió lesz.
 Elveszítjük a 100\$-t, ha nem lesz recesszió.
-Lehetőségünk van a pénz egy részéből rövid kötvényt venni, amely rész mindkét esetben várhatóan 3\% kamatot fizet.
-Legyen a második alternatívánk, hogy 20\$-ból veszünk \("\)Igen\("\)-t és a maradék 80\$-ból pedig rövid kötvényt.
-A 80\$ rövid kötvény 2.40\$ kamatot fizet 2026 végéig.
-Növekedés esetén csak a kötvényre fordított névérték és a kamat marad meg, recesszió esetén ezen felül az \("\)Igen\("\)-re
-51.72\$-t kapunk a Polymarketen (összesen 134.12\$).
+A másik alternatíva, hogy nem veszünk részt ebben a játékban
+és a pénzből a jelenlegi árfolyamon tovább növelnjük a részvény portfóliónk.
+
+Összegezzük a két alternatíva egyes eseteit.
+Amennyiben részt veszünk a játékban, akkor a recesszió esetén
+a 600\$-os részvény portfólió érték mellé 251.08\$-t nyerünk a Polymarketen, összesen 851.08\$ várható pénzösszeg.
+Ha nem lesz recesszió, akkor pedig 1060\$-unk lesz 2026 végére.
+A másik alternatíva esetén az 1100 részvény befektetés várhatón recesszió esetén 660,
+míg növekedés esetén 1166\$-unk lesz várhatóan 2026 végére.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[scale=0.3]{PolymarketUSARecession2025-10-07.png}
-    \caption{Polymarket USA recesszió 2026 végig (2025.10.07.-én.)}
+    \includegraphics[scale=0.3]{PolymarketUSARecession2025-10-14.png}
+    \caption{Polymarket USA recesszió 2026 végig (2025.10.14.-én.)}
     \label{fig:polyusarecession}
 \end{figure}
 
-A Polymarket árfolyama alapján 0.39 esély van a recesszióra és
+A Polymarket-en a játékban résztvevők szerint 0.62 eséllyel nem lesz recesszió, míg 0.38 eséllyel recesszió lesz.
+Mi ennél egy kicsit optimistábbak vagyunk és azt gondoljuk, hogy csak 0.2 eséllyel lesz recesszió
+és 0.8 eséllyel kerüli el az USA a recessziót.
 
 Melyik befektetést válasszuk?
 
@@ -739,11 +748,11 @@ Melyik befektetést válasszuk?
 \multirow{2}{*}{\bf Cselekvési} &  \multicolumn{2}{c}{ \bf Események }\\
  {\bf lehetőségek} & $s_1=$ recesszió & $s_2=$ növekedés \\
 \hline
-  $a_1=$ polymarket \("\)Igen\("\) 100.00 & 250.04 & 0.00 \\
-  $a_2=$ polymarket \("\)Igen\("\) 20, rövid kötvény 80 & 134.12 & 82.40 \\
+  $a_1=$ polymarket \("\)Igen\("\) +100\$ & 851.08 & 1060.00 \\
+  $a_2=$ növeljük a részvény portfóliónk +100\$ & 660.00 & 1166.00 \\
 \end{tabular}
 \end{center}
-$P(s_1) = 0.55 , P(s_2) = 0.45$ szubjektív valószínűségi értékek (becslések).
+$P(s_1) = 0.2 , P(s_2) = 0.8$ szubjektív valószínűségi értékek (becslések).
 
 \subsection{Dominancia módszer}
 \label{susec:domi}
@@ -754,20 +763,19 @@ A fenti példában nincs ilyen alternatíva.
 \subsection{Döntés a pénzérték alapján}
 \label{susec:penzert}
 A döntésben csak a nyereségértékeket vesszük figyelembe a valószínűségeket nem.
-\paragraph{Pesszimista, maximin kritérium:}  sorminimumok maximuma $\rightarrow a_2$
-\paragraph{Optimista, maximax kritérium:}  sormaximumok maximuma $\rightarrow a_1$
+\paragraph{Pesszimista, maximin kritérium:}  sorminimumok maximuma $\rightarrow a_1$
+\paragraph{Optimista, maximax kritérium:}  sormaximumok maximuma $\rightarrow a_2$
 
 \
 
-De pénzérték alapján ezen enyhíteni szoktak $\rightarrow$ optimizmus együttható: \emph{Hurwick-féle} $\alpha$, a döntéshozó $\alpha$ arányban optimista és $1-\alpha$ arányban pesszimista. Legyen például $\alpha \gets 0.8$, ekkor a példánkban: 
+De pénzérték alapján ezen enyhíteni szoktak $\rightarrow$ optimizmus együttható:
+\emph{Hurwick-féle} $\alpha$, a döntéshozó $\alpha$ arányban optimista és $1-\alpha$ arányban pesszimista.
+Legyen például $\alpha \gets 0.6$, ekkor a példánkban:
 \begin{center}
-$H_{a_1} \gets 0.8\cdot 60.76 + 0.2\cdot 40.95 = 56.798$
-%$H_{a_1} \gets 0.8\cdot 60.59 + 0.2\cdot 40.95 = 56.662$
-%$H_{a_1} \gets 0.8\cdot 2000 + 0.2\cdot -10800 = -560$
+$H_{a_1} \gets 0.6\cdot 1060.00 + 0.4\cdot 851.08 = 976.43$
 
-$H_{a_2} \gets 0.8\cdot 55.35 + 0.2\cdot 51.15 = 54.51$
-%$H_{a_2} \gets 0.8\cdot 57.58 + 0.2\cdot 52.50 = 56.564$
-%$H_{a_2} \gets 0.8\cdot 456 + 0.2\cdot 360 = 436.80$
+$H_{a_2} \gets 0.6\cdot 1166.00 + 0.4\cdot 660.00 = 963.60$
+
 \end{center}
 
 A döntést a $max\{H_{a_1},H_{a_2}\}$ alapján hozzuk, így az $a_1$-et választjuk.
@@ -776,126 +784,70 @@ A döntést a $max\{H_{a_1},H_{a_2}\}$ alapján hozzuk, így az $a_1$-et válasz
 \label{susec:vaert}
 \paragraph{Maximum likelihood kritérium: } azt választjuk, amelynek a legnagyobb a bekövetkezési valószínűség mellett legnagyobb a pénzértéke. 
 
-Tehát a $P(s_1)$-nek a legnagyobb a valószínűsége, így az $a_2$-t választjuk.
-
-\subsection{Döntés a várható pénzérték alapján}
-\label{VP}
-Alternatívánként vesszük a természet állapotaihoz tartozó várható pénzértéket és azok valószínűségét. Kiszámoljuk az állapotok becsült valószínűségekkel súlyozott összegeit és kiválasztjuk közülük a maximálisat.
-
-$VP(a_1) = 0.55\cdot 40.95 + 0.45\cdot 60.76 = 49.8645$
-%$VP(a_1) = 0.55\cdot 40.95 + 0.45\cdot 60.59 = 49.788$
-%$VP(a_1) = 0.25\cdot -10800 + 0.75\cdot 2000 = -1200$
-
-$VP(a_2) = 0.55\cdot 55.35 + 0.45\cdot 51.15 = 53.46$
-%$VP(a_2) = 0.55\cdot 57.58 + 0.45\cdot 52.50 = 55.294$
-%$VP(a_2) = 0.25\cdot 456 + 0.75\cdot 360 = 384$
-
-Az $a_2$-t választjuk.
-
-
-\subsection{Döntés az elmulasztott nyereség alapján}
-\label{susec:elmunyer}
-Ebben az esetben se vesszük figyelembe a valószínűségeket. Ugyanakkor a pénzérték helyett itt az adott esemény által elérhető maximális nyereségtől való eltérést vesszük. Ezek alapján a táblázatunk a következőképpen néz ki:
-
-%\begin{center}
-%\begin{tabular}{l|c|c}
-%\multirow{2}{*}{\bf Cselekvési lehetőségek } &  \multicolumn{2}{c}{ \bf Események }\\
-% & $s_1=$ hulladéklerakó épül & $s_2=$ nincs új beruházás \\
-%\hline
-%  $a_1=$ termőföldvásárlás  & 11 256 & 0 \\
-%  $a_2=$ pénz a bankban & 0 & 1640\\
-%\end{tabular}
-%\end{center}
-
-%\begin{center}
-%\begin{tabular}{l|c|c}
-%\multirow{2}{*}{\bf Cselekvési} &  \multicolumn{2}{c}{ \bf Események }\\
-% {\bf lehetőségek} & $s_1=$ tartósan & $s_2=$ enyhülő \\
-%  & magas infláció &  infláció \\
-%\hline
-%  $a_1=$ ingatlan & 19.64 & 0 \\
-%  $a_2=$ PMÁP & 3.01 & 8.09 \\
-%\end{tabular}
-%\end{center}
-
-\begin{center}
-\begin{tabular}{l|c|c}
-\multirow{2}{*}{\bf Cselekvési} &  \multicolumn{2}{c}{ \bf Események }\\
- {\bf lehetőségek} & $s_1=$ tartósan & $s_2=$ enyhülő \\
-  & magas infláció &  infláció \\
-\hline
-  $a_1=$ ingatlan & 19.81 & 0 \\
-  $a_2=$ PMÁP & 5.41 & 9.61 \\
-\end{tabular}
-\end{center}
-
-\paragraph{Pesszimista döntéshozó:} A döntést az alternatívánkénti (soronkénti) maximális értékek minimuma fogja adni. Tehát az $a_2$-t választjuk.
-
-\subsection{Döntés a várható elmulasztott nyereség alapján}
-Az előzővel teljesen azonosan, azt leszámítva, hogy az elmulasztott nyereség táblázatából vesszük az értékeket és itt a minimálisat választjuk.
-
-$VE(a_1) = 0.55\cdot 19.81 + 0.45\cdot 0 = 10.8955$
-
-$VE(a_2) = 0.55\cdot 5.41 + 0.45\cdot 9.61 = 7.3$
-
-Az $a_2$-t választjuk.
+Tehát a $P(s_2)$-nek a legnagyobb a valószínűsége, így az $a_2$-t választjuk.
 
 \subsection{Döntés a rendelkezésre álló információ alapján}
-Azonos a \ref{VP} szekcióban bemutatottakkal, várható pénzértéket számolunk. Annyival bővül, hogy itt kihangsúlyozzuk azt, hogy a valószínűségeket \emph{rendelkezésre álló információnak} tekintjük. Tehát azok szubjektív valószínűségek.
+Az alternatívákhoz várható pénzértéket számolunk a rendelkezésünkre álló információk alapján.
+Rendelkezésünkre álló információ: a becsült várható pénzérték és a becsült valószínűségek.
+Alternatívánként vesszük a természet állapotaihoz tartozó várható pénzértéket és azok valószínűségét.
+Kiszámoljuk az állapotok becsült valószínűségekkel súlyozott összegét és kiválasztjuk közülük a maximálisat.
 
-%$VPRI(a_1) = 0.25\cdot -10800 + 0.75\cdot 2000 = -1200$
-%$VPRI(a_1) = 0.55\cdot 12 + 0.45\cdot 9 = 10.65$
-%$VPRI(a_1) = 0.55\cdot 40.95 + 0.45\cdot 60.59 = 49.788$
-$VPRI(a_1) = 0.55\cdot 40.95 + 0.45\cdot 60.76 = 49.8645$
+$VPRI(a_1) = 0.2\cdot 851.08 + 0.8\cdot 1060.00 = 1018.216$
 
-%$VPRI(a_2) = 0.25\cdot 456 + 0.75\cdot 360 = 384$
-%$VPRI(a_2) = 0.55\cdot 9.995 + 0.45\cdot 10.295 = 10.13$
-%$VPRI(a_2) = 0.55\cdot 57.58 + 0.45\cdot 52.50 = 55.294$
-$VPRI(a_2) = 0.55\cdot 55.35 + 0.45\cdot 51.15 = 53.46$
+$VPRI(a_2) = 0.2\cdot 660.00 + 0.8\cdot 1166.00 = 1064.80$
 
-%$VPRI = max\{VPRI(a_1), VPRI(a_2)\} = 10.65$
-$VPRI = max\{VPRI(a_1), VPRI(a_2)\} = 53.46$
+$VPRI = max\{VPRI(a_1), VPRI(a_2)\} = 1064.80$, az $a_2$-t választjuk.
 
-\subsection{A tökéletes információ várható pénzértéke} 
-Ha élne egy jós, aki meg tudná mondani, hogy milyen lesz az infláció, %elindul-e a beruházás,
+\subsection{A tökéletes információ ára}
+Ha élne egy jós, aki meg tudná mondani, hogy lesz-e recesszió
 akkor ennek az információnak mekkora a várható pénzértéke?
 (Mennyit érdemes fizetni a tökéletes információért cserébe?)
 Feltevés: a jós által mondott esemény biztosan bekövetkezik.
 
-Első lépésben meg kell vizsgálni, hogyha az általunk ismert eseményeket állítja a jós, akkor azokat biztosan bekövetkező eseményként vizsgálva mekkora a várható pénzérték.
-Itt azért szerepel továbbra is egy valószínűségi súlyozás, mert így ad teljes eseményteret a két eset. Ennek olyan jelentése van, hogy szerintünk ekkora valószínűséggel mondja a jós, hogy $s_{i}$ esemény következik be biztosan. Ez megegyezik a korábbi valószínűséggel ugyanis a két esemény bekövetkezéséről továbbra is ez a véleményünk. Amennyiben a jós bevonása ezen változtatna, akkor ez természetesen módosulhat.
+Első lépésben meg kell vizsgálni, hogyha az általunk ismert eseményeket állítja a jós,
+akkor azokat biztosan bekövetkező eseményként vizsgálva mekkora a várható pénzérték.
+Itt azért szerepel továbbra is egy valószínűségi súlyozás, mert így ad teljes eseményteret a két eset.
+Ennek olyan jelentése van, hogy szerintünk ekkora valószínűséggel mondja a jós, hogy $s_{i}$ esemény következik be biztosan.
+Ez megegyezik a korábbi valószínűséggel ugyanis a két esemény bekövetkezéséről továbbra is ugyanaz a véleményünk.
+Amennyiben a jós bevonása ezen változtatna, akkor ez természetesen módosulhat.
 
 Lehetséges előrejelzés:
 \begin{itemize}
-\item ha $s_{1}$ lesz a jós szerint $\rightarrow$ optimális cselekvés: $a_2$  és a $VP(a_1) = 0.55\cdot 55.35 = 30.4425$
-\item ha $s_{2}$ lesz a jós szerint $\rightarrow$ optimális cselekvés: $a_1$  és a $VP(a_2) = 0.45\cdot 60.76 = 27.342$
+\item ha $s_{1}$ lesz a jós szerint $\rightarrow$ optimális cselekvés: $a_1$  és a $VP(a_1) = 0.20\cdot 851.08 = 170.216$
+\item ha $s_{2}$ lesz a jós szerint $\rightarrow$ optimális cselekvés: $a_2$  és a $VP(a_2) = 0.80\cdot 1166.00 = 932.8$
 \end{itemize}
 
 A tökéletes információ várható pénzértéke ennek a két lehetőségnek az összege: 
 
-$VPTI = 30.4425 + 27.342 = 57.7845$
+$VPTI = 170.216 + 932.8 = 1103.01$
 
-"Mennyit fizessünk a jósnak?" kérdésre a válasz: $VPTI - VPRI = 57.7845 - 53.46 = 4.3245$ (ez egy maximum érték, ennél többet nem ér az információ)
+"Mennyit fizessünk a jósnak?" kérdésre a válasz: $VPTI - VPRI = 1103.01 - 1064.80 = 38.21$ (ez egy maximum érték, ennél többet nem ér az információ)
 
 \subsection{Döntés nem tökéletes információ alapján}
 \label{sec:NTI}
 
-Mivel ténylegesen tökéletes információval rendelkező jósok nem léteznek, ezért helyettük érdemesebb kockázatelemző, előrejelző céget keresni. Ami a következő állításokat teheti:
+Mivel ténylegesen tökéletes információval rendelkező jósok nem léteznek,
+ezért helyettük érdemesebb kockázatelemző, előrejelző céget keresni.
+Ami a következő állításokat teheti:
 \begin{itemize}
-\item $z_{1}:$ azt állítják (előrejelzik), hogy az infláció magasan marad.  %(általánosan: bekövetkezik vmely esemény, itt speciálisan, ez az $s_{1}$)
-\item $z_{2}:$ azt állítják, hogy az infláció mérséklődik. % $s_{2}$ következik be (általánosan: nem következik be a $z_{1}$-ben feltett esemény, itt speciálisan, ez az $s_{2}$)
+\item $z_{1}:$ azt állítják (előrejelzést tesznek), hogy recesszió lesz.
+\item $z_{2}:$ azt állítják, hogy nem lesz recesszió. % $s_{2}$ következik be (általánosan: nem következik be a $z_{1}$-ben feltett esemény, itt speciálisan, ez az $s_{2}$)
 \end{itemize}
 
 Tegyük fel, hogy a cégről ismert \textbf{az előrejelzési pontossága}, korábbi évek előrejelzéseinek a pontossága alapján:
 \begin{itemize}
-\item $P(z_{1}|s_1) = 0.8$ 
-\item $P(z_{2}|s_1) = 1- P(z_{1}|s_1) = 0.2$
-\item $P(z_{2}|s_2) = 0.7$ 
-\item $P(z_{1}|s_2) = 0.3$ 
+\item $P(z_{1}|s_1) = 0.7$
+\item $P(z_{2}|s_1) = 1- P(z_{1}|s_1) = 0.3$
+\item $P(z_{2}|s_2) = 0.95$
+\item $P(z_{1}|s_2) = 0.05$
 \end{itemize}
-Ezek a \textbf{beválási valószínűségek (likelihoodok)}. Akár meg is egyezhetnének a $s_1$ és $s_2$-re, de általában a változás bekövetkezést nehezebb előre jelezni. Ez az információ a feladatok többségében elérhető, ennek elérhetősége az előfeltétele a feladat végrehajtásának. Az előző fejezetben például a jósnak 1 volt a találati értéke és 0 a tévesztési score-ja mindkét esetben.
+Ezek a \textbf{beválási valószínűségek (likelihoodok)}.
+Akár meg is egyezhetnének a $s_1$ és $s_2$-re, de általában a változás bekövetkezést nehezebb előre jelezni.
+Ez az információ a feladatok többségében elérhető, ennek elérhetősége az előfeltétele a feladat végrehajtásának.
+Az előző fejezetben például a jósnak 1 volt a találati értéke és 0 a tévesztési score-ja mindkét esetben.
 
-Az ilyen feladatok esetében a $P(s_1) = 0.55 , P(s_2) = 0.45$ saját véleményen alapuló valószínűségi értékeket tekintjük \textbf{a priori valószínűségek}nek. 
+Az ilyen feladatok esetében a $P(s_1) = 0.2 , P(s_2) = 0.8$ saját véleményen alapuló valószínűségi értékeket tekintjük
+\textbf{a priori valószínűségek}nek.
 
 \textbf{A Bayes-tétellel kiszámolható a posteriori valószínűségeket}: $P(s_1|z_1),$ $P(s_2|z_1),$ $ P(s_1|z_2),$ $P(s_2|z_2)$
 \begin{equation}
@@ -903,39 +855,45 @@ Az ilyen feladatok esetében a $P(s_1) = 0.55 , P(s_2) = 0.45$ saját vélemény
 P(s_1|z_1) =& \frac{P(z_{1}|s_1) \cdot  P(s_1)}{\sum_{i}^{ } P(z_{1}|s_i) \cdot  P(s_i)} \\
 &\vdots \text{ a többit hasnolóan} \\
 \\
-P(z_1)=\sum_{i}^{ } P(z_{1}|s_i) \cdot  P(s_i) =  0.8\cdot 0.55+0.3\cdot 0.45 &= 0.575 \\
-P(z_2)=\sum_{i}^{ } P(z_{2}|s_i) \cdot  P(s_i) =  0.2\cdot 0.55+0.7\cdot 0.45 &= 0.425 \\
-P(s_1|z_1) = \frac{0.44}{0.575} = 0.7652,  
-P(s_2|z_1) = \frac{0.135}{0.575} &= 0.2348 \\
-P(s_1|z_2) = \frac{0.11}{0.425} = 0.2588,
-P(s_2|z_2) = \frac{0.315}{0.425} &= 0.7412
+P(z_1)=\sum_{i}^{ } P(z_{1}|s_i) \cdot  P(s_i) =  0.7\cdot 0.2 + 0.05\cdot 0.8 &= 0.18 \\
+P(z_2)=\sum_{i}^{ } P(z_{2}|s_i) \cdot  P(s_i) =  0.3\cdot 0.2 + 0.95\cdot 0.8 &= 0.82 \\
+P(s_1|z_1) = \frac{0.14}{0.18} = 0.78,
+P(s_2|z_1) = \frac{0.04}{0.18} &= 0.22 \\
+P(s_1|z_2) = \frac{0.06}{0.82} = 0.07,
+P(s_2|z_2) = \frac{0.76}{0.82} &= 0.93
 \\
 \end{split}
 \end{equation}
 
 Ezekből pedig kifejezhető az adott alternatíva, adott előrejelzés melletti várható pénzértéke:
 
-$VP(a_1|z_1) = \sum_{i}^{ }v(s_i,a_1)\cdot P(s_i|z_1) = 40.95\cdot 0.7652 + 60.76\cdot 0.2348 = 45.601388$ 
+$VP(a_1|z_1) = \sum_{i}^{ }vp(s_i,a_1)\cdot P(s_i|z_1) = 851.08\cdot 0.78 + 1060.00\cdot 0.22 = \textbf{897.04}$
  
-$VP(a_2|z_1) = \sum_{i}v(s_i,a_2)\cdot P(s_i|z_1) = 55.35\cdot 0.7652 + 51.15\cdot 0.2348 = \textbf{54.36384}$ 
+$VP(a_2|z_1) = \sum_{i}vp(s_i,a_2)\cdot P(s_i|z_1) = 660.00\cdot 0.78 + 1166.00\cdot 0.22 = 771.32$
 
-$VP(a_1|z_2) = \sum_{i}v(s_i,a_1)\cdot P(s_i|z_2) = 40.95\cdot 0.2588 + 60.76\cdot 0.7412 = \textbf{55.633172}$  
+$VP(a_1|z_2) = \sum_{i}vp(s_i,a_1)\cdot P(s_i|z_2) = 851.08\cdot 0.07 + 1060.00\cdot 0.93 = 1045.38$
 
-$VP(a_2|z_2) = \sum_{i}v(s_i,a_2)\cdot P(s_i|z_2) = 55.35\cdot 0.2588 + 51.15\cdot 0.7412 = 52.23696$
+$VP(a_2|z_2) = \sum_{i}vp(s_i,a_2)\cdot P(s_i|z_2) = 660.00\cdot 0.07 + 1166.00\cdot 0.93 = \textbf{1130.58}$
 
 \paragraph{A nem tökéletes információ várható pénzértéke: }
 
-Ajánlatot kapunk az eddig vizsgált előrejelző cégtől: 1.5 millió forintért előrejelzést adnak az inflációra. A kérdés megéri-e ennyiért elfogadni az ajánlatot. Mennyit ér a nem tökéletes információ?
+Ajánlatot kapunk az eddig vizsgált előrejelző cégtől: 10 dollárért előrejelzést adnak a recesszióra.
+A kérdés megéri-e ennyiért elfogadni az ajánlatot.
+Mennyit ér a nem tökéletes információ?
 
 Lehetséges előrejelzés:
 \begin{itemize}
-\item $z_{1} \rightarrow$ optimális cselekvés: $a_2$  és a $VP(a_2) = VP(a_2|z_1) \cdot  P(z_1) = 54.36384\cdot 0.575 = 31.259208$
-\item $z_{2} \rightarrow$ optimális cselekvés: $a_1$  és a $VP(a_1) = VP(a_1|z_2) \cdot  P(z_2) = 55.633172\cdot 0.425 = 23.6440981$
+\item $z_{1} \rightarrow$ optimális cselekvés: $a_1$  és a $VP(a_1) = VP(a_1|z_1) \cdot  P(z_1) = 897.04\cdot 0.18 = 161.47$
+\item $z_{2} \rightarrow$ optimális cselekvés: $a_2$  és a $VP(a_2) = VP(a_2|z_2) \cdot  P(z_2) = 1130.58\cdot 0.82 = 927.08$
 \end{itemize}
 
-Nem teljes információhoz tartozó pénzérték: $VPNTI = \sum_{j} VP(a_j) = 31.259208 + 23.6440981 = 54.903$
+Nem teljes információhoz tartozó pénzérték: $VPNTI = \sum_{j} VP(a_j) = 161.47 + 927.08 = 1088.55$
 
-A "Mennyit fizessünk legfeljebb az előrejelző cégnek?" kérdésre a választ az alábbiak alapján tudjuk megkapni: $VPNTI - VPRI = 54.90 - 53.46 = 1.44$. Ami egy maximális érték arra, amennyiért megéri őket alkalmazni. Mivel ez feletti ajánlat érkezett, ezért elutasítjuk.
+A "Mennyit fizessünk legfeljebb az előrejelző cégnek?"
+kérdésre a választ az alábbiak alapján tudjuk megkapni:
+$VPNTI - VPRI = 1088.55 - 1064.80 = 23.75$.
+Ami egy maximális érték arra, amennyiért megéri őket alkalmazni.
+Mivel ez feletti ajánlat érkezett, ezért elutasítjuk.
 
 \subsection{Döntés döntési fa eljárás alapján}
 
@@ -958,8 +916,12 @@ Jelölésben, új cselekvési alternatívákat vezetünk be:
 \paragraph{Előkészületek: }
 \begin{itemize}
 \item a fát a gyökérből indulva rajzoljuk meg, minden lehetséges döntésnek és lehetséges eseménynek külön ágat húzunk be (fenti ábra).
-\item az eseményekhez tartozó valószínűségeket be tudjuk helyettesíteni az egyes ágakra. Egy esemény minél mélyebben van, annál több dologtól függ. A lentebbi ágakon a felette lévőekkel alkot feltételes valószínűséget. Pl: egy lentebbi ágon $P(s_1|z_1)$ van, míg felül $P(z_1)$ van (tehát ez utóbbi nem függ az $s_i$-től).
-\item a levelekhez be tudjuk írni az egyes választások pénzértékét a táblázatból (előrejelzés esetében már itt $d$ = 1.5 millió forinttal terhelt pénzértékeket).
+\item az eseményekhez tartozó valószínűségeket be tudjuk helyettesíteni az egyes ágakra.
+Egy esemény minél mélyebben van, annál több dologtól függ.
+A lentebbi ágakon a felette lévőekkel alkot feltételes valószínűséget.
+Pl: egy lentebbi ágon $P(s_1|z_1)$ van, míg felül $P(z_1)$ van (tehát ez utóbbi nem függ az $s_i$-től).
+\item a levelekhez be tudjuk írni az egyes választások pénzértékét a táblázatból
+(előrejelzés esetében már itt $d$ = 10 dollárral terhelt pénzértékeket).
 \end{itemize}
 
 \paragraph{Eljárás: }
@@ -967,14 +929,16 @@ a levélből elindulva, felfelé propagálva kiszámoljuk az egyes csúcsokat ($
 \begin{itemize}
 \item az események esetében kiszámoljuk a csúcshoz tartozó várható pénzértéket: \\
  $VP_K = \sum_{i\in K} ag_i\cdot gyerek_i$ 
-\item döntési elágazás: kiválasztjuk a $max_{i\in K}\{gyerek_i\}$ és a nem maximális értékhez tartozó ágat levágjuk. Ez lesz a csúcs várható pénzértéke.
+\item döntési elágazás: kiválasztjuk a $max_{i\in K}\{gyerek_i\}$
+és a nem maximális értékhez tartozó ágat levágjuk.
+Ez lesz a csúcs várható pénzértéke.
 \end{itemize}
 
 Végül a gyökérben egyetlen, a feladat várható pénzértéke marad és az ahhoz tartozó optimális döntések.
 
 \begin{center}
 
-\includegraphics[scale=0.7]{dectree05}
+\includegraphics[scale=0.7]{dectree06}
 \\
 \end{center}
 
