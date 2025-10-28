@@ -117,11 +117,14 @@
 \select@language {english} \contentsline {paragraph}{Jelölés: }{28}{}%
 \select@language {english} \contentsline {subsection}{\numberline {10.5}Többtényezős hasznosság függvény létezése és előállítása}{29}{}%
 \select@language {english} \contentsline {subsubsection}{\numberline {10.5.1}Függetlenségi tesztek}{29}{}%
-\select@language {english} \contentsline {paragraph}{Értékfüggetlenség}{29}{}%
 \select@language {english} \contentsline {paragraph}{Hasznosságfüggetlenség}{29}{}%
 \select@language {english} \contentsline {paragraph}{Preferenciafüggetlenség}{29}{}%
+\select@language {english} \contentsline {paragraph}{Def:}{29}{}%
+\select@language {english} \contentsline {paragraph}{Definíció: }{29}{}%
+\select@language {english} \contentsline {paragraph}{Kvázi additivitási tétel}{30}{}%
+\select@language {english} \contentsline {paragraph}{Feltételek - Összegzés:}{30}{}%
 \select@language {english} \contentsline {subsection}{\numberline {10.6}Additív és multiplikatív hasznosságfüggvény}{30}{}%
 \select@language {english} \contentsline {paragraph}{A közös alak: kvázi additív hasznosságfüggvény (kifejezhető belőle az additív és a multiplikatív hasznosságfüggvény)}{30}{}%
-\select@language {english} \contentsline {paragraph}{$K$ skálázási konstans meghatározása 2D ($n=2$) esetben:}{30}{}%
+\select@language {english} \contentsline {paragraph}{$K$ skálázási konstans meghatározása 2D ($n=2$) esetben:}{31}{}%
 \select@language {english} \contentsline {subsection}{\numberline {10.7}Előállítás}{31}{}%
-\select@language {english} \contentsline {subsection}{\numberline {10.8}A hasznossági elmélet felvetéseinek magatartáselméleti kritikái}{31}{}%
+\select@language {english} \contentsline {subsection}{\numberline {10.8}A hasznossági elmélet felvetéseinek magatartáselméleti kritikái}{32}{}%

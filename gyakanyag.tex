@@ -1288,14 +1288,14 @@ Többtényezős hasznosság függvény az értékelő függvényhez hasonlóan a
 
 Jelölés: $A^p$ kockázatos kimenetelek halmaza:  $a_p=\{c, \alpha\} \in A^p  $ vagy $a_{p} = \{x_i, \alpha_i, x_i \in X_i\}$
 
-\paragraph{Értékfüggetlenség}
+%\paragraph{Értékfüggetlenség}
 
-Legyen $T=(X_1,...,X_m)$ tényezőhalmaz. $T$ tényezőrészhalmazai \textit{érték-függetlenek} $\Leftrightarrow$ ha $\forall a_p, a_q \in A^p$ (amelyek együttes eloszlásai rendre $\alpha,\beta$): 
-\begin{equation}
- a_p \sim a_q \Leftrightarrow \forall i=1..m: \alpha_i=\beta_i
-\end{equation}
+%Legyen $T=(X_1,...,X_m)$ tényezőhalmaz. $T$ tényezőrészhalmazai \textit{érték-függetlenek} $\Leftrightarrow$ ha $\forall a_p, a_q \in A^p$ (amelyek együttes eloszlásai rendre $\alpha,\beta$):
+%\begin{equation}
+% a_p \sim a_q \Leftrightarrow \forall i=1..m: \alpha_i=\beta_i
+%\end{equation}
 
-Ez nehezen teljesülő feltétel, de az additív alak létezésének a feltétele.
+%Ez nehezen teljesülő feltétel, de az additív alak létezésének a feltétele.
 
 \paragraph{Hasznosságfüggetlenség}
 
@@ -1320,15 +1320,35 @@ Legyen $T=(X_1,...,X_m)$ tényezőhalmaz, $C \subseteq T$ tényezőrészhalmaz, 
 \end{equation}
 Determinisztikus esethez teljesen hasonlóan.
 
-\textbf{Értékfüggetlenség $\Rightarrow$ Hasznosságfüggetlenség $\Rightarrow$ Preferenciafüggetlenség.}
+\paragraph{Def:} Egy $u: A^p \rightarrow \mathbb{R}$ \textbf{mérhető} $\Leftrightarrow u$ tükrözi \textbf{(1)} az $A^p$-beli elemek sorrendjét és \textbf{(2)} az elemek különbségeinek a sorrendjét.
 
-Értékfüggetlenség $\Rightarrow$ additív forma
+A mérhető $u$ létezésének vizsgálata nehézkes (itt most nem térünk ki rá).
+
+Differenciaképzés: $\circ$.
+
+\textbf{Mérhetőség feltétele:} $u$ mérhető, ha $\forall a,b,c,d \in A: a \circ b \succeq^* c \circ d$ $\Leftrightarrow$ $u(a)-u(b) \geq u(c)-u(d)$
+
+\paragraph{Definíció: } Legyen $T=(X_1,...,X_m)$ tényezőhalmaz, $C \subseteq T$ gyenge differencia-független $C^*\subseteq T $-tól $\Leftrightarrow$ ha $\forall w_C,x_C,y_C,z_C \in X_C:$ valamely $w_{C^*}^0 \in X_{C^*}$ esetén teljesül minden más $w_{C^*} \in X_{C^*}$ -re, hogy: $(w_C, w_{C^*}^0) \circ (x_C, w_{C^*}^0) \succeq^* (y_C, w_{C^*}^0) \circ (z_C, w_{C^*}^0)$  $\Rightarrow$ $(w_C, w_{C^*}) \circ (x_C, w_{C^*}) \succeq^* (y_C, w_{C^*}) \circ (z_C, w_{C^*})$
+
+\paragraph{Kvázi additivitási tétel} Tegyük fel, hogy
+\begin{itemize}
+\item létezik $u$ mérhető hasznosság függvény
+\item a legkevésbé preferált $a^0: u(a^0) = 0$ és a legjobban preferált $a^1: u(a^1)=1$
+\item hasonlóan $\forall i \in 1,..,n : $ a legkevésbé preferált $x_i^0: v_i(x_i^0) = 0$ és a legjobban preferált $x_i^1: v_i(x_i^1)=1$.
+\end{itemize}
+Ha $\forall i \in 1,..,n : X_i$ tényező gyenge-differenciafüggetlen a komplementerhalmazától, akkor \textbf{$u$ felírható kvázi additív alakban}.
+
+%\textbf{Értékfüggetlenség $\Rightarrow$ Hasznosságfüggetlenség $\Rightarrow$ Preferenciafüggetlenség.}
+
+\paragraph{Feltételek - Összegzés:}
+
+\
+
+Kölcsönös preferenciafüggetlenség $\Rightarrow$ additív forma
 
 Kölcsönös hasznosságfüggetlenség  $\Rightarrow$ multiplikatív forma
 
-Minden tényező ($\{X_i\} = C$) legyen hasznosságfüggetlen a komplementeréhez képest $\Rightarrow$ kvázi additív forma
-
-Minden más esetben  $\Rightarrow$ egyéb formák
+Gyenge differenciafüggetlenség $\Rightarrow$ kvázi additív forma
 
 \subsection{Additív és multiplikatív hasznosságfüggvény}
 \paragraph{A közös alak: kvázi additív hasznosságfüggvény (kifejezhető belőle az additív és a multiplikatív hasznosságfüggvény)}
