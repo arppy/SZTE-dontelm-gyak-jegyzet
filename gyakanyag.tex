@@ -191,7 +191,7 @@ Példa: 50 millió forint alatti ingatlanokat kiemelkedően jó értékűnek tar
 \paragraph{Problémák az eddigi ábrázolással:}
 \begin{itemize}
 \item nem számszerű értékek,
-\item normalizálatlan (nem ismert a globális range),
+\item nem skálázott (nem ismert a globális range),
 \item kritériumonként eltérően maximalizálni vagy minimalizálni szeretnénk, 
 \item a lakás mérete esetében pedig általában inkább egy megfelelő értéket szoktunk keresni és nem minél nagyobb vagy minél kisebb méretű lakást (tegyük fel, hogy \textbf{70 m$^2$}-es a számunkra optimális lakásméret).
 \end{itemize}
@@ -233,7 +233,7 @@ A lakás méretének egyirányú skálára való felfűzése több lehetséges m
 
 \paragraph{Skála meghatározása:} szakértőktől, vagy ha nem jutunk semmilyen információhoz, akkor az ismert értékek maximuma és minimuma alapján.
 
-\paragraph{Normalizálás:} 
+\paragraph{Skálázás:}
 \begin{center}
 maximum feladat: $r_{ij} = \frac{x_{ij} - x^{min}_j}{x^{max}_j - x^{min}_j} $ 
 
@@ -268,7 +268,7 @@ Pl: legfontosabb szempont a biciklitárolási lehetőség, második pedig a lak�
 
 \subsection{Maximin módszer (pesszimista döntéshozó)}
 
-Az értékek azonos, normalizált skálán vannak. Minden alternatívához megkeresi a felvett leggyengébb értéket és azok közül kiválasztja a legjobbat.
+Az értékek azonos skálán vannak. Minden alternatívához megkeresi a felvett leggyengébb értéket és azok közül kiválasztja a legjobbat.
 
 A példában az utolsó alternatíva legrosszabb értéke 0.57, az $A1$-é 0.1, az $A2$-é 0.58, míg az $A3$-é 0.12, így ezeknek a maximuma 0.58, ezért az $A2$ alternatívát választjuk.
 
@@ -1001,7 +1001,7 @@ Az előző fejezetben olyan speciális esetet néztünk, ahol mindkét alternat�
 
 \paragraph{Döntési szabály megalkotása  $\rightarrow$ Bernoulli elv: } A döntéshozó preferenciarendezését a lotterykhez tartozó várható pénzérték által kijelölt sorrend határozza meg. Tehát Bernoulli szerint $A^p$ elemeihez meghatározzuk a várható értékét, majd azt az alternatívát választjuk, amelyiknek legnagyobb a várható hasznossága: $u(a_{p_k})= \sum_{s_k \in S} P(s_k)\cdot v(c_{jk}) \rightarrow$ ezek közül azt az alternatívát választjuk, ahol maximális ez az érték. (Bernoulli elv röviden: $VPRI=max(u(a_{p_k}))$, várható pénzérték alapján döntünk).
 
-Példa: $u(a_p)= 0.9\cdot 12 + 0.1\cdot 0 = 10.8$ és $u(a_q)= 0.9\cdot 1000000 + 0.1\cdot 0 = 900000$. Ezek közül az $a_q$ lotteryhez tartozó érték a maximális így ezt preferáljuk. (Ebben az esetben nem alkalmaztuk a $u$ értékelő függvényt, de ha az értékeket normalizáljuk, és ezt tekintenénk értékelésnek, akkor is ezen eredményre jutnánk a döntés szempontjából.)
+Példa: $u(a_p)= 0.9\cdot 12 + 0.1\cdot 0 = 10.8$ és $u(a_q)= 0.9\cdot 1000000 + 0.1\cdot 0 = 900000$. Ezek közül az $a_q$ lotteryhez tartozó érték a maximális így ezt preferáljuk. (Ebben az esetben nem alkalmaztuk a $u$ értékelő függvényt, de ha az értékeket skálázzuk, és ezt tekintenénk értékelésnek, akkor is ezen eredményre jutnánk a döntés szempontjából.)
 
 \subsection{Axiómarendszerek (Neumann-Morgenstern 1947)} 
 %\subsubsection{1. Axióma}
