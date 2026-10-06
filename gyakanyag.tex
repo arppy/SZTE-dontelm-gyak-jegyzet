@@ -703,19 +703,25 @@ Ezekből meg szeretnénk kapni a $v(a_1), v(a_2), v(a_3)$-kat. Ez így többtén
 
 \item \textbf{A döntéshozó direkt értékelést ad.} Általában nem tud, nehéz, nem lesz konzisztens. (Az elemi módszereknél ezzel próbálkoztunk).
 
-\item \textbf{Lineáris értékelő függvény:} meghatározzuk az adott tényező szélső értékeit és a közötte lévő részt egyszerűen behúzzuk egy egyenessel.
+\item \textbf{Standard függvényalak használata - Logaritmikus / Lineáris / Konkáv exponenciális értékelő függvény:}
+meghatározzuk az adott tényező szélső értékeit és a közöttük lévő részt behúzzuk a választott függvény görbéjével.
 
-Ennek a módszernek az alapján lehetséges bármely más görbe használata is (például szigmoid).
-
-\item \textbf{Felező módszer:}
+\item \textbf{Kérdőíves illesztés - Felező módszer (Bisection method) :}
 Az eljárást minden $X_k \in X$ tényezőre végrehajtjuk:
 \begin{enumerate}
-\item Adjunk meg egy egyértelmű rendezést a lehetséges tényező értékek felett.
-\item Válasszuk ki a legkevésbé kívánatos $x^0_k $ és a leginkább kívánatos $x^1_k$ tényezőértéket. A valós értéküket rögzítsük: $v(x^0_k) = 0 $, $v(x^1_k) = 1$
-\item Amíg nem találjuk meg a $x^0_k$ és a $x^1_k$ középpontját, vegyünk egy tetszőleges $x^\prime_k \in X_k$ tényezőértéket és kérdezzük meg a döntéshozót, hogy értékelje a $x^0_k$-ből és a $x^1_k$-ből való elmozdulást a vizsgált tényezőérték esetében. Ha a két elmozdulás között eltérés van, akkor vegyünk egy további tényezőértéket abból az intervallumból, ahol a középpont várhatóan megtalálható lesz. Ha megvan akkor $ v(x^{0.5}_k) = v(x^{\prime}_k) = 0.5$ és ekkor léphetünk a következő lépésre.
+\item A döntéshozó adjon meg egy egyértelmű rendezést a lehetséges kritérium értékek felett.
+\item Válasszuk ki a legkevésbé kívánatos $x^0_k $ és a leginkább kívánatos $x^1_k$ kritériumértéket.
+A valós értéküket rögzítsük: $v(x^0_k) = 0 $, $v(x^1_k) = 1$
+\item Amíg nem találjuk meg a $x^0_k$ és a $x^1_k$ középpontját,
+vegyünk egy tetszőleges $x^\prime_k \in X_k$ tényezőértéket és kérdezzük meg a döntéshozót,
+hogy értékelje a $x^0_k$-ből és a $x^1_k$-ből való elmozdulást a vizsgált tényezőérték esetében.
+Ha a két elmozdulás között eltérés van, akkor vegyünk egy további tényezőértéket abból az intervallumból,
+ahol a középpont várhatóan megtalálható lesz.
+Ha megvan akkor $ v(x^{0.5}_k) = v(x^{\prime}_k) = 0.5$ és ekkor léphetünk a következő lépésre.
 \item Az előző lépés alkalmazása a $x^0_k$ és a $x^{0.5}_k$ közötti $x^{0.25}_k$ és a $x^{0.5}_k$ és a $x^1_k$ közötti $x^{0.75}_k$ középpont megtalálásáért.
 \item Konzisztencia ellenőrzés: a kapott $x^{0.25}_k$ és $x^{0.75}_k$ középpontja valóban a $x^{0.5}_k$?
-\item Ismételjük a (c) lépéstől, a részletezni kívánt intervallumon, addig míg elegendő pont nem lesz a görbe illesztéséhez. A görbének rendelkeznie kell a korábban vizsgált tulajdonságokkal (folytonosság, monotonitás)
+\item Ismételjük a (c) lépéstől, a részletezni kívánt intervallumon, addig míg elegendő pont nem lesz egy görbe illesztéséhez.
+A görbének mindenképpen rendelkeznie kell a korábban vizsgált tulajdonságokkal (folytonosság, monotonitás)
 \end{enumerate}
 
 \end{enumerate}
