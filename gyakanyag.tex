@@ -233,7 +233,7 @@ A lakás méretének egyirányú skálára való felfűzése több lehetséges m
 
 \paragraph{Skála meghatározása:} szakértőktől, vagy ha nem jutunk semmilyen információhoz, akkor az ismert értékek maximuma és minimuma alapján.
 
-\paragraph{Skálázás:}
+\paragraph{Min-max skálázás:}
 \begin{center}
 maximum feladat: $r_{ij} = \frac{x_{ij} - x^{min}_j}{x^{max}_j - x^{min}_j} $ 
 
@@ -259,6 +259,8 @@ Maximum és minimum meghatározása:
  $A_4$&0.57  &0.8 & 0.9 & 0.97 & 0.9 \\
 \end{tabular}
 \end{center}
+
+További lehetséges skálázási módszererek: standardizálás (standard skálázás: átlag, szórás), robosztus skálázás (medián, IQR)
 
 \subsection{Lexikografikus módszer}
 
@@ -383,6 +385,8 @@ $\Rightarrow \exists v: A \rightarrow \mathbb{R} $, ahol $\forall(a,b) \in A$ te
 
 \paragraph{A fenti tétel, túl szigorú az indifferencia osztályok megszámlálhatóságáról.}
 
+Jelenlegi feltevéssel nem lehetséges folytonos (nem megszámlálható) preferencia struktúra felett értékelő függvényt meghatározni. 
+
 Ha gyengítjük a feltételt akkor is megkaphatjuk $v$ létezését.
 
 Legyen a feltételünk az, hogy $\exists B$ az indifferencia osztályok egy részhalmaza, amelyre teljesül:
@@ -390,18 +394,22 @@ Legyen a feltételünk az, hogy $\exists B$ az indifferencia osztályok egy rés
 \item $B$ megszámlálható,
 \item $\forall A_1, A_2$ indifferencia osztály részhalmazra: $\exists C \in B$, hogy ha $A_1 \succ A_2$ akkor $A_1 \succ C \succ A_2$ (tehát sűrű a $\succ$ rendezésre). 
 \end{itemize}
-Ekkor teljesül $v$ létezése. Összefoglalva ez annyit jelent, hogy ha létezik olyan véges indifferencia osztályok részhalmaza, amihez megadható olyan rendezés, ami egyértelműen rendezni tudja az ezen a részhalmazon túli indifferencia osztályokat is, akkor létezik hozzá értékelő függvény. (Ez egy jó dolog!)
+Ekkor teljesül $v$ létezése. 
+
+Összefoglalva ez annyit jelent, hogy ha létezik olyan véges indifferencia osztályok részhalmaza, amihez megadható olyan rendezés, ami egyértelműen rendezni tudja az ezen a részhalmazon túli indifferencia osztályokat is, akkor létezik hozzá értékelő függvény. (Ez egy jó dolog!)
 
 \paragraph{Speciális eset: A n dimenziós vektortér. }
-Tehát $\forall a \in A$ alternatíva $x_1, ... , x_n$ komponenssel (tulajdonság) jellemzett.
+
+A fejezet összes további részében ebből az esetből indulunk ki.
+Tehát legyen $\forall a \in A$ alternatíva $x_1, ... , x_n$ komponenssel (tulajdonság) jellemzett.
 Ekkor $v: \mathbb{R}^n \rightarrow \mathbb{R}$ lesz.
 Feltesszük továbbra is, hogy a $\succeq$ reláció egy gyenge rendezés az $A$ halmaz elemeire.
 És ebben az esetben az alábbi két további feltétel teljesülése esetén garantált $v$ létezése:
 \begin{itemize}
 \item monotonitási feltétel:
 $\forall a,b \in A$ alternatíva, amely $x_1, ... , x_n$ és $y_1, ... , y_n$ komponenssel jellemzett,
-teljesül, hogy $x_i \geq y_i$ ($\forall i = 1, ... , n$) és legalább egy $j$ esetén pedig
-$x_j \geq y_j$ $\Rightarrow a \succ b$.
+teljesül, hogy $x_i \succeq y_i$ ($\forall i = 1, ... , n$) és legalább egy $j$ esetén pedig
+$x_j \succ y_j$ $\Rightarrow a \succ b$.
 Tehát ha $a$ kritériumonként mindenben legalább olyan jó,
 mint $b$ és létezik legalább egy kritérium, amiben $a$ egyértelműen jobb, mint $b$,
 akkor szigorú preferenciának kell fennállnia $a$ javára: $a \succ b$.
@@ -409,7 +417,17 @@ akkor szigorú preferenciának kell fennállnia $a$ javára: $a \succ b$.
 Erre azért van szükség, mert a valós függvényeknek folytonosnak kell lennie $\mathbb{R}^n$-en, ezért a kis változások az
 alternatívákban nem vezethetnek hirtelen, ugrásszerű változáshoz a preferenciákban.
 \end{itemize}
-Továbbiakban ezt a speciális esetét vizsgáljuk.
+
+\paragraph{Ellenpélda: ha döntéshozó preferenciái a lexikografikus módszert követi.}
+
+Ekkor megadható olyan példa, amelyre sérülnek a fentiek.
+Tekintsük az $a_i = \left(1 + \frac{1}{i}, 0\right)$ állapotok sorozatát, és rögzítsük az $b = (1, 100)$ elemet!
+\begin{itemize}
+    \item Minden $i \in \mathbb{N}$ esetén $a_i \succ b$, mivel az első koordinátára $1 + \frac{1}{i} > 1$.
+    \item A sorozat határértéke: ${i \to \infty} : a_i = x = (1, 0)$.
+    \item A határértéken a preferencia megfordul: $b \succ a$, hiszen az első koordináták egyenlőek ($1 = 1$), de a másodikban $100 > 0$.
+\end{itemize}
+Mivel $a_i \succ b$ minden $i$-re, de $i \to \infty : a_i = a \prec b$, a felső halmaz nem zárt, így a preferencia nem folytonos.
 
 \subsection{Értékelő függvények dekompozíciós alakjai}
 
@@ -495,6 +513,8 @@ Tehát: (csoki, süti) $\succeq$ (vanília, süti) $\Rightarrow$ (csoki, fagyi) 
 \paragraph{Kölcsönös preferencia függetlenség: } ez az előző definícióval szemben a teljes tényezőhalmazra vonatkozik. Méghozzá akkor és csak akkor teljesül ha, minden $C \subseteq T$ preferencia független $C^*$-tól.
 
 A kölcsönös preferencia függetlenség az additív preferencia struktúra létezésének a szükséges és elégséges feltétele (kivéve kétdimenziós esetben).
+
+Ugyanakkor szerencsére elegendő legfeljebb kettes kritériumpárokra ellenőrizni, hogy a komplementerükhöz képest preferencia függetlenek legyenek, ugyanis ebben az esetben automatikusan következik, hogy nagyobb halmazokra is működni fog a preferencia függetlenség.
 
 \subsubsection{Kétdimenziós eset}
 
@@ -584,7 +604,7 @@ Differenciaképzés: $\circ$.
 \textbf{Mérhetőség feltétele:} $v$ mérhető, ha $\forall a,b,c,d \in A: a \circ b \succeq^* c \circ d$ $\Leftrightarrow$ $v(a)-v(b) \geq v(c)-v(d)$ 
  
  
-\paragraph{Definíció: } Legyen $T=(X_1,...,X_m)$ tényezőhalmaz, $C \subseteq T$ gyenge differencia-független $C^*\subseteq T $-tól $\Leftrightarrow$ ha $\forall w_C,x_C,y_C,z_C \in X_C:$ valamely $w_{C^*}^0 \in X_{C^*}$ esetén teljesül minden más $w_{C^*} \in X_{C^*}$ -re, hogy: $(w_C, w_{C^*}^0) \circ (x_C, w_{C^*}^0) \succeq^* (y_C, w_{C^*}^0) \circ (z_C, w_{C^*}^0)$  $\Rightarrow$ $(w_C, w_{C^*}) \circ (x_C, w_{C^*}) \succeq^* (y_C, w_{C^*}) \circ (z_C, w_{C^*})$ 
+\paragraph{Definíció: } Legyen $T=(X_1,...,X_m)$ tényezőhalmaz, $C \subseteq T$ differencia-független $C^*\subseteq T $-tól $\Leftrightarrow$ ha $\forall w_C,x_C,y_C,z_C \in X_C:$ valamely $w_{C^*}^0 \in X_{C^*}$ esetén teljesül minden más $w_{C^*} \in X_{C^*}$ -re, hogy: $(w_C, w_{C^*}^0) \circ (x_C, w_{C^*}^0) \succeq^* (y_C, w_{C^*}^0) \circ (z_C, w_{C^*}^0)$  $\Rightarrow$ $(w_C, w_{C^*}) \circ (x_C, w_{C^*}) \succeq^* (y_C, w_{C^*}) \circ (z_C, w_{C^*})$ 
 
 \paragraph{Kvázi additivitási tétel} Tegyük fel, hogy
 \begin{itemize}
@@ -592,7 +612,11 @@ Differenciaképzés: $\circ$.
 \item a legkevésbé preferált $a^0: v(a^0) = 0$ és a legjobban preferált $a^1: v(a^1)=1$
 \item hasonlóan $\forall i \in 1,..,n : $ a legkevésbé preferált $x_i^0: v_i(x_i^0) = 0$ és a legjobban preferált $x_i^1: v_i(x_i^1)=1$.
 \end{itemize}
-Ha $\forall i \in 1,..,n : X_i$ tényező gyenge-differenciafüggetlen a komplementerhalmazától, akkor \textbf{$v$ felírható kvázi additív alakban}.
+Ha $\forall i \in 1,..,n : X_i$ tényező differenciafüggetlen a komplementerhalmazától, akkor \textbf{$v$ felírható kvázi additív alakban}. 
+
+Értelmezés: elegendő ha az egy elemű halmazok differenciafüggetlenek. 
+Nem szükséges a kettes, hármas, ... párokra ezt bemutatni és semmiféle preferencia függetlenség nem szükséges.
+Az additív alaknak azon felül, hogy kölcsönösen preferencia független még kölcsönösen differenciafüggetlennek is kell lennie.
 
 \subsection{Multiplikatív értékelő függvények}
 Legyen $a=(x_1, ... , x_n) \in A$. Ekkor a preferencia struktúra \textbf{multiplikatív} $\Leftrightarrow$ teljesül:
@@ -602,7 +626,10 @@ v(a)  & = \frac{1}{K}([1+K\cdot k_{1}\cdot  v_1(x_1)]\cdot ...\cdot [1+K\cdot k_
 \end{split}
 \end{equation}
 
-A multiplikatív alak létezéséhez (kettőnél nagyobb dimenziós esetben) a kölcsönös preferenciafüggetlenség helyett elegendő a következő feltétel: $\exists i$ index, amelyre $C=\{X_i\}$ tényezőrészhalmaz gyenge differencia független a komplementerétől és ugyanez az i index mellett teljesül, hogy $\forall j=1,...,n , j \neq i : C^{'}=\{X_i, X_j\}$ preferenciafüggetlen a komplementerétől. Ez könnyebben teljesül az additív alak létezési feltételénél, de szigorúbb a kvázi-additív alakénál.
+A multiplikatív alak létezéséhez (kettőnél nagyobb dimenziós esetben) a kölcsönös preferenciafüggetlenség helyett elegendő a következő feltétel:
+Létezik olyan i index amely mellett $ C^{'}=\{X_i\}$ differencia független a komplementerétől és létezik olyan i, j ($i \neq j$) index pár amely mellett teljesül, hogy $ C^{'}=\{X_i, X_j\}$ preferenciafüggetlen a komplementerétől. 
+
+Ez könnyebben teljesül az additív alak létezési feltételénél, de szigorúbb a kvázi-additív alakénál.
 
 \paragraph{$K$ skálázási konstans meghatározása 2D ($n=2$) esetben:}
 \begin{equation}
@@ -621,8 +648,12 @@ v(a) = & k_1\cdot v_1(x_1) + k_2\cdot v_2(x_2)+ \\
 \end{equation}
 Ahol az alábbi 3 eset állhat elő:
 \begin{enumerate}
-\item eset: $k_1 = 0$ és $k_2 = 0 \Rightarrow v(a) = v_1(x_1) \cdot  v_2(x_2), K \rightarrow \infty$. Konjukció, ÉS operátor. 
-\item eset: $k_1 = 1$ és $k_2 = 1 \Rightarrow v(a) = v_1(x_1) + v_2(x_2) - v_1(x_1)\cdot  v_2(x_2), K = -1$. Diszjunkció, VAGY operátor.  
+\item eset: $k_1 = 0$ és $k_2 = 0 \Rightarrow v(a) = v_1(x_1) \cdot  v_2(x_2), K \rightarrow \infty$. Konjukció, ÉS operátor.
+Ebben az esetben a kritériumok erősítik egymást.
+A döntéshozó kifejezetten értékeli a kiegyensúlyozott, több fronton jól teljesítő alternatívákat.
+\item eset: $k_1 = 1$ és $k_2 = 1 \Rightarrow v(a) = v_1(x_1) + v_2(x_2) - v_1(x_1)\cdot  v_2(x_2), K = -1$. Diszjunkció, VAGY operátor.
+Ebben az esetben a kritériumok együttes jelenléte "büntetést" von maga után.
+A döntéshozó óvatosabb a halmozódó előnyökkel
 \item eset: $k_1 + k_2 = 1 \Rightarrow v(c) = k_1\cdot v_1(x_1) + k_2\cdot v_2(x_2), K = 0 $. Átlag művelet. (Additív alak)
 \end{enumerate} 
 
@@ -650,8 +681,8 @@ Ezekből meg szeretnénk kapni a $v(a_1), v(a_2), v(a_3)$-kat. Ez így többtén
 
 \begin{itemize}
 \item Kölcsönös preferenciafüggetlenség (2D esetben Thompsen feltétel) vagy a páronkénti Thompsen feltétel teljesülése $\Rightarrow$ additív alak
-\item Kölcsönös gyenge differenciafüggetlenség és kritériumpárokra nézve kölcsönös preferenciafüggetlenség  $\Rightarrow$ multiplikatív forma
-\item  Kölcsönös gyenge differenciafüggetlenség $\Rightarrow$ kvázi additív forma
+\item Egyelemű halmazokra differenciafüggetlenség és kritériumpárokra nézve kölcsönös preferenciafüggetlenség  $\Rightarrow$ multiplikatív forma
+\item Egyelemű halmazokra differenciafüggetlenség  $\Rightarrow$ kvázi additív forma
 \item Minden más esetben  $\Rightarrow$ egyéb formák
 
 \end{itemize}
@@ -660,7 +691,7 @@ Ezekből meg szeretnénk kapni a $v(a_1), v(a_2), v(a_3)$-kat. Ez így többtén
 
 \begin{enumerate}
 \item Többtényezős értékelőfüggvény létezésének verifikálása. Pl: teljesül-e a preferencia struktúrára a gyenge rendezés tulajdonságai. Ha nem teljesül, akkor rossz a preferencia struktúra, megkérjük a döntéshozót, hogy racionális preferencia struktúrát állítson fel. %Ha nem ismert a preferencia struktúra, akkor feltesszük, hogy létezik: megköveteljük a függvénytől a monotonitást, és folytonosságot.
-\item Megfelelő alakú függvényforma kiválasztása. Főleg a (gyenge differencia, és preferencia, Thomsen) függetlenségi tesztek alapján történik. Mivel ezek közül csak a preferencia függetlenség ellenőrizhető intuitíven, ezért általában multiplikatív alak használata javasolt.
+\item Megfelelő alakú függvényforma kiválasztása. Főleg a (differencia, és preferencia, Thomsen) függetlenségi tesztek alapján történik. Mivel ezek közül csak a preferencia függetlenség ellenőrizhető intuitíven, ezért általában multiplikatív alak használata javasolt.
 \item Az összetevő egydimenziós értékelő függvények megkonstruálása. (\ref{sssec:1D}.-ban bemutatottak alapján)
 \item Konstansok kiválasztása: Kellő mennyiségű preferencia információ alapján felírunk egy konstansokra vonatkozó független egyenletrendszert, megoldjuk. (Konkrét megvalósítással nem foglalkozunk, hasonló a multiplikatív konstansok beállításához.)
 \item Konzisztencia ellenőrzés, elemzés. (Döntéshozóval együtt, kérdezéses módszerrel)
@@ -1328,7 +1359,7 @@ Differenciaképzés: $\circ$.
 
 \textbf{Mérhetőség feltétele:} $u$ mérhető, ha $\forall a,b,c,d \in A: a \circ b \succeq^* c \circ d$ $\Leftrightarrow$ $u(a)-u(b) \geq u(c)-u(d)$
 
-\paragraph{Definíció: } Legyen $T=(X_1,...,X_m)$ tényezőhalmaz, $C \subseteq T$ gyenge differencia-független $C^*\subseteq T $-tól $\Leftrightarrow$ ha $\forall w_C,x_C,y_C,z_C \in X_C:$ valamely $w_{C^*}^0 \in X_{C^*}$ esetén teljesül minden más $w_{C^*} \in X_{C^*}$ -re, hogy: $(w_C, w_{C^*}^0) \circ (x_C, w_{C^*}^0) \succeq^* (y_C, w_{C^*}^0) \circ (z_C, w_{C^*}^0)$  $\Rightarrow$ $(w_C, w_{C^*}) \circ (x_C, w_{C^*}) \succeq^* (y_C, w_{C^*}) \circ (z_C, w_{C^*})$
+\paragraph{Definíció: } Legyen $T=(X_1,...,X_m)$ tényezőhalmaz, $C \subseteq T$ differencia-független $C^*\subseteq T $-tól $\Leftrightarrow$ ha $\forall w_C,x_C,y_C,z_C \in X_C:$ valamely $w_{C^*}^0 \in X_{C^*}$ esetén teljesül minden más $w_{C^*} \in X_{C^*}$ -re, hogy: $(w_C, w_{C^*}^0) \circ (x_C, w_{C^*}^0) \succeq^* (y_C, w_{C^*}^0) \circ (z_C, w_{C^*}^0)$  $\Rightarrow$ $(w_C, w_{C^*}) \circ (x_C, w_{C^*}) \succeq^* (y_C, w_{C^*}) \circ (z_C, w_{C^*})$
 
 \paragraph{Kvázi additivitási tétel} Tegyük fel, hogy
 \begin{itemize}
@@ -1336,7 +1367,7 @@ Differenciaképzés: $\circ$.
 \item a legkevésbé preferált $a^0: u(a^0) = 0$ és a legjobban preferált $a^1: u(a^1)=1$
 \item hasonlóan $\forall i \in 1,..,n : $ a legkevésbé preferált $x_i^0: v_i(x_i^0) = 0$ és a legjobban preferált $x_i^1: v_i(x_i^1)=1$.
 \end{itemize}
-Ha $\forall i \in 1,..,n : X_i$ tényező gyenge-differenciafüggetlen a komplementerhalmazától, akkor \textbf{$u$ felírható kvázi additív alakban}.
+Ha $\forall i \in 1,..,n : X_i$ tényező differenciafüggetlen a komplementerhalmazától, akkor \textbf{$u$ felírható kvázi additív alakban}.
 
 %\textbf{Értékfüggetlenség $\Rightarrow$ Hasznosságfüggetlenség $\Rightarrow$ Preferenciafüggetlenség.}
 
@@ -1348,7 +1379,7 @@ Kölcsönös preferenciafüggetlenség $\Rightarrow$ additív forma
 
 Kölcsönös hasznosságfüggetlenség  $\Rightarrow$ multiplikatív forma
 
-Gyenge differenciafüggetlenség $\Rightarrow$ kvázi additív forma
+Differenciafüggetlenség $\Rightarrow$ kvázi additív forma
 
 \subsection{Additív és multiplikatív hasznosságfüggvény}
 \paragraph{A közös alak: kvázi additív hasznosságfüggvény (kifejezhető belőle az additív és a multiplikatív hasznosságfüggvény)}
