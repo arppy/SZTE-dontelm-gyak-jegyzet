@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.1)  6 OCT 2026 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.13)  20 OCT 2026 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -510,10 +510,10 @@ letezz^^?uk, an-nyit tudunk, hogy his-toriku-san ma-gas ^^Sert^^Sekelts^^Segen
 File: PolymarketUSARecession2025-10-14.png Graphic file (type png)
 <use PolymarketUSARecession2025-10-14.png>
 Package pdftex.def Info: PolymarketUSARecession2025-10-14.png  used on input li
-ne 772.
+ne 759.
 (pdftex.def)             Requested size: 400.49934pt x 197.84064pt.
  [18 <./PolymarketUSARecession2025-10-14.png>]
-Overfull \hbox (10.08499pt too wide) in paragraph at lines 808--811
+Overfull \hbox (10.08499pt too wide) in paragraph at lines 815--818
 []\OT1/cmr/m/n/10.95 De p^^Senz^^Sert^^Sek alapj^^San ezen enyh^^S^^Pteni szok-
 tak $\OMS/cmsy/m/n/10.95 !$ \OT1/cmr/m/n/10.95 op-ti-miz-mus egy^^?utthat^^So: 
 \OT1/cmr/m/it/10.95 Hurwick-f^^Sele $\OML/cmm/m/it/10.95 $\OT1/cmr/m/n/10.95 ,
@@ -521,7 +521,7 @@ tak $\OMS/cmsy/m/n/10.95 !$ \OT1/cmr/m/n/10.95 op-ti-miz-mus egy^^?utthat^^So:
  []
 
 
-Overfull \hbox (6.73201pt too wide) in paragraph at lines 827--831
+Overfull \hbox (6.73201pt too wide) in paragraph at lines 834--838
 \OT1/cmr/m/n/10.95 delkez^^Ses^^?unkre ^^Sall^^So in-form^^Saci^^So: a becs^^?u
 lt v^^Sarhat^^So p^^Senz^^Sert^^Sek ^^Ses a becs^^?ult val^^Sosz^^S^^Pn}us^^Seg
 ek. Al-ter-nat^^S^^Pv^^Sank^^Sent
@@ -536,12 +536,12 @@ Package epstopdf Info: Source file: <dectree01.eps>
 (epstopdf)                    size: 68105 bytes
 (epstopdf)             Command: <repstopdf --outfile=dectree01-eps-converted-to
 .pdf dectree01.eps>
-(epstopdf)             \includegraphics on input line 949.
+(epstopdf)             \includegraphics on input line 956.
 Package epstopdf Info: Output file is already uptodate.
 <dectree01-eps-converted-to.pdf, id=94, 630.355pt x 654.445pt>
 File: dectree01-eps-converted-to.pdf Graphic file (type pdf)
 <use dectree01-eps-converted-to.pdf>
-Package pdftex.def Info: dectree01-eps-converted-to.pdf  used on input line 949
+Package pdftex.def Info: dectree01-eps-converted-to.pdf  used on input line 956
 .
 (pdftex.def)             Requested size: 441.24548pt x 458.10838pt.
  [21] [22 <./dectree01-eps-converted-to.pdf>]
@@ -553,48 +553,48 @@ Package epstopdf Info: Source file: <dectree06.eps>
 (epstopdf)                    size: 81588 bytes
 (epstopdf)             Command: <repstopdf --outfile=dectree06-eps-converted-to
 .pdf dectree06.eps>
-(epstopdf)             \includegraphics on input line 978.
+(epstopdf)             \includegraphics on input line 985.
 Package epstopdf Info: Output file is already uptodate.
 <dectree06-eps-converted-to.pdf, id=104, 744.7825pt x 613.29124pt>
 File: dectree06-eps-converted-to.pdf Graphic file (type pdf)
 <use dectree06-eps-converted-to.pdf>
-Package pdftex.def Info: dectree06-eps-converted-to.pdf  used on input line 978
+Package pdftex.def Info: dectree06-eps-converted-to.pdf  used on input line 985
 .
 (pdftex.def)             Requested size: 521.3442pt x 429.30093pt.
 
-Overfull \hbox (37.64732pt too wide) in paragraph at lines 978--979
+Overfull \hbox (37.64732pt too wide) in paragraph at lines 985--986
  [] 
  []
 
 
-Overfull \hbox (5.04689pt too wide) in paragraph at lines 982--982
+Overfull \hbox (5.04689pt too wide) in paragraph at lines 989--989
 []\OT1/cmr/bx/n/17.28 Multi-attribute util-ity the-ory --- Hasznoss^^Sag f^^?ug
 gv^^Seny 
  []
 
 
-Overfull \hbox (3.21378pt too wide) in paragraph at lines 985--986
+Overfull \hbox (3.21378pt too wide) in paragraph at lines 992--993
 \OT1/cmr/m/n/10.95 min-den d^^?ont^^Seshoz^^So megpr^^Sob^^Sal op-ti-maliz^^Sal
 ni egy olyan f^^?uggv^^Senyt, amely ag-greg^^Salja az ^^?osszes v^^Selem^^Seny^
 ^Set
  []
 
 [23 <./dectree06-eps-converted-to.pdf>] [24] [25]
-Overfull \hbox (9.26938pt too wide) in paragraph at lines 1153--1154
+Overfull \hbox (9.26938pt too wide) in paragraph at lines 1160--1161
  \OT1/cmr/bx/n/12 A felt^^Setelekb}ol megkon-stru^^Salhat^^So a hasznoss^^Sagf^
 ^?uggv^^Seny: [] \OT1/cmr/m/n/10.95 Az els}o felt^^Setelnek k^^?osz^^?onhet}oen
 
  []
 
 [26]
-Overfull \hbox (11.30821pt too wide) in paragraph at lines 1198--1199
+Overfull \hbox (11.30821pt too wide) in paragraph at lines 1205--1206
 []\OT1/cmr/m/n/10.95 Ism^^Setelj^^?uk min-den is-mert kimenetelre ($\OML/cmm/m/
 it/10.95 c[]$\OT1/cmr/m/n/10.95 ): vegy^^?uk az adott kimenetelt bi-zonyoss^^Sa
 gi egyen^^Sert^^Sekk^^Sent
  []
 
 
-Overfull \hbox (21.35643pt too wide) in paragraph at lines 1219--1220
+Overfull \hbox (21.35643pt too wide) in paragraph at lines 1226--1227
 []\OT1/cmr/bx/n/10.95 A d^^?ont^^Seshoz^^Soval t^^?ort^^Sent egyeztet^^Ses, dia
 l^^Sogus sor^^San keletkez}o v^^Salaszok fogj^^Sak meghat^^Sarozni
  []
@@ -607,12 +607,12 @@ Package epstopdf Info: Source file: <utilmake.eps>
 (epstopdf)                    size: 18044 bytes
 (epstopdf)             Command: <repstopdf --outfile=utilmake-eps-converted-to.
 pdf utilmake.eps>
-(epstopdf)             \includegraphics on input line 1223.
+(epstopdf)             \includegraphics on input line 1230.
 Package epstopdf Info: Output file is already uptodate.
 <utilmake-eps-converted-to.pdf, id=120, 394.47375pt x 320.19624pt>
 File: utilmake-eps-converted-to.pdf Graphic file (type pdf)
 <use utilmake-eps-converted-to.pdf>
-Package pdftex.def Info: utilmake-eps-converted-to.pdf  used on input line 1223
+Package pdftex.def Info: utilmake-eps-converted-to.pdf  used on input line 1230
 .
 (pdftex.def)             Requested size: 276.12973pt x 224.13583pt.
 [27] [28 <./utilmake-eps-converted-to.pdf>]
@@ -624,23 +624,23 @@ Package epstopdf Info: Source file: <kockazat.eps>
 (epstopdf)                    size: 18795 bytes
 (epstopdf)             Command: <repstopdf --outfile=kockazat-eps-converted-to.
 pdf kockazat.eps>
-(epstopdf)             \includegraphics on input line 1309.
+(epstopdf)             \includegraphics on input line 1316.
 Package epstopdf Info: Output file is already uptodate.
 <kockazat-eps-converted-to.pdf, id=130, 345.29pt x 270.00874pt>
 File: kockazat-eps-converted-to.pdf Graphic file (type pdf)
 <use kockazat-eps-converted-to.pdf>
-Package pdftex.def Info: kockazat-eps-converted-to.pdf  used on input line 1309
+Package pdftex.def Info: kockazat-eps-converted-to.pdf  used on input line 1316
 .
 (pdftex.def)             Requested size: 241.70134pt x 189.00482pt.
 
-Overfull \hbox (10.11833pt too wide) in paragraph at lines 1322--1323
+Overfull \hbox (10.11833pt too wide) in paragraph at lines 1329--1330
 \OT1/cmr/m/n/10.95 T^^?obbt^^Senyez}os hasznoss^^Sag f^^?uggv^^Seny az ^^Sert^^
 Sekel}o f^^?uggv^^Senyhez ha-sonl^^Soan a dekom-poz^^S^^Pci^^Sos alakok vizsg^^
 Salat^^Sat
  []
 
 [29 <./kockazat-eps-converted-to.pdf>] [30] [31]
-Overfull \hbox (15.61588pt too wide) in paragraph at lines 1467--1468
+Overfull \hbox (15.61588pt too wide) in paragraph at lines 1474--1475
 []\OT1/cmr/m/n/10.95 Az ^^?osszetev}o egy-di-menzi^^Sos ^^Sert^^Sekel}o f^^?ugg
 v^^Senyek megkon-stru^^Sal^^Sasa, bi-zonyoss^^Sagi egyen^^Sert^^Sekes m^^Sodsze
 r
@@ -654,7 +654,7 @@ L3 programming layer <2026-03-20>
  ) 
 Here is how much of TeX's memory you used:
  5330 strings out of 469543
- 89664 string characters out of 5472960
+ 89664 string characters out of 5472959
  527240 words of memory out of 6000000
  33844 multiletter control sequences out of 15000+600000
  641074 words of font info for 94 fonts, out of 8000000 for 9000
@@ -680,7 +680,7 @@ onts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/cm-super/sfrm1095.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/cm-super/sfrm1200.pfb>
-Output written on gyakanyag.pdf (32 pages, 628414 bytes).
+Output written on gyakanyag.pdf (32 pages, 628870 bytes).
 PDF statistics:
  236 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams

@@ -74,7 +74,7 @@
 \select@language {english} \contentsline {subsection}{\numberline {9.3}Döntés a valószínűségérték alapján}{19}{}%
 \select@language {english} \contentsline {paragraph}{Maximum likelihood kritérium: }{19}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.4}Döntés a rendelkezésre álló információ alapján}{19}{}%
-\select@language {english} \contentsline {subsection}{\numberline {9.5}A tökéletes információ ára}{19}{}%
+\select@language {english} \contentsline {subsection}{\numberline {9.5}A tökéletes információ ára}{20}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.6}Döntés nem tökéletes információ alapján}{20}{}%
 \select@language {english} \contentsline {paragraph}{A nem tökéletes információ várható pénzértéke: }{21}{}%
 \select@language {english} \contentsline {subsection}{\numberline {9.7}Döntés döntési fa eljárás alapján}{21}{}%
